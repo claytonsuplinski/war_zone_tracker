@@ -92,8 +92,6 @@ function init_wars(){
 				test_war.add_battle(new Battle(battle));
 				//test_war.add_battle(new Battle(180 * Math.random() - 90, 360 * Math.random() - 180));
 			});
-			alert(test_war.start_time);
-			alert(test_war.end_time);
 		}
 	});
 }
