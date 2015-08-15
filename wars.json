@@ -2004,9 +2004,393 @@
 						"lat": 64.883,
 						"lon": 28.916
 					}
+				},
+				{
+					"name": "Battle of Kollaa",
+					"start": "12/7/1939",
+					"end": "3/13/1940",
+					"winner": "Finland",
+					"countries": [
+						{
+							"name": "Finland",
+							"casualities": 1500,
+							"leader": "Woldemar Hagglund",
+							"troops": "?"
+						},
+						{
+							"name": "Soviet Union",
+							"casualities": 8000,
+							"leader": "Ivan Khabarov",
+							"troops": "?"
+						}
+					],
+					"location": {
+						"name": "Kollaa River, Finland",
+						"lat": 62.027,
+						"lon": 32.255
+					}
+				},
+				{
+					"name": "Battle of Honkaniemi",
+					"start": "2/25/1940",
+					"end": "2/27/1940",
+					"winner": "Soviet Union",
+					"countries": [
+						{
+							"name": "Finland",
+							"casualities": 33,
+							"leader": "Voldemar Oinonen",
+							"troops": "?"
+						},
+						{
+							"name": "Soviet Union",
+							"casualities": "?",
+							"leader": "V. Kashuba",
+							"troops": "?"
+						}
+					],
+					"location": {
+						"name": "Karelian Isthmus, Finland",
+						"lat": 60.65,
+						"lon": 28.783
+					}
+				},
+				{
+					"name": "Battle of Changsha",
+					"start": "9/17/1939",
+					"end": "10/6/1939",
+					"winner": "Republic of China",
+					"countries": [
+						{
+							"name": "Imperial Japan",
+							"casualities": 40000,
+							"leader": "Yasuji Okamura",
+							"troops": 100000
+						},
+						{
+							"name": "Republic of China",
+							"casualities": 40000,
+							"leader": "Chen Cheng",
+							"troops": 240000
+						}
+					],
+					"location": {
+						"name": "Changsha, China",
+						"lat": 28.196,
+						"lon": 112.972
+					}
+				},
+				{
+					"name": "1939-40 Winter Offensive",
+					"start": "11/1/1939",
+					"end": "3/30/1940",
+					"winner": "Imperial Japan",
+					"countries": [
+						{
+							"name": "Imperial Japan",
+							"casualities": 20000,
+							"leader": "Toshizo Nishio",
+							"troops": 850000
+						},
+						{
+							"name": "Republic of China",
+							"casualities": 70000,
+							"leader": "Xue Yue",
+							"troops": 550000
+						}
+					],
+					"location": {
+						"name": "Eastern China",
+						"lat": 31.833,
+						"lon": 117
+					}
+				},
+				{
+					"name": "Battle of the River Plate",
+					"start": "12/13/1939",
+					"end": "",
+					"winner": "United Kingdom",
+					"countries": [
+						{
+							"name": "Nazi Germany",
+							"casualities": 36,
+							"leader": "Hans Langsdorff",
+							"troops": "?"
+						},
+						{
+							"name": "United Kingdom",
+							"casualities": 72,
+							"leader": "Henry Harwood",
+							"troops": "?"
+						}
+					],
+					"location": {
+						"name": "Argentina / Uruguay",
+						"lat": -35.666,
+						"lon": -55.783
+					}
+				},
+				{
+					"name": "Altmark Incident",
+					"start": "2/16/1940",
+					"end": "",
+					"winner": "United Kingdom",
+					"countries": [
+						{
+							"name": "Nazi Germany",
+							"casualities": 4,
+							"leader": "Heinrich Dau",
+							"troops": "?"
+						},
+						{
+							"name": "United Kingdom",
+							"casualities": 0,
+							"leader": "Philip Vian",
+							"troops": "?"
+						}
+					],
+					"location": {
+						"name": "Jossingfjord, Norway",
+						"lat": 58.316,
+						"lon": 6.336
+					}
+				},
+				{
+					"name": "Action of 4 April 1941",
+					"start": "4/4/1941",
+					"end": "",
+					"winner": "Nazi Germany",
+					"countries": [
+						{
+							"name": "Nazi Germany",
+							"casualities": 0,
+							"leader": "Otto Kahler",
+							"troops": "?"
+						},
+						{
+							"name": "United Kingdom",
+							"casualities": 74,
+							"leader": "J.A. Blackburn",
+							"troops": "?"
+						}
+					],
+					"location": {
+						"name": "Mid Atlantic Ocean",
+						"lat": 14.5,
+						"lon": -40.5
+					}
+				},
+				{
+					"name": "Battle of the Bismarck",
+					"start": "5/26/1941",
+					"end": "5/27/1941",
+					"winner": "United Kingdom",
+					"countries": [
+						{
+							"name": "Nazi Germany",
+							"casualities": 2200,
+							"leader": "Gunther Lutjens",
+							"troops": "?"
+						},
+						{
+							"name": "United Kingdom",
+							"casualities": 3,
+							"leader": "John Tovey",
+							"troops": "?"
+						}
+					],
+					"location": {
+						"name": "Atlantic Ocean",
+						"lat": 48.39,
+						"lon": -4.53
+					}
+				},
+				{
+					"name": "Battle of the St. Lawrence",
+					"start": "5/1/1942",
+					"end": "11/1/1944",
+					"winner": "Canada",
+					"countries": [
+						{
+							"name": "Nazi Germany",
+							"casualities": "?",
+							"leader": "Karl Donitz",
+							"troops": "?"
+						},
+						{
+							"name": "Canada",
+							"casualities": 340,
+							"leader": "Percy Nelles",
+							"troops": "?"
+						}
+					],
+					"location": {
+						"name": "Gulf of St. Lawrence",
+						"lat": 48.6,
+						"lon": -61.4
+					}
+				},
+				{
+					"name": "Naval Battle of Casablanca",
+					"start": "11/8/1942",
+					"end": "11/16/1942",
+					"winner": "United States",
+					"countries": [
+						{
+							"name": "Nazi Germany",
+							"casualities": 462,
+							"leader": "Ernst Kals",
+							"troops": "?"
+						},
+						{
+							"name": "United States",
+							"casualities": 174,
+							"leader": "Henry Kent Hewitt",
+							"troops": "?"
+						}
+					],
+					"location": {
+						"name": "Casablanca, French Morocco",
+						"lat": 33.55,
+						"lon": -7.583
+					}
+				},
+				{
+					"name": "Battle of Barents Sea",
+					"start": "12/31/1942",
+					"end": "",
+					"winner": "United Kingdom",
+					"countries": [
+						{
+							"name": "Nazi Germany",
+							"casualities": 330,
+							"leader": "Oskar Kummetz",
+							"troops": "?"
+						},
+						{
+							"name": "United Kingdom",
+							"casualities": 250,
+							"leader": "Robert Burnett",
+							"troops": "?"
+						}
+					],
+					"location": {
+						"name": "Barents Sea, Norway",
+						"lat": 73.25,
+						"lon": 29
+					}
+				},
+				{
+					"name": "Battle of the North Cape",
+					"start": "12/26/1943",
+					"end": "",
+					"winner": "United Kingdom",
+					"countries": [
+						{
+							"name": "Nazi Germany",
+							"casualities": 1932,
+							"leader": "Erich Bey",
+							"troops": "?"
+						},
+						{
+							"name": "United Kingdom",
+							"casualities": 11,
+							"leader": "Bruce Fraser",
+							"troops": "?"
+						}
+					],
+					"location": {
+						"name": "North Cape, Norway",
+						"lat": 72.516,
+						"lon": 28.25
+					}
+				},
+				{
+					"name": "Battle of Ushant",
+					"start": "6/9/1944",
+					"end": "",
+					"winner": "United Kingdom",
+					"countries": [
+						{
+							"name": "Nazi Germany",
+							"casualities": 39,
+							"leader": "Theodor von Bechtolsheim",
+							"troops": "?"
+						},
+						{
+							"name": "United Kingdom",
+							"casualities": 0,
+							"leader": "Basil Jones",
+							"troops": "?"
+						}
+					],
+					"location": {
+						"name": "English Channel",
+						"lat": 50,
+						"lon": -2
+					}
+				},
+				{
+					"name": "Battle of Pierres Noires",
+					"start": "7/5/1944",
+					"end": "",
+					"winner": "Canada",
+					"countries": [
+						{
+							"name": "Nazi Germany",
+							"casualities": "?",
+							"leader": "Gerhard Palmgren",
+							"troops": "?"
+						},
+						{
+							"name": "Canada",
+							"casualities": 0,
+							"leader": "Dickson Carlile Wallace",
+							"troops": "?"
+						}
+					],
+					"location": {
+						"name": "Iroise Sea",
+						"lat": 48.211,
+						"lon": -4.914
+					}
+				},
+				{
+					"name": "Battle of Point Judith",
+					"start": "5/5/1945",
+					"end": "5/6/1945",
+					"winner": "United States",
+					"countries": [
+						{
+							"name": "Nazi Germany",
+							"casualities": 55,
+							"leader": "?",
+							"troops": "?"
+						},
+						{
+							"name": "United States",
+							"casualities": 12,
+							"leader": "F.C. McCune",
+							"troops": "?"
+						}
+					],
+					"location": {
+						"name": "Point Judith, Rhode Island",
+						"lat": 41.361,
+						"lon": -71.481
+					}
 				}
 			],
 			"countries": [
+				{
+					"name": "Canada",
+					"leaders": [
+						{
+							"name": "William Lyon Mackenzie King",
+							"title": "Prime Minister"
+						}
+					]
+				},
 				{
 					"name": "France",
 					"leaders": [
@@ -2017,11 +2401,29 @@
 					]
 				},
 				{
+					"name": "Vichy France",
+					"leaders": [
+						{
+							"name": "Philippe Petain",
+							"title": "Prime Minister"
+						}
+					]
+				},
+				{
 					"name": "Finland",
 					"leaders": [
 						{
 							"name": "Kyosti Kallio",
 							"title": "President"
+						}
+					]
+				},
+				{
+					"name": "Imperial Japan",
+					"leaders": [
+						{
+							"name": "Hideki Tojo",
+							"title": "Prime Minister"
 						}
 					]
 				},
@@ -2044,11 +2446,29 @@
 					]
 				},
 				{
+					"name": "Republic of China",
+					"leaders": [
+						{
+							"name": "Chiang Kai-shek",
+							"title": "Commander"
+						}
+					]
+				},
+				{
 					"name": "Soviet Union",
 					"leaders": [
 						{
 							"name": "Joseph Stalin",
 							"title": "Premier"
+						}
+					]
+				},
+				{
+					"name": "United Kingdom",
+					"leaders": [
+						{
+							"name": "Winston Churchill",
+							"title": "Prime Minister"
 						}
 					]
 				},
