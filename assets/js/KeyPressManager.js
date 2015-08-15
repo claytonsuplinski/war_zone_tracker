@@ -8,8 +8,10 @@ document.addEventListener('keyup', function(event) {
 	WARS.keys_pressed.splice(WARS.keys_pressed.indexOf(event.keyCode), 1);
 });
 
+var test_pressed = false;
 setInterval(function(){
 	if(WARS.keys_pressed.indexOf(87) != -1) { // W
+		test_pressed = true;
 		// Go forwards
 		if(WARS.user.free_mode){
 			var tmp_angle = -WARS.user.rotation.y*WARS.constants.to_radians;
@@ -102,7 +104,7 @@ function init_mouse_controls(){
 				}
 			}
 			if(WARS.mouse.right_down){
-				WARS.user.position.z -= (event.pageY - WARS.mouse.y);
+				WARS.user.position.z -= (event.pageY - WARS.mouse.y)/4;
 				if(WARS.user.position.z > -WARS.constants.earth_radius-WARS.constants.zoom_offset){
 					WARS.user.position.z = -WARS.constants.earth_radius-WARS.constants.zoom_offset;
 				}

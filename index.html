@@ -10,7 +10,8 @@
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	
     <link rel="stylesheet" href="webgl.css" type="text/css">
@@ -29,6 +30,10 @@
 	
 	<style>
 	
+		*{
+			font-family:'Cinzel';
+		}
+	
 		body{
 			margin:0px;
 			overflow:hidden;
@@ -40,6 +45,46 @@
 		}
 		
 		#time-select-display{
+			background:transparent;
+		}
+		
+		.navbar{
+			border-width:0px;
+			background:#141111;
+			background-image:url('./assets/textures/background.png');
+		}
+		
+		#top-panel .container{
+			overflow:auto;
+		}
+		
+		#top-panel .navbar-header{
+			min-width:400px;
+		}
+		
+		#top-panel a{
+			cursor:pointer;
+			color:#BFA475;
+		}
+		
+		#top-panel a:hover{
+			color:#CB9C4C;
+		}
+		
+		#top-panel .navbar-brand{
+			font-family:'Arvo';
+		}
+		
+		#war-dropdown{
+			background:#201C1C;
+		}
+		
+		#top-panel .dropdown-menu{
+			text-align:center;
+			margin-left:8%;
+		}
+		
+		#top-panel .dropdown-menu a:hover{
 			background:transparent;
 		}
 	
@@ -102,12 +147,42 @@
 	
 </head>
 <body onload="start()">
-<!--
-	<div id="map-container">
-		
-	</div>
-	
-	-->
+
+	<nav id="top-panel" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+				<a id="war-name" class="navbar-brand" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></a>
+				  <ul id="war-dropdown" class="dropdown-menu" aria-labelledby="dropdownMenu1">
+				  </ul>
+            </div>
+            <div class="collapse navbar-collapse pull-right" id="navbar-collapse-1">
+			
+                <ul class="nav navbar-nav text-center" style="width:100%;">
+					<li>
+						<a>
+							Battles
+						</a>
+                    </li>
+					<li>
+						<a>
+							Countries
+						</a>
+                    </li>
+					<li>
+						<a>
+							Commanders
+						</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 	
 	<canvas id="glcanvas" width="640" height="480" oncontextmenu="return false;">
       Your browser doesn't appear to support the HTML5 <code>&lt;canvas&gt;</code> element.
@@ -115,21 +190,12 @@
 
 	<nav id="bottom-panel" class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
 			
                 <ul class="nav navbar-nav text-center" style="width:100%;">
 					<li style="width:100%;">
 						<a>
 								<div class="col-md-3 col-xs-12">
-									<input type="text" id="time-select-display" readonly style="border:0; color:#f6931f; font-weight:bold;width:100%;">
+									<input type="text" id="time-select-display" readonly style="border:0; color:#7E755C; font-weight:bold;width:100%;">
 								</div>
 								<div class="col-md-9 col-xs-12">
 									<div id="time-select-slider"></div>
@@ -137,7 +203,6 @@
 						</a>
                     </li>
                 </ul>
-            </div>
         </div>
     </nav>
 

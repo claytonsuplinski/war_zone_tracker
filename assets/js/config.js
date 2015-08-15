@@ -4,6 +4,8 @@ WARS.window = {};
 WARS.window.width = 0;
 WARS.window.height = 0;
 
+WARS.war_name = "American Revolutionary War";
+
 WARS.constants = {};
 WARS.constants.months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 WARS.constants.to_radians = Math.PI/180;
@@ -45,42 +47,27 @@ WARS.models = {};
 
 WARS.models.electrons = {};
 
-function init_models(){
-
-	/*
-	WARS.models["Massachusetts Bay"] = new Sphere(0.2, 30, 30);
-	WARS.models["Massachusetts Bay"].set_texture("./assets/textures/massachusetts_bay.png");
-	WARS.models["Massachusetts Bay"].set_shader(basic_shader);
-	*/
-
-	WARS.models.tie = new Sphere(0.1, 30, 30);
+WARS.init = {};
+WARS.init.models = function(){
+	WARS.models.tie = new Sphere(0.05, 30, 30);
 	WARS.models.tie.set_texture("./assets/textures/tie.png");
 	WARS.models.tie.set_shader(basic_shader);
-	
-	WARS.models.electrons["p"] = new Sphere(0.2, 8, 8);
-	WARS.models.electrons["p"].set_texture("./assets/textures/electron_p.png");
-	WARS.models.electrons["p"].set_shader(basic_shader);	
-	
-	WARS.models.electrons["d"] = new Sphere(0.2, 8, 8);
-	WARS.models.electrons["d"].set_texture("./assets/textures/electron_d.png");
-	WARS.models.electrons["d"].set_shader(basic_shader);	
-	
-	WARS.models.electrons["f"] = new Sphere(0.2, 8, 8);
-	WARS.models.electrons["f"].set_texture("./assets/textures/electron_f.png");
-	WARS.models.electrons["f"].set_shader(basic_shader);	
 }
 
-function init_wars(){
+WARS.init.wars = function(){
 
 	test_war = new War();
+	
+	$("#war-name").html(WARS.war_name+' <span class="caret"></span>');
 
+	var tmp_dropdown = "";
 	Object.keys(WARS.data).forEach(function(war_name){
 		var war = WARS.data[war_name];
 		var battles = war.battles;
 		var countries = war.countries;
-		if(war_name == "American Revolutionary War"){
+		if(war_name == WARS.war_name){
 			countries.forEach(function(country){
-				WARS.models[country.name] = new Sphere(0.1, 30, 30);
+				WARS.models[country.name] = new Sphere(0.05, 30, 30);
 				var filename = country.name.toLowerCase().replace(' ', '_').replace(' ', '_');
 				WARS.models[country.name].set_texture("./assets/textures/"+filename+".png");
 				WARS.models[country.name].set_shader(basic_shader);
@@ -93,12 +80,16 @@ function init_wars(){
 				//test_war.add_battle(new Battle(180 * Math.random() - 90, 360 * Math.random() - 180));
 			});
 		}
+		else{
+			tmp_dropdown += '<li><a onclick="WARS.war_name=&quot;'+war_name+'&quot;;WARS.init.project();">'+war_name+'</a></li>';
+		}
 	});
+	$("#war-dropdown").html(tmp_dropdown);
 }
 
-function init_project(){
-	init_models();
-	init_wars();
+WARS.init.project = function(){
+	WARS.init.models();
+	WARS.init.wars();
 	$( "#time-select-slider" ).slider({
       range: true,
       min: test_war.start_time.getTime(),

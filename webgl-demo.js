@@ -40,7 +40,7 @@ function start() {
 			
 		basic_shader = new Shader("shader-vs", "shader-fs");
 
-		init_project();
+		WARS.init.project();
 		
 		test_sphere = new Sphere(WARS.constants.earth_radius, 200, 200);
 		test_sphere.set_texture("./assets/textures/earth.png");
