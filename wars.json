@@ -2379,9 +2379,293 @@
 						"lat": 41.361,
 						"lon": -71.481
 					}
+				},
+				{
+					"name": "Battle of Drobak Sound",
+					"start": "4/9/1940",
+					"end": "",
+					"winner": "Norway",
+					"countries": [
+						{
+							"name": "Nazi Germany",
+							"casualities": 800,
+							"leader": "Oskar Kummetz",
+							"troops": "?"
+						},
+						{
+							"name": "Norway",
+							"casualities": 0,
+							"leader": "Birger Eriksen",
+							"troops": 407
+						}
+					],
+					"location": {
+						"name": "Drobak Sound, Norway",
+						"lat": 59.7,
+						"lon": 10.592
+					}
+				},
+				{
+					"name": "Namsos Campaign",
+					"start": "4/1/1940",
+					"end": "5/1/1940",
+					"winner": "Nazi Germany",
+					"countries": [
+						{
+							"name": "Nazi Germany",
+							"casualities": "?",
+							"leader": "?",
+							"troops": 6000
+						},
+						{
+							"name": "United Kingdom",
+							"casualities": 19,
+							"leader": "Adrian Carton De Wiart",
+							"troops": 6000
+						}
+					],
+					"location": {
+						"name": "Southern Norway",
+						"lat": 64.493,
+						"lon": 11.511
+					}
+				},
+				{
+					"name": "Battle of the Netherlands",
+					"start": "5/10/1940",
+					"end": "5/14/1940",
+					"winner": "Nazi Germany",
+					"countries": [
+						{
+							"name": "Nazi Germany",
+							"casualities": 2032,
+							"leader": "Fedor von Bock",
+							"troops": 750000
+						},
+						{
+							"name": "Netherlands",
+							"casualities": 2600,
+							"leader": "Henri Winkelman",
+							"troops": 280000
+						}
+					],
+					"location": {
+						"name": "Netherlands",
+						"lat": 51.916,
+						"lon": 4.5
+					}
+				},
+				{
+					"name": "Battle of Belgium",
+					"start": "5/10/1940",
+					"end": "5/28/1940",
+					"winner": "Nazi Germany",
+					"countries": [
+						{
+							"name": "Nazi Germany",
+							"casualities": 10232,
+							"leader": "Gerd von Rundstedt",
+							"troops": "?"
+						},
+						{
+							"name": "Belgium",
+							"casualities": 222443,
+							"leader": "King Leopold III",
+							"troops": "?"
+						}
+					],
+					"location": {
+						"name": "Belgium and Luxembourg",
+						"lat": 50.797,
+						"lon": 5.680
+					}
+				},
+				{
+					"name": "Battle of France",
+					"start": "5/10/1940",
+					"end": "6/25/1940",
+					"winner": "Nazi Germany",
+					"countries": [
+						{
+							"name": "Nazi Germany",
+							"casualities": 163650,
+							"leader": "Walther von Brauchitsch",
+							"troops": 3650000
+						},
+						{
+							"name": "France",
+							"casualities": 360000,
+							"leader": "Maurice Gamelin",
+							"troops": 3450000
+						}
+					],
+					"location": {
+						"name": "France",
+						"lat": 48.856,
+						"lon": 2.350
+					}
+				},
+				{
+					"name": "Battle of Dunkirk",
+					"start": "5/26/1940",
+					"end": "6/4/1940",
+					"winner": "United Kingdom",
+					"countries": [
+						{
+							"name": "Nazi Germany",
+							"casualities": 30000,
+							"leader": "Gerd von Rundstedt",
+							"troops": 800000
+						},
+						{
+							"name": "United Kingdom",
+							"casualities": 11000,
+							"leader": "Lord Gort",
+							"troops": 400000
+						}
+					],
+					"location": {
+						"name": "Dunkirk, France",
+						"lat": 51.034,
+						"lon": 2.376
+					}
+				},
+				{
+					"name": "Attack on Mers-el-Kebir",
+					"start": "7/3/1940",
+					"end": "",
+					"winner": "United Kingdom",
+					"countries": [
+						{
+							"name": "Vichy France",
+							"casualities": 1297,
+							"leader": "Marcel-Bruno Gensoul",
+							"troops": "?"
+						},
+						{
+							"name": "United Kingdom",
+							"casualities": 2,
+							"leader": "James Somerville",
+							"troops": "?"
+						}
+					],
+					"location": {
+						"name": "French Algeria, North Africa",
+						"lat": 35.719,
+						"lon": -0.688
+					}
+				},
+				{
+					"name": "Battle of Britain",
+					"start": "7/10/1940",
+					"end": "10/31/1940",
+					"winner": "United Kingdom",
+					"countries": [
+						{
+							"name": "Nazi Germany",
+							"casualities": 2698,
+							"leader": "Adolf Hitler",
+							"troops": "?"
+						},
+						{
+							"name": "United Kingdom",
+							"casualities": 544,
+							"leader": "Winston Churchill",
+							"troops": "?"
+						}
+					],
+					"location": {
+						"name": "London, England",
+						"lat": 51.507,
+						"lon": -0.127
+					}
+				},
+				{
+					"name": "Italian Conquest of British Somaliland",
+					"start": "8/3/1940",
+					"end": "8/19/1940",
+					"winner": "Italy",
+					"countries": [
+						{
+							"name": "Italy",
+							"casualities": 465,
+							"leader": "Guglielmo Nasi",
+							"troops": 24000
+						},
+						{
+							"name": "United Kingdom",
+							"casualities": 50,
+							"leader": "Reade Godwin-Austen",
+							"troops": 5000
+						}
+					],
+					"location": {
+						"name": "British Somaliland",
+						"lat": 9.55,
+						"lon": 44.066
+					}
+				},
+				{
+					"name": "Japanese Invasion of French Indochina",
+					"start": "9/22/1940",
+					"end": "9/26/1940",
+					"winner": "Imperial Japan",
+					"countries": [
+						{
+							"name": "Imperial Japan",
+							"casualities": 2000,
+							"leader": "Akihito Nakamura",
+							"troops": 36000
+						},
+						{
+							"name": "Vichy France",
+							"casualities": 824,
+							"leader": "Maurice Martin",
+							"troops": 3000
+						}
+					],
+					"location": {
+						"name": "French Indochina",
+						"lat": 10.776,
+						"lon": 106.700
+					}
+				},
+				{
+					"name": "Battle of Dakar",
+					"start": "9/23/1940",
+					"end": "9/25/1940",
+					"winner": "Vichy France",
+					"countries": [
+						{
+							"name": "Vichy France",
+							"casualities": "?",
+							"leader": "Pierre Francois Boisson",
+							"troops": "?"
+						},
+						{
+							"name": "United Kingdom",
+							"casualities": "?",
+							"leader": "John Cunningham",
+							"troops": "?"
+						}
+					],
+					"location": {
+						"name": "Dakar, French West Africa",
+						"lat": 14.692,
+						"lon": -17.446
+					}
 				}
 			],
 			"countries": [
+				{
+					"name": "Belgium",
+					"leaders": [
+						{
+							"name": "Leopold III",
+							"title": "King"
+						}
+					]
+				},
 				{
 					"name": "Canada",
 					"leaders": [
@@ -2428,11 +2712,38 @@
 					]
 				},
 				{
+					"name": "Italy",
+					"leaders": [
+						{
+							"name": "Benito Mussolini",
+							"title": "Prime Minister"
+						}
+					]
+				},
+				{
 					"name": "Nazi Germany",
 					"leaders": [
 						{
 							"name": "Adolf Hitler",
 							"title": "Fuhrer"
+						}
+					]
+				},
+				{
+					"name": "Netherlands",
+					"leaders": [
+						{
+							"name": "Wilhelmina",
+							"title": "Queen"
+						}
+					]
+				},
+				{
+					"name": "Norway",
+					"leaders": [
+						{
+							"name": "Vidkun Quisling",
+							"title": "Minister President"
 						}
 					]
 				},
