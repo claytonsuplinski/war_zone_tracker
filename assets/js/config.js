@@ -45,8 +45,6 @@ WARS.mouse.y = "";
 
 WARS.models = {};
 
-WARS.models.electrons = {};
-
 WARS.init = {};
 WARS.init.models = function(){
 	WARS.models.tie = new Sphere(0.05, 30, 30);
@@ -68,7 +66,7 @@ WARS.init.wars = function(){
 		if(war_name == WARS.war_name){
 			countries.forEach(function(country){
 				WARS.models[country.name] = new Sphere(0.05, 30, 30);
-				var filename = country.name.toLowerCase().replace(' ', '_').replace(' ', '_');
+				var filename = country.name.toLowerCase().replace(/\s+/g, '_');
 				WARS.models[country.name].set_texture("./assets/textures/"+filename+".png");
 				WARS.models[country.name].set_shader(basic_shader);
 			});

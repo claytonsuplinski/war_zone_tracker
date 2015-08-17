@@ -35,6 +35,11 @@ Battle.prototype.compare_times = function(first_date, second_date){
 
 Battle.prototype.draw = function(){
 
+	if(this.model == undefined){
+		alert(this.battle.winner);
+		alert(Object.keys(WARS.models));
+	}
+
 	if(this.compare_times(WARS.date_range.end_time, this.start_time) && this.compare_times(this.end_time, WARS.date_range.start_time) ){
 		mvPushMatrix();
 		mvRotate(this.battle.location.lon, [0,1,0]);
