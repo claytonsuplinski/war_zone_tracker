@@ -12,6 +12,8 @@ WARS.constants.to_radians = Math.PI/180;
 WARS.constants.lon_offset = 180;
 WARS.constants.earth_radius = 10;
 WARS.constants.zoom_offset = 0.1;
+WARS.constants.background_image_radius = 50;
+WARS.constants.gallery_size = 4;
 
 WARS.functions = {};
 WARS.functions.init_data = function(){
@@ -30,10 +32,10 @@ WARS.user.free_mode = false;
 WARS.user.position = {};
 WARS.user.position.x = 0;
 WARS.user.position.y = 0;
-WARS.user.position.z = -30;
+WARS.user.position.z = -45;
 WARS.user.rotation = {};
-WARS.user.rotation.x = -40;
-WARS.user.rotation.y = 0;
+WARS.user.rotation.x = 15;
+WARS.user.rotation.y = 211;
 
 WARS.date_range = {};
 
@@ -77,6 +79,8 @@ WARS.init.wars = function(){
 				test_war.add_battle(new Battle(battle));
 				//test_war.add_battle(new Battle(180 * Math.random() - 90, 360 * Math.random() - 180));
 			});
+			
+			gallery = new Gallery(WARS.war_name.toLowerCase().replace(/\s+/g, '_'));
 		}
 		else{
 			tmp_dropdown += '<li><a onclick="WARS.war_name=&quot;'+war_name+'&quot;;WARS.init.project();">'+war_name+'</a></li>';

@@ -42,10 +42,14 @@ function start() {
 
 		WARS.init.project();
 		
-		test_sphere = new Sphere(WARS.constants.earth_radius, 200, 200);
-		test_sphere.set_texture("./assets/textures/earth.png");
-		test_sphere.set_shader(basic_shader);
-		test_sphere_rotation = 0;
+		earth = new Sphere(WARS.constants.earth_radius, 200, 200);
+		earth.set_texture("./assets/textures/earth.png");
+		earth.set_shader(basic_shader);
+		earth_rotation = 0;
+		
+		background_sphere = new Sphere(100, 200, 200);
+		background_sphere.set_texture("./assets/textures/background_sphere.png");
+		background_sphere.set_shader(basic_shader);
 
 		setInterval(drawScene, 15);
 
@@ -71,7 +75,11 @@ function drawScene() {
 		mvRotate(WARS.user.rotation.y, [0,1,0]);
 	}
 	
-	test_sphere.draw();
+	background_sphere.draw();
+	
+	gallery.draw();
+	
+	earth.draw();
 	
 	test_war.draw();
   

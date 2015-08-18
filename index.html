@@ -20,6 +20,7 @@
 	<script src="./assets/js/Shader.js" type="text/javascript"></script>
 	<script src="./assets/js/GraphicsObject.js" type="text/javascript"></script>
 	<script src="./assets/js/OBJ.js" type="text/javascript"></script>
+	<script src="./assets/js/Gallery.js" type="text/javascript"></script>
 	<script src="./assets/js/Sphere.js" type="text/javascript"></script>
 	<script src="./assets/js/Rectangle.js" type="text/javascript"></script>
 	<script src="./assets/js/War.js" type="text/javascript"></script>
@@ -165,7 +166,7 @@
 			
                 <ul class="nav navbar-nav text-center" style="width:100%;">
 					<li>
-						<a>
+						<a data-toggle="modal" data-target="#battles-modal">
 							Battles
 						</a>
                     </li>
@@ -210,6 +211,22 @@
                 </ul>
         </div>
     </nav>
+	
+	<div class="modal fade" id="battles-modal" role="dialog">
+	  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h4 class="modal-title" id="myModalLabel">Battles</h4>
+		  </div>
+		  <div class="modal-body">
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			<button type="button" class="btn btn-primary">Tour</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
 
 <script>
 

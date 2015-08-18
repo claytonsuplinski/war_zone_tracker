@@ -12,6 +12,8 @@ var test_pressed = false;
 setInterval(function(){
 	if(WARS.keys_pressed.indexOf(87) != -1) { // W
 		test_pressed = true;
+		alert(WARS.user.rotation.x);
+		alert(WARS.user.rotation.y);
 		// Go forwards
 		if(WARS.user.free_mode){
 			var tmp_angle = -WARS.user.rotation.y*WARS.constants.to_radians;
@@ -108,8 +110,8 @@ function init_mouse_controls(){
 				if(WARS.user.position.z > -WARS.constants.earth_radius-WARS.constants.zoom_offset){
 					WARS.user.position.z = -WARS.constants.earth_radius-WARS.constants.zoom_offset;
 				}
-				if(WARS.user.position.z < -1000){
-					WARS.user.position.z = -1000;
+				if(WARS.user.position.z < 5-WARS.constants.background_image_radius){
+					WARS.user.position.z = 5-WARS.constants.background_image_radius;
 				}
 			}
 			WARS.mouse.x = event.pageX;
@@ -121,8 +123,8 @@ function init_mouse_controls(){
 			if(WARS.user.position.z > -WARS.constants.earth_radius-WARS.constants.zoom_offset){
 				WARS.user.position.z = -WARS.constants.earth_radius-WARS.constants.zoom_offset;
 			}
-			if(WARS.user.position.z < -1000){
-				WARS.user.position.z = -1000;
+			if(WARS.user.position.z < 5-WARS.constants.background_image_radius){
+				WARS.user.position.z = 5-WARS.constants.background_image_radius;
 			}
 		});
 		
