@@ -72,13 +72,21 @@ WARS.init.wars = function(){
 				WARS.models[country.name].set_texture("./assets/textures/"+filename+".png");
 				WARS.models[country.name].set_shader(basic_shader);
 			});
+			
+			var tmp_html = "";
 			battles.forEach(function(battle){
 				var lat = -battle.location.lat;
 				var lon = battle.location.lon;
 				
 				test_war.add_battle(new Battle(battle));
-				//test_war.add_battle(new Battle(180 * Math.random() - 90, 360 * Math.random() - 180));
+				tmp_html += 
+						'<div class="col-xs-12 modal-select">'+
+							'<div class="col-xs-12 modal-select-title">'+battle.name+'</div>'+
+							'<div class="col-md-6 col-xs-12">'+battle.location.name+'</div>'+
+							'<div class="col-md-6 col-xs-12">'+battle.start+'</div>'+
+						'</div>';
 			});
+			$("#battles-modal .modal-body").html(tmp_html);
 			
 			gallery = new Gallery(WARS.war_name.toLowerCase().replace(/\s+/g, '_'));
 		}

@@ -50,6 +50,8 @@ function start() {
 		background_sphere = new Sphere(100, 200, 200);
 		background_sphere.set_texture("./assets/textures/background_sphere.png");
 		background_sphere.set_shader(basic_shader);
+		
+		background_room = new Room();
 
 		setInterval(drawScene, 15);
 
@@ -75,7 +77,7 @@ function drawScene() {
 		mvRotate(WARS.user.rotation.y, [0,1,0]);
 	}
 	
-	background_sphere.draw();
+	background_room.draw();
 	
 	gallery.draw();
 	
