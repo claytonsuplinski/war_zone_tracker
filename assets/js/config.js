@@ -36,6 +36,28 @@ WARS.user.position.z = -45;
 WARS.user.rotation = {};
 WARS.user.rotation.x = 15;
 WARS.user.rotation.y = 211;
+WARS.user.interpolate_start = {"x": 0, "y": 0};
+WARS.user.interpolate_end = {"x": 0, "y": 0};
+WARS.user.interpolation_percent = 0;
+WARS.user.interpolate_position = function(){
+	if(WARS.user.interpolation_percent == 0){
+		WARS.user.interpolate_start = {x: WARS.user.rotation.x, y: WARS.user.rotation.y};
+	}
+	WARS.user.interpolation_percent += 0.025;
+
+	var alpha = 1 - WARS.user.interpolation_percent;
+	var beta = WARS.user.interpolation_percent;
+	
+	WARS.user.rotation.x = alpha * WARS.user.interpolate_start.x + beta * WARS.user.interpolate_end.x;
+	WARS.user.rotation.y = alpha * WARS.user.interpolate_start.y + beta * WARS.user.interpolate_end.y;
+	
+	if(WARS.user.interpolation_percent < 1){
+		setTimeout(WARS.user.interpolate_position, 15);
+	}
+	else{
+		WARS.user.interpolation_percent = 0;
+	}
+};
 
 WARS.date_range = {};
 
@@ -66,27 +88,41 @@ WARS.init.wars = function(){
 		var battles = war.battles;
 		var countries = war.countries;
 		if(war_name == WARS.war_name){
+			$("#battles-modal .modal-body").html('');
+			$("#countries-modal .modal-body").html('');
 			countries.forEach(function(country){
 				WARS.models[country.name] = new Sphere(0.05, 30, 30);
 				var filename = country.name.toLowerCase().replace(/\s+/g, '_');
 				WARS.models[country.name].set_texture("./assets/textures/"+filename+".png");
 				WARS.models[country.name].set_shader(basic_shader);
+				
+				var wins = battles.filter(function (battle) { 
+					return battle.winner == country.name;
+				}).length;
+				var losses = battles.filter(function (battle) { 
+					return (battle.winner != country.name && 
+							battle.winner != "" && 
+							battle.countries.filter(function (c){
+								return c.name == country.name;
+							}).length > 0
+							);
+				}).length;
+				
+				$("#countries-modal .modal-body").append(
+					'<span class="col-xs-12 flag-background" style="'+
+						'background-image:url(&quot;./assets/textures/'+country.name.toLowerCase().replace(/\s+/g, '_')+'.png&quot;);">'+
+						'<div class="col-xs-12 modal-select">'+
+							'<div class="col-xs-12 modal-select-title">'+country.name+'</div>'+
+							'<div class="col-md-6 col-xs-12">'+wins+(wins == 1 ? " Victory" : " Victories")+'</div>'+
+							'<div class="col-md-6 col-xs-12">'+losses+(losses == 1 ? " Defeat" : " Defeats")+'</div>'+
+						'</div>'+
+					'</span>'
+				);
 			});
 			
-			var tmp_html = "";
 			battles.forEach(function(battle){
-				var lat = -battle.location.lat;
-				var lon = battle.location.lon;
-				
 				test_war.add_battle(new Battle(battle));
-				tmp_html += 
-						'<div class="col-xs-12 modal-select">'+
-							'<div class="col-xs-12 modal-select-title">'+battle.name+'</div>'+
-							'<div class="col-md-6 col-xs-12">'+battle.location.name+'</div>'+
-							'<div class="col-md-6 col-xs-12">'+battle.start+'</div>'+
-						'</div>';
 			});
-			$("#battles-modal .modal-body").html(tmp_html);
 			
 			gallery = new Gallery(WARS.war_name.toLowerCase().replace(/\s+/g, '_'));
 		}

@@ -64,21 +64,31 @@
 		}
 		
 		.modal-body{
-			background: #54483E;
+			background: rgba(50, 43, 43, 0.5);
 			max-height:70vh;
 			overflow:auto;
 		}
 		
 		.modal-select{
-			background:#322B2B;
+			background-color:rgba(50, 43, 43, 0.9);
 			color:#AE9580;
 			padding:5px;
-			margin-bottom:15px;
 			text-align:center;
+			cursor:pointer;
+		}
+		
+		.modal-select:hover{
+			background-color:rgba(50, 43, 43, 0.97);
+		}
+		
+		.flag-background{
+			background-size:100% 100%;
+			padding:0px;
+			margin-bottom:15px;
 		}
 		
 		.modal-select-title{
-			background:rgba(0,0,0,0.2);
+			background:rgba(0,0,0,0.5);
 			margin-bottom:5px;
 		}
 		
@@ -202,7 +212,7 @@
 						</a>
                     </li>
 					<li>
-						<a>
+						<a data-toggle="modal" data-target="#countries-modal">
 							Countries
 						</a>
                     </li>
@@ -254,6 +264,21 @@
 		  <div class="modal-footer">
 			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 			<button type="button" class="btn btn-primary">Tour</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+	<div class="modal fade" id="countries-modal" role="dialog">
+	  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h4 class="modal-title" id="myModalLabel">Countries</h4>
+		  </div>
+		  <div class="modal-body">
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 		  </div>
 		</div>
 	  </div>

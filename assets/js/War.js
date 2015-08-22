@@ -24,6 +24,20 @@ War.prototype.add_battle = function(battle){
 	}
 	
 	this.battles.push(battle);
+	
+	$("#battles-modal .modal-body").append(
+					'<span class="col-xs-12 flag-background" style="'+
+						'background-image:url(&quot;./assets/textures/'+battle.battle.winner.toLowerCase().replace(/\s+/g, '_')+'.png&quot;);">'+
+						'<div class="col-xs-12 modal-select" onclick="'+
+							'WARS.user.interpolate_end = {x: '+battle.battle.location.lat+', y: '+(90-battle.battle.location.lon)+'};'+
+							'WARS.user.interpolate_position();'+
+						'">'+
+							'<div class="col-xs-12 modal-select-title">'+battle.battle.name+'</div>'+
+							'<div class="col-md-6 col-xs-12">'+battle.battle.location.name+'</div>'+
+							'<div class="col-md-6 col-xs-12">'+battle.battle.start+'</div>'+
+						'</div>'+
+					'</span>'
+	);
 };
 
 War.prototype.draw = function(){

@@ -2807,8 +2807,8 @@
 				},
 				{
 					"name": "Battle of Damascus",
-					"start": "",
-					"end": "",
+					"start": "6/18/1941",
+					"end": "6/21/1941",
 					"winner": "United Kingdom",
 					"countries": [
 						{
@@ -5003,6 +5003,256 @@
 						"name": "Normandy, France",
 						"lat": 49.333,
 						"lon": -0.566
+					}
+				},
+				{
+					"name": "Battle of Saipan",
+					"start": "6/15/1944",
+					"end": "7/9/1944",
+					"winner": "United States",
+					"countries": [
+						{
+							"name": "Imperial Japan",
+							"casualities": 24000,
+							"leader": "Yoshitsugu Saito",
+							"troops": 32000
+						},
+						{
+							"name": "United States",
+							"casualities": 3426,
+							"leader": "Richmond Turner",
+							"troops": 71000
+						}
+					],
+					"location": {
+						"name": "Saipan, Mariana Islands",
+						"lat": 15.1833,
+						"lon": 145.75
+					}
+				},
+				{
+					"name": "Second Battle of Guam",
+					"start": "7/21/1944",
+					"end": "8/10/1944",
+					"winner": "United States",
+					"countries": [
+						{
+							"name": "Imperial Japan",
+							"casualities": 18337,
+							"leader": "Takeshi Takashina",
+							"troops": 18657
+						},
+						{
+							"name": "United States",
+							"casualities": 1783,
+							"leader": "Roy Geiger",
+							"troops": 59401
+						}
+					],
+					"location": {
+						"name": "Guam, Mariana Islands",
+						"lat": 13.501,
+						"lon": 144.8
+					}
+				},
+				{
+					"name": "Battle of Tinian",
+					"start": "7/24/1944",
+					"end": "8/1/1944",
+					"winner": "United States",
+					"countries": [
+						{
+							"name": "Imperial Japan",
+							"casualities": 5542,
+							"leader": "Kiyochi Ogata",
+							"troops": 8039
+						},
+						{
+							"name": "United States",
+							"casualities": 326,
+							"leader": "Harry Schmidt",
+							"troops": 41364
+						}
+					],
+					"location": {
+						"name": "Tinian, Mariana Islands",
+						"lat": 15,
+						"lon": 145.633
+					}
+				},
+				{
+					"name": "Operation Bagration",
+					"start": "6/22/1944",
+					"end": "8/19/1944",
+					"winner": "Soviet Union",
+					"countries": [
+						{
+							"name": "Nazi Germany",
+							"casualities": 381000,
+							"leader": "Ernst Busch",
+							"troops": 1036760
+						},
+						{
+							"name": "Soviet Union",
+							"casualities": 180040,
+							"leader": "Georgy Zhukov",
+							"troops": 2331700
+						}
+					],
+					"location": {
+						"name": "Belarus",
+						"lat": 53.916,
+						"lon": 27.55
+					}
+				},
+				{
+					"name": "Battle of the Philippine Sea",
+					"start": "6/19/1944",
+					"end": "6/20/1944",
+					"winner": "United States",
+					"countries": [
+						{
+							"name": "Imperial Japan",
+							"casualities": 2987,
+							"leader": "Jisaburo Ozawa",
+							"troops": "?"
+						},
+						{
+							"name": "United States",
+							"casualities": "?",
+							"leader": "Raymond Spruance",
+							"troops": "?"
+						}
+					],
+					"location": {
+						"name": "The Philippine Sea",
+						"lat": 20,
+						"lon": 130
+					}
+				},
+				{
+					"name": "Battle of Tali-Ihantala",
+					"start": "6/25/1944",
+					"end": "7/9/1944",
+					"winner": "Finland",
+					"countries": [
+						{
+							"name": "Finland",
+							"casualities": 1100,
+							"leader": "Karl Lennart Oesch",
+							"troops": 50000
+						},
+						{
+							"name": "Soviet Union",
+							"casualities": 4500,
+							"leader": "Leonid Govorov",
+							"troops": 150000
+						}
+					],
+					"location": {
+						"name": "Karelian Isthmus",
+						"lat": 60.768,
+						"lon": 28.878
+					}
+				},
+				{
+					"name": "Warsaw Uprising",
+					"start": "8/1/1944",
+					"end": "10/2/1944",
+					"winner": "Nazi Germany",
+					"countries": [
+						{
+							"name": "Nazi Germany",
+							"casualities": 9000,
+							"leader": "Walter Model",
+							"troops": 25000
+						},
+						{
+							"name": "Poland",
+							"casualities": 10000,
+							"leader": "Tadeusz Bor-Komorowski",
+							"troops": 49000
+						}
+					],
+					"location": {
+						"name": "Warsaw, Poland",
+						"lat": 52.23,
+						"lon": 21.0108
+					}
+				},
+				{
+					"name": "Operation Dragoon",
+					"start": "8/15/1944",
+					"end": "9/14/1944",
+					"winner": "United States",
+					"countries": [
+						{
+							"name": "Nazi Germany",
+							"casualities": 7000,
+							"leader": "Johannes Blaskowitz",
+							"troops": 300000
+						},
+						{
+							"name": "United States",
+							"casualities": 2050,
+							"leader": "Jacob Devers",
+							"troops": 200000
+						}
+					],
+					"location": {
+						"name": "Southern France",
+						"lat": 43.227,
+						"lon": 6.661
+					}
+				},
+				{
+					"name": "Battle of Arnhem",
+					"start": "9/17/1944",
+					"end": "9/26/1944",
+					"winner": "Nazi Germany",
+					"countries": [
+						{
+							"name": "Nazi Germany",
+							"casualities": 1300,
+							"leader": "Walter Model",
+							"troops": "?"
+						},
+						{
+							"name": "United Kingdom",
+							"casualities": 1984,
+							"leader": "Roy Urquhart",
+							"troops": "?"
+						}
+					],
+					"location": {
+						"name": "Netherlands",
+						"lat": 51.9802,
+						"lon": 5.9003
+					}
+				},
+				{
+					"name": "Battle of Peleliu",
+					"start": "9/15/1944",
+					"end": "11/27/1944",
+					"winner": "United States",
+					"countries": [
+						{
+							"name": "Imperial Japan",
+							"casualities": 10700,
+							"leader": "Kunio Nakagawa",
+							"troops": 10900
+						},
+						{
+							"name": "United States",
+							"casualities": 1508,
+							"leader": "William Rupertus",
+							"troops": 47561
+						}
+					],
+					"location": {
+						"name": "Peleliu, Palau Islands",
+						"lat": 7,
+						"lon": 134.25
 					}
 				}
 			],
