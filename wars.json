@@ -1558,8 +1558,8 @@
 					"name": "Great Britain",
 					"leaders": [
 						{
-							"name": "King George III",
-							"title": "Monarch"
+							"name": "George III",
+							"title": "King"
 						}
 					]
 				},
@@ -5253,6 +5253,481 @@
 						"name": "Peleliu, Palau Islands",
 						"lat": 7,
 						"lon": 134.25
+					}
+				},
+				{
+					"name": "Battle of Aachen",
+					"start": "10/2/1944",
+					"end": "10/21/1944",
+					"winner": "United States",
+					"countries": [
+						{
+							"name": "Nazi Germany",
+							"casualities": 5000,
+							"leader": "Gerhard Wilck",
+							"troops": 13000
+						},
+						{
+							"name": "United States",
+							"casualities": 5000,
+							"leader": "Courtney Hodges",
+							"troops": 100000
+						}
+					],
+					"location": {
+						"name": "Aachen, Germany",
+						"lat": 50.766,
+						"lon": 6.1
+					}
+				},
+				{
+					"name": "Battle of the Sheldt",
+					"start": "10/2/1944",
+					"end": "11/8/1944",
+					"winner": "Canada",
+					"countries": [
+						{
+							"name": "Nazi Germany",
+							"casualities": 12000,
+							"leader": "Gustav-Adolf von Zangen",
+							"troops": 90000
+						},
+						{
+							"name": "Canada",
+							"casualities": 6367,
+							"leader": "Bertram Ramsay",
+							"troops": 60000
+						}
+					],
+					"location": {
+						"name": "Northern Belgium",
+						"lat": 51.416,
+						"lon": 4.166
+					}
+				},
+				{
+					"name": "Battle of Angaur",
+					"start": "9/17/1944",
+					"end": "10/22/1944",
+					"winner": "United States",
+					"countries": [
+						{
+							"name": "Imperial Japan",
+							"casualities": 1350,
+							"leader": "Ushio Goto",
+							"troops": 1400
+						},
+						{
+							"name": "United States",
+							"casualities": 260,
+							"leader": "Paul Mueller",
+							"troops": 10000
+						}
+					],
+					"location": {
+						"name": "Palau Islands",
+						"lat": 6.9,
+						"lon": 134.133
+					}
+				},
+				{
+					"name": "Battle of Hurtgen Forest",
+					"start": "9/19/1944",
+					"end": "12/16/1944",
+					"winner": "Nazi Germany",
+					"countries": [
+						{
+							"name": "Nazi Germany",
+							"casualities": 28000,
+							"leader": "Walter Model",
+							"troops": 80000
+						},
+						{
+							"name": "United States",
+							"casualities": 33000,
+							"leader": "Omar Bradley",
+							"troops": 120000
+						}
+					],
+					"location": {
+						"name": "German-Belgian Border",
+						"lat": 50.708,
+						"lon": 6.362
+					}
+				},
+				{
+					"name": "Battle of Leyte",
+					"start": "10/17/1944",
+					"end": "12/26/1944",
+					"winner": "United States",
+					"countries": [
+						{
+							"name": "Imperial Japan",
+							"casualities": 70000,
+							"leader": "Tomoyuki Yamashita",
+							"troops": 85000
+						},
+						{
+							"name": "United States",
+							"casualities": 3504,
+							"leader": "Douglas MacArthur",
+							"troops": 320000
+						}
+					],
+					"location": {
+						"name": "Leyte Island, Philippines",
+						"lat": 10.95,
+						"lon": 124.833
+					}
+				},
+				{
+					"name": "Battle of Leyte Gulf",
+					"start": "10/23/1944",
+					"end": "10/26/1944",
+					"winner": "United States",
+					"countries": [
+						{
+							"name": "Imperial Japan",
+							"casualities": 12500,
+							"leader": "Takeo Kurita",
+							"troops": "?"
+						},
+						{
+							"name": "United States",
+							"casualities": 2800,
+							"leader": "William Halsey",
+							"troops": "?"
+						}
+					],
+					"location": {
+						"name": "Leyte Gulf, Philippines",
+						"lat": 10.37,
+						"lon": 125.355
+					}
+				},
+				{
+					"name": "Operation Queen",
+					"start": "11/16/1944",
+					"end": "12/16/1944",
+					"winner": "Nazi Germany",
+					"countries": [
+						{
+							"name": "Nazi Germany",
+							"casualities": 38500,
+							"leader": "Walter Model",
+							"troops": "?"
+						},
+						{
+							"name": "United States",
+							"casualities": 38500,
+							"leader": "Omar Bradley",
+							"troops": "?"
+						}
+					],
+					"location": {
+						"name": "Rur Valley, Germany",
+						"lat": 51.197,
+						"lon": 5.981
+					}
+				},
+				{
+					"name": "Battle of the Bulge",
+					"start": "12/16/1944",
+					"end": "1/25/1945",
+					"winner": "United States",
+					"countries": [
+						{
+							"name": "Nazi Germany",
+							"casualities": 100000,
+							"leader": "Adolf Hitler",
+							"troops": 300000
+						},
+						{
+							"name": "United States",
+							"casualities": 89500,
+							"leader": "Dwight D. Eisenhower",
+							"troops": 610000
+						}
+					],
+					"location": {
+						"name": "The Ardennes",
+						"lat": 50.25,
+						"lon": 5.666
+					}
+				},
+				{
+					"name": "Operation Elephant",
+					"start": "1/26/1945",
+					"end": "1/31/1945",
+					"winner": "Canada",
+					"countries": [
+						{
+							"name": "Nazi Germany",
+							"casualities": 243,
+							"leader": "?",
+							"troops": "?"
+						},
+						{
+							"name": "Canada",
+							"casualities": 300,
+							"leader": "?",
+							"troops": "?"
+						}
+					],
+					"location": {
+						"name": "Kapelsche Veer, Netherlands",
+						"lat": 51.692,
+						"lon": 4.985
+					}
+				},
+				{
+					"name": "Raid at Cabanatuan",
+					"start": "1/30/1945",
+					"end": "",
+					"winner": "United States",
+					"countries": [
+						{
+							"name": "Imperial Japan",
+							"casualities": 1000,
+							"leader": "Tomoyuki Yamashita",
+							"troops": 1220
+						},
+						{
+							"name": "United States",
+							"casualities": 2,
+							"leader": "Henry Mucci",
+							"troops": 413
+						}
+					],
+					"location": {
+						"name": "Nueva Ecija, Philippines",
+						"lat": 15.509,
+						"lon": 121.044
+					}
+				},
+				{
+					"name": "Prague Offensive",
+					"start": "5/6/1945",
+					"end": "5/11/1945",
+					"winner": "Soviet Union",
+					"countries": [
+						{
+							"name": "Nazi Germany",
+							"casualities": 860000,
+							"leader": "Ferdinand Schorner",
+							"troops": 650000
+						},
+						{
+							"name": "Soviet Union",
+							"casualities": 49348,
+							"leader": "Ivan Konev",
+							"troops": 1770700
+						}
+					],
+					"location": {
+						"name": "Prague, Czechoslovakia",
+						"lat": 50.083,
+						"lon": 14.416
+					}
+				},
+				{
+					"name": "Operation Spring Awakening",
+					"start": "3/6/1945",
+					"end": "3/16/1945",
+					"winner": "Soviet Union",
+					"countries": [
+						{
+							"name": "Nazi Germany",
+							"casualities": 12358,
+							"leader": "Josef Dietrich",
+							"troops": 465050
+						},
+						{
+							"name": "Soviet Union",
+							"casualities": 8492,
+							"leader": "Fyodor Tolbukhin",
+							"troops": 431000
+						}
+					],
+					"location": {
+						"name": "Lake Balaton, Hungary",
+						"lat": 46.983,
+						"lon": 18.35
+					}
+				},
+				{
+					"name": "Battle of Bataan",
+					"start": "1/31/1945",
+					"end": "2/21/1945",
+					"winner": "United States",
+					"countries": [
+						{
+							"name": "Imperial Japan",
+							"casualities": 2400,
+							"leader": "Rikichi Tsukada",
+							"troops": 2800
+						},
+						{
+							"name": "United States",
+							"casualities": 338,
+							"leader": "Charles Hall",
+							"troops": 35000
+						}
+					],
+					"location": {
+						"name": "Bataan Peninsula, Philippines",
+						"lat": 14.666,
+						"lon": 120.416
+					}
+				},
+				{
+					"name": "Battle of Manila",
+					"start": "2/3/1945",
+					"end": "3/3/1945",
+					"winner": "United States",
+					"countries": [
+						{
+							"name": "Imperial Japan",
+							"casualities": 16665,
+							"leader": "Iwabuchi Sanji",
+							"troops": 12500
+						},
+						{
+							"name": "United States",
+							"casualities": 1010,
+							"leader": "Douglas MacArthur",
+							"troops": 35000
+						}
+					],
+					"location": {
+						"name": "Manila, Philippines",
+						"lat": 14.583,
+						"lon": 120.966
+					}
+				},
+				{
+					"name": "Battle of Luzon",
+					"start": "1/9/1945",
+					"end": "8/15/1945",
+					"winner": "United States",
+					"countries": [
+						{
+							"name": "Imperial Japan",
+							"casualities": 214585,
+							"leader": "Tomoyuki Yamashita",
+							"troops": 287000
+						},
+						{
+							"name": "United States",
+							"casualities": 37870,
+							"leader": "Douglas MacArthur",
+							"troops": 280000
+						}
+					],
+					"location": {
+						"name": "Luzon, Philippines",
+						"lat": 16,
+						"lon": 121
+					}
+				},
+				{
+					"name": "Battle for the Recapture of Corregidor",
+					"start": "2/16/1945",
+					"end": "2/26/1945",
+					"winner": "United States",
+					"countries": [
+						{
+							"name": "Imperial Japan",
+							"casualities": 6600,
+							"leader": "Rikichi Tsukada",
+							"troops": 6700
+						},
+						{
+							"name": "United States",
+							"casualities": 207,
+							"leader": "George Jones",
+							"troops": 7000
+						}
+					],
+					"location": {
+						"name": "Corregidor, Philippines",
+						"lat": 14.3855,
+						"lon": 120.5730
+					}
+				},
+				{
+					"name": "Los Banos Raid",
+					"start": "2/23/1945",
+					"end": "",
+					"winner": "United States",
+					"countries": [
+						{
+							"name": "Imperial Japan",
+							"casualities": 80,
+							"leader": "T. Iwanaka",
+							"troops": 10000
+						},
+						{
+							"name": "United States",
+							"casualities": 3,
+							"leader": "Henry Burgress",
+							"troops": 1100
+						}
+					],
+					"location": {
+						"name": "Laguna, Philippines",
+						"lat": 14.161,
+						"lon": 121.242
+					}
+				},
+				{
+					"name": "Battle of Mindanao",
+					"start": "3/10/1945",
+					"end": "8/15/1945",
+					"winner": "United States",
+					"countries": [
+						{
+							"name": "Imperial Japan",
+							"casualities": 6400,
+							"leader": "Gyosaku Morozumi",
+							"troops": 102000
+						},
+						{
+							"name": "United States",
+							"casualities": 886,
+							"leader": "Franklin Sibert",
+							"troops": 600000
+						}
+					],
+					"location": {
+						"name": "Mindanao Island, Philippines",
+						"lat": 8,
+						"lon": 125
+					}
+				},
+				{
+					"name": "Operation Varsity",
+					"start": "3/24/1945",
+					"end": "",
+					"winner": "United Kingdom",
+					"countries": [
+						{
+							"name": "Nazi Germany",
+							"casualities": 3500,
+							"leader": "Gunther Blumentritt",
+							"troops": 8000
+						},
+						{
+							"name": "United Kingdom",
+							"casualities": 2700,
+							"leader": "Bernard Montgomery",
+							"troops": 16870
+						}
+					],
+					"location": {
+						"name": "Wesel, Germany",
+						"lat": 51.658,
+						"lon": 6.617
 					}
 				}
 			],

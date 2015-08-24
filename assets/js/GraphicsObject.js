@@ -12,6 +12,8 @@ function GraphicsObject(){
 	this.img = "";
 	this.image = "";
 	this.texture = "";
+	
+	this.scale = [1,1,1];
 };
 
 GraphicsObject.prototype.init_buffers = function(){
@@ -54,26 +56,30 @@ GraphicsObject.prototype.set_shader = function(shader_program){
 	this.shader_program = tmp;
 }
 
-GraphicsObject.prototype.draw = function(){
-  
-  mvPushMatrix();
-  
-    // Draw the cube by binding the array buffer to the cube's vertices
-  // array, setting attributes, and pushing it to GL.
-  gl.bindBuffer(gl.ARRAY_BUFFER, this.v_buffer);
-  gl.vertexAttribPointer(0, 3, gl.FLOAT, false, 0, 0);
-  
-  gl.bindBuffer(gl.ARRAY_BUFFER, this.vt_buffer);
-  gl.vertexAttribPointer(1, 2, gl.FLOAT, false, 0, 0);
-    
-  gl.activeTexture(gl.TEXTURE0);
-  gl.bindTexture(gl.TEXTURE_2D, this.texture);
-  gl.uniform1i(gl.getUniformLocation(this.shader_program, "uSampler"), 0);
+GraphicsObject.prototype.draw = function(params){
 
-  gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, this.vertex_indices_buffer);
-  setMatrixUniforms(this.shader_program);
-  gl.drawElements(gl.TRIANGLES, this.vertex_indices.length, gl.UNSIGNED_SHORT, 0);
-  
-  mvPopMatrix();
+	if(params != undefined){
+		if(params.scale != undefined){
+			this.scale = params.scale;
+		}
+	}
+
+	mvPushMatrix();
+
+		gl.bindBuffer(gl.ARRAY_BUFFER, this.v_buffer);
+		gl.vertexAttribPointer(0, 3, gl.FLOAT, false, 0, 0);
+
+		gl.bindBuffer(gl.ARRAY_BUFFER, this.vt_buffer);
+		gl.vertexAttribPointer(1, 2, gl.FLOAT, false, 0, 0);
+
+		gl.activeTexture(gl.TEXTURE0);
+		gl.bindTexture(gl.TEXTURE_2D, this.texture);
+		gl.uniform1i(gl.getUniformLocation(this.shader_program, "uSampler"), 0);
+
+		gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, this.vertex_indices_buffer);
+		setMatrixUniforms(this.shader_program);
+		gl.drawElements(gl.TRIANGLES, this.vertex_indices.length, gl.UNSIGNED_SHORT, 0);
+
+	mvPopMatrix();
 
 };

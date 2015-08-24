@@ -132,7 +132,7 @@
 	
 	</style>
 	
-	    <script id="shader-fs" type="x-shader/x-fragment">
+	<script id="shader-fs" type="x-shader/x-fragment">
 		precision mediump float; 
 		varying vec4 forFragColor;
 		
@@ -149,41 +149,42 @@
     
     <script id="shader-vs" type="x-shader/x-vertex">
 
-	attribute vec3 aVertexPosition;
-	attribute vec2 aTextureCoord;
+		attribute vec3 aVertexPosition;
+		attribute vec2 aTextureCoord;
+		attribute vec3 aScale;
 
-	uniform mat4 uPMatrix, uMVMatrix;//, normalMat;
-	
-	varying highp vec2 vTextureCoord;
+		uniform mat4 uPMatrix, uMVMatrix;//, normalMat;
+		
+		varying highp vec2 vTextureCoord;
 
-	varying vec4 forFragColor;
+		varying vec4 forFragColor;
 
-	const vec3 lightPos = vec3(1, 1, -1);
-	const vec3 diffuseColor = vec3(0.5, 0.0, 0.0);
-	const vec3 specColor = vec3(1.0, 1.0, 1.0);
+		const vec3 lightPos = vec3(1, 1, -1);
+		const vec3 diffuseColor = vec3(0.5, 0.0, 0.0);
+		const vec3 specColor = vec3(1.0, 1.0, 1.0);
 
-	void main(){
-	  vec4 pos = uPMatrix * uMVMatrix * vec4(aVertexPosition, 1.0);
-	  gl_Position = pos;
+		void main(){
+		  vec4 pos = uPMatrix * uMVMatrix * vec4(aVertexPosition, 1.0);
+		  gl_Position = pos;
 
-	  vec3 normal = vec3(1, 1, 1);
-	  vec4 vertPos4 = uMVMatrix * vec4(aVertexPosition, 1.0);
-	  vec3 vertPos = vec3(vertPos4) / vertPos4.w;
-	  vec3 lightDir = normalize(lightPos - vertPos);
-	  vec3 reflectDir = reflect(-lightDir, normal);
-	  vec3 viewDir = normalize(-vertPos);
+		  vec3 normal = vec3(1, 1, 1);
+		  vec4 vertPos4 = uMVMatrix * vec4(aVertexPosition, 1.0);
+		  vec3 vertPos = vec3(vertPos4) / vertPos4.w;
+		  vec3 lightDir = normalize(lightPos - vertPos);
+		  vec3 reflectDir = reflect(-lightDir, normal);
+		  vec3 viewDir = normalize(-vertPos);
 
-	  float lambertian = max(dot(lightDir,normal), 0.0);
-	  float specular = 0.0;
-	  
-	  if(lambertian > 0.0) {
-		float specAngle = max(dot(reflectDir, viewDir), 0.0);
-		specular = pow(specAngle, 4.0);
-	  }
-	  
-	  forFragColor = vec4(lambertian*diffuseColor + specular*specColor, 1.0);
-	  vTextureCoord = aTextureCoord;
-	}
+		  float lambertian = max(dot(lightDir,normal), 0.0);
+		  float specular = 0.0;
+		  
+		  if(lambertian > 0.0) {
+			float specAngle = max(dot(reflectDir, viewDir), 0.0);
+			specular = pow(specAngle, 4.0);
+		  }
+		  
+		  forFragColor = vec4(lambertian*diffuseColor + specular*specColor, 1.0);
+		  vTextureCoord = aTextureCoord;
+		}
 
     </script>
 	
@@ -217,7 +218,7 @@
 						</a>
                     </li>
 					<li>
-						<a>
+						<a data-toggle="modal" data-target="#commanders-modal">
 							Commanders
 						</a>
                     </li>
@@ -274,6 +275,21 @@
 		<div class="modal-content">
 		  <div class="modal-header">
 			<h4 class="modal-title" id="myModalLabel">Countries</h4>
+		  </div>
+		  <div class="modal-body">
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+	<div class="modal fade" id="commanders-modal" role="dialog">
+	  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h4 class="modal-title" id="myModalLabel">Commanders</h4>
 		  </div>
 		  <div class="modal-body">
 		  </div>

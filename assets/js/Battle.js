@@ -14,6 +14,8 @@ function Battle(battle){
 	else{
 		this.model = WARS.models.tie;
 	}
+	
+	this.scale = [5,5,5];
 }
 
 Battle.prototype.compare_times = function(first_date, second_date){
@@ -46,7 +48,7 @@ Battle.prototype.draw = function(){
 		mvRotate(-this.battle.location.lat, [0,0,1]);
 		mvTranslate([-WARS.constants.earth_radius, 0, 0]);
 		mvRotate(60, [0,1,0]);
-		this.model.draw();
+		this.model.draw({scale: this.scale});
 		mvPopMatrix();
 	}
 }

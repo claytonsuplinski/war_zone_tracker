@@ -108,11 +108,18 @@ WARS.init.wars = function(){
 							);
 				}).length;
 				
+				var leaders = "";
+				country.leaders.forEach(function(leader){
+					leaders += '<div class="col-xs-12">'+leader.name+' - '+leader.title+'</div>';
+				});
+				
+				
 				$("#countries-modal .modal-body").append(
 					'<span class="col-xs-12 flag-background" style="'+
 						'background-image:url(&quot;./assets/textures/'+country.name.toLowerCase().replace(/\s+/g, '_')+'.png&quot;);">'+
 						'<div class="col-xs-12 modal-select">'+
 							'<div class="col-xs-12 modal-select-title">'+country.name+'</div>'+
+							leaders+
 							'<div class="col-md-6 col-xs-12">'+wins+(wins == 1 ? " Victory" : " Victories")+'</div>'+
 							'<div class="col-md-6 col-xs-12">'+losses+(losses == 1 ? " Defeat" : " Defeats")+'</div>'+
 						'</div>'+
@@ -120,8 +127,65 @@ WARS.init.wars = function(){
 				);
 			});
 			
+			var commanders = [];
+			
 			battles.forEach(function(battle){
+				battle.countries.forEach(function(country){
+					var commander_name = country.leader;
+					if(["", "?"].indexOf(commander_name) == -1){
+						var curr_commander = commanders.filter(function(c) c.name == commander_name && c.country == country.name);
+						if(curr_commander.length > 0){
+							curr_commander = curr_commander[0];
+							if(curr_commander.country == battle.winner){
+								curr_commander.wins++;
+							}
+							else{
+								curr_commander.losses++;
+							}
+						}
+						else{
+							var tmp_commander = {name: commander_name, country: country.name, wins: 0, losses: 0};
+							if(tmp_commander.country == battle.winner){
+								tmp_commander.wins = 1;
+								tmp_commander.losses = 0;
+							}
+							else{
+								tmp_commander.wins = 0;
+								tmp_commander.losses = 1;
+							}
+							commanders.push(tmp_commander);
+						}
+					}
+				});
 				test_war.add_battle(new Battle(battle));
+			});
+			
+			//sort commanders
+			commanders.sort(function (a, b){
+				if (a.losses > b.losses){return 1;}
+				if (a.losses < b.losses){return -1;}
+				return 0;
+			});
+			
+			commanders.sort(function (a, b){
+				if (a.wins > b.wins){return -1;}
+				if (a.wins < b.wins){return 1;}
+				return 0;
+			});
+			
+			$("#commanders-modal .modal-body").html('');
+			commanders.forEach(function(commander){
+				$("#commanders-modal .modal-body").append(
+					'<span class="col-xs-12 flag-background" style="'+
+						'background-image:url(&quot;./assets/textures/'+commander.country.toLowerCase().replace(/\s+/g, '_')+'.png&quot;);">'+
+						'<div class="col-xs-12 modal-select">'+
+							'<div class="col-xs-12 modal-select-title">'+commander.name+'</div>'+
+							'<div class="col-xs-12">'+commander.country+'</div>'+
+							'<div class="col-md-6 col-xs-12">'+commander.wins+(commander.wins == 1 ? " Victory" : " Victories")+'</div>'+
+							'<div class="col-md-6 col-xs-12">'+commander.losses+(commander.losses == 1 ? " Defeat" : " Defeats")+'</div>'+
+						'</div>'+
+					'</span>'
+				);
 			});
 			
 			gallery = new Gallery(WARS.war_name.toLowerCase().replace(/\s+/g, '_'));

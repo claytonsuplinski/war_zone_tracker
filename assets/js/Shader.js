@@ -30,6 +30,8 @@ Shader.prototype.init_shader = function(){
   
   textureCoordAttribute = gl.getAttribLocation(this.shader_program, "aTextureCoord");
   gl.enableVertexAttribArray(textureCoordAttribute);
+  
+  this.scaleAttribute = gl.getAttribLocation(this.shader_program, "aScale");
 };
 
 Shader.prototype.get_shader = function(gl, id){
