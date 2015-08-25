@@ -12,8 +12,6 @@ var test_pressed = false;
 setInterval(function(){
 	if(WARS.keys_pressed.indexOf(87) != -1) { // W
 		test_pressed = true;
-		alert(WARS.user.rotation.x);
-		alert(WARS.user.rotation.y);
 		// Go forwards
 		if(WARS.user.free_mode){
 			var tmp_angle = -WARS.user.rotation.y*WARS.constants.to_radians;
@@ -66,7 +64,6 @@ setInterval(function(){
 		if(WARS.user.free_mode){
 			WARS.user.rotation.x--;
 		}
-		alert(JSON.stringify(WARS.user.position) + " | " + JSON.stringify(WARS.user.rotation));
     }
 	if(WARS.keys_pressed.indexOf(40) != -1) { // Down Arrow
         // Go down
@@ -83,6 +80,7 @@ function init_mouse_controls(){
 			WARS.mouse.y = event.pageY;
 			if(event.which == 1){ // Left mouse
 				WARS.mouse.left_down = true;
+				$("#battle-info").hide('fade');
 			}
 			if(event.which == 3){ // Right mouse
 				WARS.mouse.right_down = true;

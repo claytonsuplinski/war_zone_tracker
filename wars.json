@@ -878,31 +878,6 @@
 					}
 				},
 				{
-					"name": "Battle of Ridgefield",
-					"start": "4/27/1777",
-					"end": "4/27/1777",
-					"winner": "",
-					"countries": [
-						{
-							"name": "Great Britain",
-							"casualities": 150,
-							"leader": "William Tryon",
-							"troops": 1800
-						},
-						{
-							"name": "United States",
-							"casualities": 20,
-							"leader": "David Wooster",
-							"troops": 1700
-						}
-					],
-					"location": {
-						"name": "Ridgefield, Connecticut",
-						"lat": 41.305,
-						"lon": -73.501
-					}
-				},
-				{
 					"name": "Battle of Thomas Creek",
 					"start": "5/17/1777",
 					"end": "5/17/1777",
@@ -950,31 +925,6 @@
 						"name": "Sag Harbor, New York",
 						"lat": 41,
 						"lon": -72.3
-					}
-				},
-				{
-					"name": "Battle of Short Hills",
-					"start": "6/26/1777",
-					"end": "",
-					"winner": "",
-					"countries": [
-						{
-							"name": "Great Britain",
-							"casualities": 5,
-							"leader": "William Howe",
-							"troops": 11000
-						},
-						{
-							"name": "United States",
-							"casualities": "?",
-							"leader": "William Alexander",
-							"troops": 2500
-						}
-					],
-					"location": {
-						"name": "Scotch Plains, New Jersey",
-						"lat": 40.633,
-						"lon": -74.372
 					}
 				},
 				{
@@ -1225,31 +1175,6 @@
 						"name": "Chadds Ford Township, Pennsylvania",
 						"lat": 39.872,
 						"lon": -75.59
-					}
-				},
-				{
-					"name": "Battle of the Clouds",
-					"start": "9/16/1777",
-					"end": "",
-					"winner": "",
-					"countries": [
-						{
-							"name": "Great Britain",
-							"casualities": 100,
-							"leader": "William Howe",
-							"troops": 18000
-						},
-						{
-							"name": "United States",
-							"casualities": 100,
-							"leader": "George Washington",
-							"troops": 10000
-						}
-					],
-					"location": {
-						"name": "East Whiteland Township, Pennsylvania",
-						"lat": 40.038,
-						"lon": -75.555
 					}
 				},
 				{
@@ -1648,6 +1573,256 @@
 						"name": "Charleston County, South Carolina",
 						"lat": 32.752,
 						"lon": -79.874
+					}
+				},
+				{
+					"name": "First Battle of Bull Run",
+					"start": "7/21/1861",
+					"end": "",
+					"winner": "Confederate States",
+					"countries": [
+						{
+							"name": "Confederate States",
+							"casualities": 1982,
+							"leader": "P.G.T. Beauregard",
+							"troops": 34000
+						},
+						{
+							"name": "United States",
+							"casualities": 2896,
+							"leader": "Irvin McDowell",
+							"troops": 35000
+						}
+					],
+					"location": {
+						"name": "Fairfax County, Virginia",
+						"lat": 38.814,
+						"lon": -77.522
+					}
+				},
+				{
+					"name": "Battle of Gettysburg",
+					"start": "7/1/1863",
+					"end": "7/3/1863",
+					"winner": "United States",
+					"countries": [
+						{
+							"name": "Confederate States",
+							"casualities": 23231,
+							"leader": "Robert E. Lee",
+							"troops": 71699
+						},
+						{
+							"name": "United States",
+							"casualities": 23055,
+							"leader": "George Meade",
+							"troops": 93921
+						}
+					],
+					"location": {
+						"name": "Gettysburg, Pennsylvania",
+						"lat": 39.811,
+						"lon": -77.224
+					}
+				},
+				{
+					"name": "Siege of Vicksburg",
+					"start": "5/18/1863",
+					"end": "7/4/1863",
+					"winner": "United States",
+					"countries": [
+						{
+							"name": "Confederate States",
+							"casualities": 32697,
+							"leader": "John Pemberton",
+							"troops": 33000
+						},
+						{
+							"name": "United States",
+							"casualities": 4835,
+							"leader": "Ulysses S. Grant",
+							"troops": 77000
+						}
+					],
+					"location": {
+						"name": "Warren County, Mississippi",
+						"lat": 32.343,
+						"lon": -90.851
+					}
+				},
+				{
+					"name": "Battle of Antietam",
+					"start": "9/17/1862",
+					"end": "",
+					"winner": "United States",
+					"countries": [
+						{
+							"name": "Confederate States",
+							"casualities": 10316,
+							"leader": "Robert E. Lee",
+							"troops": 38000
+						},
+						{
+							"name": "United States",
+							"casualities": 12401,
+							"leader": "George McClellan",
+							"troops": 75500
+						}
+					],
+					"location": {
+						"name": "Washington County, Maryland",
+						"lat": 39.473,
+						"lon": -77.744
+					}
+				},
+				{
+					"name": "Battle of Fredericksburg",
+					"start": "12/11/1862",
+					"end": "12/15/1862",
+					"winner": "Confederate States",
+					"countries": [
+						{
+							"name": "Confederate States",
+							"casualities": 5377,
+							"leader": "Robert E. Lee",
+							"troops": 72500
+						},
+						{
+							"name": "United States",
+							"casualities": 12653,
+							"leader": "Ambrose Burnside",
+							"troops": 114000
+						}
+					],
+					"location": {
+						"name": "Spotsylvania County, Virginia",
+						"lat": 38.299,
+						"lon": -77.47
+					}
+				},
+				{
+					"name": "Battle of Franklin",
+					"start": "11/30/1864",
+					"end": "",
+					"winner": "United States",
+					"countries": [
+						{
+							"name": "Confederate States",
+							"casualities": 6252,
+							"leader": "John Bell Hood",
+							"troops": 27000
+						},
+						{
+							"name": "United States",
+							"casualities": 2326,
+							"leader": "John Schofield",
+							"troops": 27000
+						}
+					],
+					"location": {
+						"name": "Williamson County, Tennessee",
+						"lat": 35.917,
+						"lon": -86.873
+					}
+				},
+				{
+					"name": "Battle of Shiloh",
+					"start": "4/6/1862",
+					"end": "4/7/1862",
+					"winner": "United States",
+					"countries": [
+						{
+							"name": "Confederate States",
+							"casualities": 10699,
+							"leader": "P.G.T. Beauregard",
+							"troops": 44699
+						},
+						{
+							"name": "United States",
+							"casualities": 13047,
+							"leader": "Ulysses S. Grant",
+							"troops": 66812
+						}
+					],
+					"location": {
+						"name": "Hardin County, Tennessee",
+						"lat": 35.15,
+						"lon": -88.321
+					}
+				},
+				{
+					"name": "Seven Days Battles",
+					"start": "6/25/1862",
+					"end": "7/1/1862",
+					"winner": "Confederate States",
+					"countries": [
+						{
+							"name": "Confederate States",
+							"casualities": 20204,
+							"leader": "Robert E. Lee",
+							"troops": 92000
+						},
+						{
+							"name": "United States",
+							"casualities": 15855,
+							"leader": "George McClellan",
+							"troops": 104100
+						}
+					],
+					"location": {
+						"name": "Hanover County, Virginia",
+						"lat": 37.76,
+						"lon": -77.49
+					}
+				},
+				{
+					"name": "Battle of Petersburg",
+					"start": "6/9/1864",
+					"end": "3/25/1865",
+					"winner": "United States",
+					"countries": [
+						{
+							"name": "Confederate States",
+							"casualities": 28000,
+							"leader": "Robert E. Lee",
+							"troops": 52000
+						},
+						{
+							"name": "United States",
+							"casualities": 42000,
+							"leader": "Ulysses S. Grant",
+							"troops": 125000
+						}
+					],
+					"location": {
+						"name": "Petersburg, Virginia",
+						"lat": 37.217,
+						"lon": -77.377
+					}
+				},
+				{
+					"name": "Battle of Chancellorsville",
+					"start": "4/30/1863",
+					"end": "5/6/1863",
+					"winner": "Confederate States",
+					"countries": [
+						{
+							"name": "Confederate States",
+							"casualities": 13303,
+							"leader": "Robert E. Lee",
+							"troops": 60892
+						},
+						{
+							"name": "United States",
+							"casualities": 17197,
+							"leader": "Joseph Hooker",
+							"troops": 133868
+						}
+					],
+					"location": {
+						"name": "Spotsylvania County, Virginia",
+						"lat": 38.3105,
+						"lon": -77.6484
 					}
 				}
 			],
@@ -5728,6 +5903,331 @@
 						"name": "Wesel, Germany",
 						"lat": 51.658,
 						"lon": 6.617
+					}
+				},
+				{
+					"name": "Battle of the Visayas",
+					"start": "3/18/1945",
+					"end": "7/30/1945",
+					"winner": "United States",
+					"countries": [
+						{
+							"name": "Imperial Japan",
+							"casualities": 14300,
+							"leader": "Sosaku Suzuki",
+							"troops": 32000
+						},
+						{
+							"name": "United States",
+							"casualities": 835,
+							"leader": "Robert Eichelberger",
+							"troops": 35500
+						}
+					],
+					"location": {
+						"name": "Visayas Region, Philippines",
+						"lat": 11,
+						"lon": 123.5
+					}
+				},
+				{
+					"name": "Battle of Central Burma",
+					"start": "1/1/1945",
+					"end": "3/1/1945",
+					"winner": "United Kingdom",
+					"countries": [
+						{
+							"name": "Imperial Japan",
+							"casualities": 6513,
+							"leader": "Hyotaro Kimura",
+							"troops": "?"
+						},
+						{
+							"name": "United Kingdom",
+							"casualities": 2307,
+							"leader": "Sir William Slim",
+							"troops": "?"
+						}
+					],
+					"location": {
+						"name": "Central Burma",
+						"lat": 22,
+						"lon": 96
+					}
+				},
+				{
+					"name": "Battle of Iwo Jima",
+					"start": "2/19/1945",
+					"end": "3/26/1945",
+					"winner": "United States",
+					"countries": [
+						{
+							"name": "Imperial Japan",
+							"casualities": 18375,
+							"leader": "Tadamichi Kuribayashi",
+							"troops": 21060
+						},
+						{
+							"name": "United States",
+							"casualities": 6821,
+							"leader": "Chester Nimitz",
+							"troops": 110000
+						}
+					],
+					"location": {
+						"name": "Iwo Jima, Volcano Islands",
+						"lat": 24.783,
+						"lon": 141.316
+					}
+				},
+				{
+					"name": "Battle of Halbe",
+					"start": "4/24/1945",
+					"end": "5/1/1945",
+					"winner": "Soviet Union",
+					"countries": [
+						{
+							"name": "Nazi Germany",
+							"casualities": 30000,
+							"leader": "Theodor Busse",
+							"troops": 210000
+						},
+						{
+							"name": "Soviet Union",
+							"casualities": 20000,
+							"leader": "Ivan Konev",
+							"troops": 280000
+						}
+					],
+					"location": {
+						"name": "Halbe, Germany",
+						"lat": 52.106,
+						"lon": 13.7008
+					}
+				},
+				{
+					"name": "Battle of Berlin",
+					"start": "4/16/1945",
+					"end": "5/2/1945",
+					"winner": "Soviet Union",
+					"countries": [
+						{
+							"name": "Nazi Germany",
+							"casualities": 100000,
+							"leader": "Adolf Hitler",
+							"troops": 766750
+						},
+						{
+							"name": "Soviet Union",
+							"casualities": 81116,
+							"leader": "Georgy Zhukov",
+							"troops": 2500000
+						}
+					],
+					"location": {
+						"name": "Berlin, Germany",
+						"lat": 52.516,
+						"lon": 13.383
+					}
+				},
+				{
+					"name": "Battle of Tarakan",
+					"start": "5/1/1945",
+					"end": "6/21/1945",
+					"winner": "Australia",
+					"countries": [
+						{
+							"name": "Imperial Japan",
+							"casualities": 1540,
+							"leader": "Tadai Tokoi",
+							"troops": 2200
+						},
+						{
+							"name": "Australia",
+							"casualities": 251,
+							"leader": "David Whitehead",
+							"troops": 15532
+						}
+					],
+					"location": {
+						"name": "Tarakan Island, Netherlands East Indies",
+						"lat": 3.35,
+						"lon": 117.566
+					}
+				},
+				{
+					"name": "Battle of Poljana",
+					"start": "5/14/1945",
+					"end": "5/15/1945",
+					"winner": "Yugoslavia",
+					"countries": [
+						{
+							"name": "Nazi Germany",
+							"casualities": 350,
+							"leader": "?",
+							"troops": 30000
+						},
+						{
+							"name": "Yugoslavia",
+							"casualities": 100,
+							"leader": "Kosta Nad",
+							"troops": "?"
+						}
+					],
+					"location": {
+						"name": "Prevalje, Yugoslavia",
+						"lat": 46.544,
+						"lon": 14.873
+					}
+				},
+				{
+					"name": "Battle of West Hunan",
+					"start": "4/9/1945",
+					"end": "6/7/1945",
+					"winner": "Republic of China",
+					"countries": [
+						{
+							"name": "Imperial Japan",
+							"casualities": 27000,
+							"leader": "Ichiro Banzai",
+							"troops": 80000
+						},
+						{
+							"name": "Republic of China",
+							"casualities": 7737,
+							"leader": "He Yingqin",
+							"troops": 110000
+						}
+					],
+					"location": {
+						"name": "West Hunan",
+						"lat": 30.416,
+						"lon": 111.75
+					}
+				},
+				{
+					"name": "Battle of Okinawa",
+					"start": "3/26/1945",
+					"end": "6/22/1945",
+					"winner": "United States",
+					"countries": [
+						{
+							"name": "Imperial Japan",
+							"casualities": 77166,
+							"leader": "Mitsuru Ushijima",
+							"troops": 97000
+						},
+						{
+							"name": "United States",
+							"casualities": 20195,
+							"leader": "Simon Buckner",
+							"troops": 541000
+						}
+					],
+					"location": {
+						"name": "Okinawa, Japan",
+						"lat": 26.5,
+						"lon": 128
+					}
+				},
+				{
+					"name": "Battle of North Borneo",
+					"start": "6/10/1945",
+					"end": "8/15/1945",
+					"winner": "Australia",
+					"countries": [
+						{
+							"name": "Imperial Japan",
+							"casualities": 1234,
+							"leader": "Baba Masao",
+							"troops": 8800
+						},
+						{
+							"name": "Australia",
+							"casualities": 114,
+							"leader": "George Wootten",
+							"troops": 30000
+						}
+					],
+					"location": {
+						"name": "North Borneo",
+						"lat": 5.833,
+						"lon": 118.116
+					}
+				},
+				{
+					"name": "Battle of Manchuria",
+					"start": "8/9/1945",
+					"end": "8/20/1945",
+					"winner": "Soviet Union",
+					"countries": [
+						{
+							"name": "Imperial Japan",
+							"casualities": 83737,
+							"leader": "Otozo Yamada",
+							"troops": 700000
+						},
+						{
+							"name": "Soviet Union",
+							"casualities": 9726,
+							"leader": "Aleksandr Vasilevsky",
+							"troops": 1685500
+						}
+					],
+					"location": {
+						"name": "Inner Mongolia",
+						"lat": 45,
+						"lon": 125
+					}
+				},
+				{
+					"name": "Atomic Bombing of Hiroshima",
+					"start": "8/6/1945",
+					"end": "",
+					"winner": "United States",
+					"countries": [
+						{
+							"name": "Imperial Japan",
+							"casualities": 146000,
+							"leader": "Shunroku Hata",
+							"troops": 40000
+						},
+						{
+							"name": "United States",
+							"casualities": 20,
+							"leader": "William Parsons",
+							"troops": 1770
+						}
+					],
+					"location": {
+						"name": "Hiroshima, Japan",
+						"lat": 34.385,
+						"lon": 132.455
+					}
+				},
+				{
+					"name": "Atomic Bombing of Nagasaki",
+					"start": "8/9/1945",
+					"end": "",
+					"winner": "United States",
+					"countries": [
+						{
+							"name": "Imperial Japan",
+							"casualities": 80000,
+							"leader": "Shunroku Hata",
+							"troops": 9000
+						},
+						{
+							"name": "United States",
+							"casualities": 0,
+							"leader": "William Parsons",
+							"troops": 1770
+						}
+					],
+					"location": {
+						"name": "Nagasaki, Japan",
+						"lat": 32.783,
+						"lon": 129.866
 					}
 				}
 			],

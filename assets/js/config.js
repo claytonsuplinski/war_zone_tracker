@@ -39,7 +39,7 @@ WARS.user.rotation.y = 211;
 WARS.user.interpolate_start = {"x": 0, "y": 0};
 WARS.user.interpolate_end = {"x": 0, "y": 0};
 WARS.user.interpolation_percent = 0;
-WARS.user.interpolate_position = function(){
+WARS.user.interpolate_position = function(battle_object){
 	if(WARS.user.interpolation_percent == 0){
 		WARS.user.interpolate_start = {x: WARS.user.rotation.x, y: WARS.user.rotation.y};
 	}
@@ -52,10 +52,12 @@ WARS.user.interpolate_position = function(){
 	WARS.user.rotation.y = alpha * WARS.user.interpolate_start.y + beta * WARS.user.interpolate_end.y;
 	
 	if(WARS.user.interpolation_percent < 1){
-		setTimeout(WARS.user.interpolate_position, 15);
+		setTimeout(function(){WARS.user.interpolate_position(battle_object);}, 15);
 	}
 	else{
 		WARS.user.interpolation_percent = 0;
+		curr_war.load_battle_info(battle_object);
+		$("#battle-info").show('fade');
 	}
 };
 
@@ -78,7 +80,7 @@ WARS.init.models = function(){
 
 WARS.init.wars = function(){
 
-	test_war = new War();
+	curr_war = new War();
 	
 	$("#war-name").html(WARS.war_name+' <span class="caret"></span>');
 
@@ -157,7 +159,7 @@ WARS.init.wars = function(){
 						}
 					}
 				});
-				test_war.add_battle(new Battle(battle));
+				curr_war.add_battle(new Battle(battle));
 			});
 			
 			//sort commanders
@@ -191,7 +193,7 @@ WARS.init.wars = function(){
 			gallery = new Gallery(WARS.war_name.toLowerCase().replace(/\s+/g, '_'));
 		}
 		else{
-			tmp_dropdown += '<li><a onclick="WARS.war_name=&quot;'+war_name+'&quot;;WARS.init.project();">'+war_name+'</a></li>';
+			tmp_dropdown += '<li><a onclick="WARS.init.war(&quot;'+war_name+'&quot;);">'+war_name+'</a></li>';
 		}
 	});
 	$("#war-dropdown").html(tmp_dropdown);
@@ -202,9 +204,9 @@ WARS.init.project = function(){
 	WARS.init.wars();
 	$( "#time-select-slider" ).slider({
       range: true,
-      min: test_war.start_time.getTime(),
-      max: test_war.end_time.getTime(),
-      values: [ test_war.start_time.getTime(), test_war.end_time.getTime() ],
+      min: curr_war.start_time.getTime(),
+      max: curr_war.end_time.getTime(),
+      values: [ curr_war.start_time.getTime(), curr_war.end_time.getTime() ],
       slide: function( event, ui ) {
 		WARS.date_range.start_time = new Date(1970, 0, 1, 0, 0, 0, ui.values[ 0 ]);
 		WARS.date_range.end_time   = new Date(1970, 0, 1, 0, 0, 0, ui.values[ 1 ]);
@@ -219,3 +221,9 @@ WARS.init.project = function(){
     $( "#time-select-display" ).val( WARS.functions.get_date_string(date_1) +
       " - " + WARS.functions.get_date_string(date_2) );
 }
+
+WARS.init.war = function(war_name){
+	WARS.war_name=war_name;
+	$("#battle-info").hide('fade');
+	WARS.init.project();
+};

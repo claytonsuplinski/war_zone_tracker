@@ -83,6 +83,6 @@ function drawScene() {
 	
 	earth.draw();
 	
-	test_war.draw();
+	curr_war.draw();
   
 }
