@@ -44,10 +44,10 @@ Battle.prototype.draw = function(){
 
 	if(this.compare_times(WARS.date_range.end_time, this.start_time) && this.compare_times(this.end_time, WARS.date_range.start_time) ){
 		mvPushMatrix();
-		mvRotate(this.battle.location.lon, [0,1,0]);
-		mvRotate(-this.battle.location.lat, [0,0,1]);
-		mvTranslate([-WARS.constants.earth_radius, 0, 0]);
-		mvRotate(60, [0,1,0]);
+		mat4.rotate(mvMatrix, degToRad(this.battle.location.lon), [0,1,0]);
+		mat4.rotate(mvMatrix, degToRad(-this.battle.location.lat), [0,0,1]);
+		mat4.translate(mvMatrix, [-WARS.constants.earth_radius, 0, 0]);
+		mat4.rotate(mvMatrix, degToRad(60), [0,1,0]);
 		this.model.draw({scale: this.scale});
 		mvPopMatrix();
 	}

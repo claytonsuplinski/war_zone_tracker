@@ -88,6 +88,15 @@ WARS.init.wars = function(){
 	Object.keys(WARS.data).forEach(function(war_name){
 		var war = WARS.data[war_name];
 		var battles = war.battles;
+		
+		battles.sort(function (a, b){
+			var c = new Date(a.start);
+			var d = new Date(b.start);
+			if (c > d){return 1;}
+			if (c < d){return -1;}
+			return 0;
+		});
+		
 		var countries = war.countries;
 		if(war_name == WARS.war_name){
 			$("#battles-modal .modal-body").html('');
@@ -162,7 +171,6 @@ WARS.init.wars = function(){
 				curr_war.add_battle(new Battle(battle));
 			});
 			
-			//sort commanders
 			commanders.sort(function (a, b){
 				if (a.losses > b.losses){return 1;}
 				if (a.losses < b.losses){return -1;}

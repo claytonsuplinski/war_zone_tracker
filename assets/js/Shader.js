@@ -10,41 +10,51 @@ Shader.prototype.init_shader = function(){
   var fragmentShader = this.get_shader(gl, this.frag);
   var vertexShader = this.get_shader(gl, this.vert);
   
-  // Create the shader program
+	this.shader_program = gl.createProgram();
+	gl.attachShader(this.shader_program, vertexShader);
+	gl.attachShader(this.shader_program, fragmentShader);
+	gl.linkProgram(this.shader_program);
+
+	if (!gl.getProgramParameter(this.shader_program, gl.LINK_STATUS)) {
+		alert("Could not initialise shaders");
+	}
+
+	gl.useProgram(this.shader_program);
+
+	this.shader_program.vertexPositionAttribute = gl.getAttribLocation(this.shader_program, "aVertexPosition");
+	gl.enableVertexAttribArray(this.shader_program.vertexPositionAttribute);
+
+	this.shader_program.vertexNormalAttribute = gl.getAttribLocation(this.shader_program, "aVertexNormal");
+	gl.enableVertexAttribArray(this.shader_program.vertexNormalAttribute);
+
+	this.shader_program.textureCoordAttribute = gl.getAttribLocation(this.shader_program, "aTextureCoord");
+	gl.enableVertexAttribArray(this.shader_program.textureCoordAttribute);
+
+	this.shader_program.pMatrixUniform = gl.getUniformLocation(this.shader_program, "uPMatrix");
+	this.shader_program.mvMatrixUniform = gl.getUniformLocation(this.shader_program, "uMVMatrix");
+	this.shader_program.nMatrixUniform = gl.getUniformLocation(this.shader_program, "uNMatrix");
+	this.shader_program.samplerUniform = gl.getUniformLocation(this.shader_program, "uSampler");
+
+	this.shader_program.materialAmbientColorUniform = gl.getUniformLocation(this.shader_program, "uMaterialAmbientColor");
+	this.shader_program.materialDiffuseColorUniform = gl.getUniformLocation(this.shader_program, "uMaterialDiffuseColor");
+	this.shader_program.materialSpecularColorUniform = gl.getUniformLocation(this.shader_program, "uMaterialSpecularColor");
+	this.shader_program.materialShininessUniform = gl.getUniformLocation(this.shader_program, "uMaterialShininess");
+	this.shader_program.materialEmissiveColorUniform = gl.getUniformLocation(this.shader_program, "uMaterialEmissiveColor");
+	this.shader_program.showSpecularHighlightsUniform = gl.getUniformLocation(this.shader_program, "uShowSpecularHighlights");
+	this.shader_program.useTexturesUniform = gl.getUniformLocation(this.shader_program, "uUseTextures");
+	this.shader_program.ambientLightingColorUniform = gl.getUniformLocation(this.shader_program, "uAmbientLightingColor");
+	this.shader_program.pointLightingLocationUniform = gl.getUniformLocation(this.shader_program, "uPointLightingLocation");
+	this.shader_program.pointLightingSpecularColorUniform = gl.getUniformLocation(this.shader_program, "uPointLightingSpecularColor");
+	this.shader_program.pointLightingDiffuseColorUniform = gl.getUniformLocation(this.shader_program, "uPointLightingDiffuseColor");
   
-  this.shader_program = gl.createProgram();
-  gl.attachShader(this.shader_program, vertexShader);
-  gl.attachShader(this.shader_program, fragmentShader);
-  gl.linkProgram(this.shader_program);
-  
-  // If creating the shader program failed, alert
-  
-  if (!gl.getProgramParameter(this.shader_program, gl.LINK_STATUS)) {
-    alert("Unable to initialize the shader program.");
-  }
-  
-  gl.useProgram(this.shader_program);
-  
-  vertexPositionAttribute = gl.getAttribLocation(this.shader_program, "aVertexPosition");
-  gl.enableVertexAttribArray(vertexPositionAttribute);
-  
-  textureCoordAttribute = gl.getAttribLocation(this.shader_program, "aTextureCoord");
-  gl.enableVertexAttribArray(textureCoordAttribute);
-  
-  this.scaleAttribute = gl.getAttribLocation(this.shader_program, "aScale");
 };
 
 Shader.prototype.get_shader = function(gl, id){
   var shaderScript = document.getElementById(id);
   
-  // Didn't find an element with the specified ID; abort.
-  
   if (!shaderScript) {
     return null;
   }
-  
-  // Walk through the source element's children, building the
-  // shader source string.
   
   var theSource = "";
   var currentChild = shaderScript.firstChild;
@@ -57,9 +67,6 @@ Shader.prototype.get_shader = function(gl, id){
     currentChild = currentChild.nextSibling;
   }
   
-  // Now figure out what type of shader script we have,
-  // based on its MIME type.
-  
   var shader;
   
   if (shaderScript.type == "x-shader/x-fragment") {
@@ -70,15 +77,9 @@ Shader.prototype.get_shader = function(gl, id){
     return null;  // Unknown shader type
   }
   
-  // Send the source to the shader object
-  
   gl.shaderSource(shader, theSource);
   
-  // Compile the shader program
-  
   gl.compileShader(shader);
-  
-  // See if it compiled successfully
   
   if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
     alert("An error occurred compiling the shaders: " + gl.getShaderInfoLog(shader));

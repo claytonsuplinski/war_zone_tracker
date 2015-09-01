@@ -52,7 +52,7 @@ Sphere.prototype.load_vertices = function(){
     }
 
     this.v = tmp_vertices;
-    //this.vertexNormals = tmp_normals;
+    this.vn = tmp_normals;
     this.vt = tmp_textures;
     this.vertex_indices = tmp_indices;
 };
