@@ -10,8 +10,8 @@ function initWebGL(canvas) {
 
 	try {
 		gl = canvas.getContext("experimental-webgl");
-		gl.viewportWidth = canvas.width;
-        gl.viewportHeight = canvas.height;
+		gl.viewportWidth = window.innerWidth;
+        gl.viewportHeight = window.innerHeight;
 	}
 	catch(e) {
 	}
@@ -81,11 +81,7 @@ function start() {
 		earth.set_texture("./assets/textures/earth.png");
 		earth.set_shader(basic_shader);
 		earth_rotation = 0;
-		
-		background_sphere = new Sphere(100, 200, 200);
-		background_sphere.set_texture("./assets/textures/background_sphere.png");
-		background_sphere.set_shader(basic_shader);
-		background_sphere.material = {
+		earth.material = {
 			ambient_color:  {r:1.0, g:1.0, b:1.0},
 			diffuse_color:  {r:0.0, g:0.0, b:0.0},
 			specular_color: {r:0.0, g:0.0, b:0.0},
@@ -94,11 +90,45 @@ function start() {
 		}
 		
 		background_room = new Room();
+		
+		test_framebuffer = new Rectangle(30, 30);
+		test_framebuffer.set_shader(basic_shader);
+		test_framebuffer.init_framebuffer();
 
 		setInterval(drawScene, 15);
 
 	}
 }
+
+function draw_only_battles(){
+	gl.clearColor(1.0, 0.0, 0.0, 0.0);
+	gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
+
+	mat4.perspective(45, window.innerWidth/window.innerHeight, 0.1, 5000.0, pMatrix);
+
+	mat4.identity(mvMatrix);
+
+	if(WARS.user.free_mode){
+		mat4.rotate(mvMatrix, degToRad(WARS.user.rotation.x), [1,0,0]);
+		mat4.rotate(mvMatrix, degToRad(WARS.user.rotation.y), [0,1,0]);
+		mat4.translate(mvMatrix, [WARS.user.position.x,0-WARS.user.position.y,WARS.user.position.z]);
+	}
+	else{
+		mat4.translate(mvMatrix, [WARS.user.position.x,0-WARS.user.position.y,WARS.user.position.z]);
+		mat4.rotate(mvMatrix, degToRad(WARS.user.rotation.x), [1,0,0]);
+		mat4.rotate(mvMatrix, degToRad(WARS.user.rotation.y), [0,1,0]);
+	}
+	
+	gl.uniform3f(basic_shader.shader_program.ambientLightingColorUniform, 1,1,1);
+	gl.uniform3f(basic_shader.shader_program.pointLightingLocationUniform, 0, 0, 0);
+	gl.uniform3f(basic_shader.shader_program.pointLightingDiffuseColorUniform, 1,1,1);
+	gl.uniform1i(basic_shader.shader_program.showSpecularHighlightsUniform, false);
+	gl.uniform1i(basic_shader.shader_program.useTexturesUniform, true); 
+	
+	curr_war.set_battles_clickable(true);
+	
+	curr_war.draw();
+};
 
 function drawScene() {
 
@@ -135,6 +165,14 @@ function drawScene() {
 	gl.uniform1i(basic_shader.shader_program.showSpecularHighlightsUniform, true);
 	gl.uniform1i(basic_shader.shader_program.useTexturesUniform, false);
 	
+	earth.material = {
+		ambient_color:  {r:1.0, g:1.0, b:1.0},
+		diffuse_color:  {r:0.0, g:0.0, b:0.0},
+		specular_color: {r:0.0, g:0.0, b:0.0},
+		emissive_color: {r:0.0, g:0.0, b:0.0},
+		shininess: 5
+	}
+	
 	earth.draw();
 	
 	gl.uniform3f(basic_shader.shader_program.ambientLightingColorUniform, 0.1, 0.1, 0.1);
@@ -143,6 +181,8 @@ function drawScene() {
 
 	gl.uniform1i(basic_shader.shader_program.showSpecularHighlightsUniform, true);
 	gl.uniform1i(basic_shader.shader_program.useTexturesUniform, false);
+	
+	curr_war.set_battles_clickable(false);
 	
 	curr_war.draw();
 	
@@ -154,6 +194,27 @@ function drawScene() {
 	gl.uniform1i(basic_shader.shader_program.useTexturesUniform, false);
 	
 	gallery.draw();
+	
+	
+	gl.uniform1i(test_framebuffer.shader_program.showSpecularHighlightsUniform, true);
+	gl.uniform3f(test_framebuffer.shader_program.pointLightingLocationUniform, -1, 2, -1);
+
+	gl.uniform3f(test_framebuffer.shader_program.ambientLightingColorUniform, 0.2, 0.2, 0.2);
+	gl.uniform3f(test_framebuffer.shader_program.pointLightingDiffuseColorUniform, 0.8, 0.8, 0.8);
+	gl.uniform3f(test_framebuffer.shader_program.pointLightingSpecularColorUniform, 0.8, 0.8, 0.8);
+	
+	/*
+	test_framebuffer.draw_scene_on_framebuffer(draw_only_battles);
+	
+	mvPushMatrix();
+//	mat4.rotate(mvMatrix, degToRad(WARS.user.rotation.y), [0,1,0]);
+	
+	gl.enable(gl.BLEND);
+	gl.blendFunc(gl.SRC_ALPHA, gl.ONE);
+	test_framebuffer.draw();
+	gl.disable(gl.BLEND);
+	mvPopMatrix();
+	*/
   
 }
 
@@ -190,6 +251,16 @@ function drawScene() {
 
 
 /*
+
+//Getting pixel values from framebuffer texture
+
+var fb = gl.createFramebuffer();
+gl.bindFramebuffer(gl.FRAMEBUFFER, fb);
+gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, tex, 0);
+if (gl.checkFramebufferStatus(gl.FRAMEBUFFER) == gl.FRAMEBUFFER_COMPLETE) {
+  var pixels = new Uint8Array(width * height * 4);
+  gl.readPixels(x, y, width, height, gl.RGBA, gl.UNSIGNED_BYTE, pixels);
+}
 
 
 

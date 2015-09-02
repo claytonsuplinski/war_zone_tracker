@@ -15,7 +15,10 @@ function Battle(battle){
 		this.model = WARS.models.tie;
 	}
 	
-	this.scale = [5,5,5];
+	this.scale = [WARS.constants.battle_scale, WARS.constants.battle_scale, WARS.constants.battle_scale];
+	
+	this.clickable = false;
+	this.clickable_id = [0,1,0];
 }
 
 Battle.prototype.compare_times = function(first_date, second_date){
@@ -48,7 +51,7 @@ Battle.prototype.draw = function(){
 		mat4.rotate(mvMatrix, degToRad(-this.battle.location.lat), [0,0,1]);
 		mat4.translate(mvMatrix, [-WARS.constants.earth_radius, 0, 0]);
 		mat4.rotate(mvMatrix, degToRad(60), [0,1,0]);
-		this.model.draw({scale: this.scale});
+		this.model.draw({scale: this.scale, clickable: (this.clickable ? this.clickable_id : [0,0,0])});
 		mvPopMatrix();
 	}
 }

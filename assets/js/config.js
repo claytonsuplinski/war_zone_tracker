@@ -14,6 +14,7 @@ WARS.constants.earth_radius = 10;
 WARS.constants.zoom_offset = 0.1;
 WARS.constants.background_image_radius = 50;
 WARS.constants.gallery_size = 4;
+WARS.constants.battle_scale = 1;
 
 WARS.functions = {};
 WARS.functions.init_data = function(){

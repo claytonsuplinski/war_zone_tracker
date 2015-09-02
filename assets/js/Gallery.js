@@ -20,10 +20,10 @@ Gallery.prototype.draw = function(){
 	var self = this;
 	this.sides.forEach(function(side, index){
 		mvPushMatrix();
-		mat4.rotate(mvMatrix, degToRad(index * 360/self.sides.length), [0,1,0]);
-		mat4.translate(mvMatrix, [0,0,WARS.constants.background_image_radius]);
-		mat4.rotate(mvMatrix, degToRad(180), [0,0,1]);
-		side.draw();
+			mat4.rotate(mvMatrix, degToRad(index * 360/self.sides.length), [0,1,0]);
+			mat4.translate(mvMatrix, [0,0,WARS.constants.background_image_radius]);
+			mat4.rotate(mvMatrix, degToRad(180), [0,0,1]);
+			side.draw();
 		mvPopMatrix();
 	});
 };

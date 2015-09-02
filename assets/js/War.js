@@ -9,11 +9,26 @@ War.prototype.init_battles = function(){
 	this.battles = [];
 };
 
-War.prototype.select_battle = function(index){
+War.prototype.set_battles_clickable = function(clickable){
+	this.battles.forEach(function(battle){
+		battle.clickable = clickable;
+	});
+};
 
+War.prototype.reset_battle_scales = function(){
+	this.battles.forEach(function(battle){
+		battle.scale = [WARS.constants.battle_scale, WARS.constants.battle_scale, WARS.constants.battle_scale];
+	});
+};
+
+War.prototype.select_battle = function(index){
 	$("#battle-info").hide('fade');
+	
+	this.reset_battle_scales();
 
 	var battle_object = this.battles[index];
+	battle_object.scale = [2*WARS.constants.battle_scale, 2*WARS.constants.battle_scale, 2*WARS.constants.battle_scale];
+	
 	var battle = battle_object.battle;
 	
 	WARS.user.interpolate_end = {x: battle.location.lat, y: +(90-battle.location.lon)};

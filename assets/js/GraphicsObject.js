@@ -20,6 +20,8 @@ function GraphicsObject(){
     this.rttTexture = "";
 	
 	this.material = "";
+	this.scale = "";
+	this.clickable_object = "";
 };
 
 GraphicsObject.prototype.init_buffers = function(){
@@ -29,6 +31,9 @@ GraphicsObject.prototype.init_buffers = function(){
 	this.material.specular_color = {r:0.0, g:0.0, b:0.0};
 	this.material.emissive_color = {r:0.0, g:0.0, b:0.0};
 	this.material.shininess = 0;
+	
+	this.scale = [1, 1, 1];
+	this.clickable_object = [0,0,0];
 	  
 	this.vn_buffer = gl.createBuffer();
 	gl.bindBuffer(gl.ARRAY_BUFFER, this.vn_buffer);
@@ -108,17 +113,17 @@ GraphicsObject.prototype.set_shader = function(shader_program){
 GraphicsObject.prototype.draw_scene_on_framebuffer = function(draw_function){
 
 	gl.bindFramebuffer(gl.FRAMEBUFFER, this.rttFramebuffer);
-	gl.viewport(0, 0, this.rttFramebuffer.width, this.rttFramebuffer.height);
+	gl.viewport(0, 0, canvas.width, this.rttFramebuffer.height);
 	gl.clearColor(1.0, 0.0, 0.0, 1.0);
 	gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
 	gl.clearColor(0.0, 0.0, 0.0, 1.0);
 
-	mat4.perspective(45, 1.66, 0.1, 100.0, pMatrix);
+	mat4.perspective(45, window.innerWidth/window.innerHeight, 0.1, 100.0, pMatrix);
 
 	gl.uniform1i(this.shader_program.showSpecularHighlightsUniform, false);
-	gl.uniform3f(this.shader_program.ambientLightingColorUniform, 0.2, 0.2, 0.2);
-	gl.uniform3f(this.shader_program.pointLightingLocationUniform, 0, 0, -5);
-	gl.uniform3f(this.shader_program.pointLightingDiffuseColorUniform, 0.8, 0.8, 0.8);
+	gl.uniform3f(this.shader_program.ambientLightingColorUniform, 1, 1, 1);
+	gl.uniform3f(this.shader_program.pointLightingLocationUniform, 0, 0, 0);
+	gl.uniform3f(this.shader_program.pointLightingDiffuseColorUniform, 0, 0, 0);
 
 	draw_function();
 	
@@ -131,11 +136,22 @@ GraphicsObject.prototype.draw_scene_on_framebuffer = function(draw_function){
 
 GraphicsObject.prototype.draw = function(params){
 
+	if(params != undefined){
+		if(params.scale != undefined){
+			this.scale = params.scale;
+		}
+		if(params.clickable != undefined){
+			this.clickable_object = params.clickable;
+		}
+	}
+
 	gl.uniform3f(this.shader_program.materialAmbientColorUniform,  this.material.ambient_color.r,  this.material.ambient_color.g,  this.material.ambient_color.b);
 	gl.uniform3f(this.shader_program.materialDiffuseColorUniform,  this.material.diffuse_color.r,  this.material.diffuse_color.g,  this.material.diffuse_color.b);
 	gl.uniform3f(this.shader_program.materialSpecularColorUniform, this.material.specular_color.r, this.material.specular_color.g, this.material.specular_color.b);
 	gl.uniform1f(this.shader_program.materialShininessUniform, this.material.shininess);
 	gl.uniform3f(this.shader_program.materialEmissiveColorUniform, this.material.emissive_color.r, this.material.emissive_color.g, this.material.emissive_color.b);
+	gl.uniform3f(this.shader_program.scale, this.scale[0], this.scale[1], this.scale[2]);
+	gl.uniform3f(this.shader_program.clickableObject, this.clickable_object[0], this.clickable_object[1], this.clickable_object[2]);
 	gl.uniform1i(this.shader_program.useTexturesUniform, true);
 	
 	mvPushMatrix();
@@ -163,6 +179,7 @@ GraphicsObject.prototype.draw = function(params){
         gl.bindTexture(gl.TEXTURE_2D, this.rttTexture);
         gl.uniform1i(this.shader_program.samplerUniform, 0);
 
+		gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, this.vertex_indices_buffer);
         setMatrixUniforms();
         gl.drawElements(gl.TRIANGLES, this.vertex_indices_buffer.numItems, gl.UNSIGNED_SHORT, 0);
 	}
@@ -184,6 +201,7 @@ GraphicsObject.prototype.draw = function(params){
 
 		gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, this.vertex_indices_buffer);
 		setMatrixUniforms();
+
 		gl.drawElements(gl.TRIANGLES, this.vertex_indices_buffer.numItems, gl.UNSIGNED_SHORT, 0);
 	}
 	
