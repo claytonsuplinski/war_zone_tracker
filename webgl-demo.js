@@ -81,13 +81,6 @@ function start() {
 		earth.set_texture("./assets/textures/earth.png");
 		earth.set_shader(basic_shader);
 		earth_rotation = 0;
-		earth.material = {
-			ambient_color:  {r:1.0, g:1.0, b:1.0},
-			diffuse_color:  {r:0.0, g:0.0, b:0.0},
-			specular_color: {r:0.0, g:0.0, b:0.0},
-			emissive_color: {r:0.0, g:0.0, b:0.0},
-			shininess: 5
-		}
 		
 		background_room = new Room();
 		
@@ -164,14 +157,6 @@ function drawScene() {
 
 	gl.uniform1i(basic_shader.shader_program.showSpecularHighlightsUniform, true);
 	gl.uniform1i(basic_shader.shader_program.useTexturesUniform, false);
-	
-	earth.material = {
-		ambient_color:  {r:1.0, g:1.0, b:1.0},
-		diffuse_color:  {r:0.0, g:0.0, b:0.0},
-		specular_color: {r:0.0, g:0.0, b:0.0},
-		emissive_color: {r:0.0, g:0.0, b:0.0},
-		shininess: 5
-	}
 	
 	earth.draw();
 	
