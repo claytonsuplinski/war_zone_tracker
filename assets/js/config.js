@@ -148,7 +148,7 @@ WARS.init.wars = function(){
 				battle.countries.forEach(function(country){
 					var commander_name = country.leader;
 					if(["", "?"].indexOf(commander_name) == -1){
-						var curr_commander = commanders.filter(function(c) c.name == commander_name && c.country == country.name);
+						var curr_commander = commanders.filter(function(c){ return c.name == commander_name && c.country == country.name; });
 						if(curr_commander.length > 0){
 							curr_commander = curr_commander[0];
 							if(curr_commander.country == battle.winner){
