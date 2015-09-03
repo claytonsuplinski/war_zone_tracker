@@ -18,8 +18,12 @@ function Battle(battle){
 	this.scale = [WARS.constants.battle_scale, WARS.constants.battle_scale, WARS.constants.battle_scale];
 	
 	this.clickable = false;
-	this.clickable_id = [0,1,0];
+	this.clickable_id = "";
 }
+
+Battle.prototype.set_clickable_id = function(id){
+	this.clickable_id = id;
+};
 
 Battle.prototype.compare_times = function(first_date, second_date){
 	if(first_date.getFullYear() > second_date.getFullYear()){
@@ -43,6 +47,10 @@ Battle.prototype.draw = function(){
 	if(this.model == undefined){
 		alert(this.battle.winner);
 		alert(Object.keys(WARS.models));
+	}
+	
+	if(this.clickable_id == ""){
+		this.clickable_id = [0,0,0];
 	}
 
 	if(this.compare_times(WARS.date_range.end_time, this.start_time) && this.compare_times(this.end_time, WARS.date_range.start_time) ){

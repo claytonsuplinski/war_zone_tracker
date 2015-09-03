@@ -141,6 +141,9 @@ WARS.init.wars = function(){
 			
 			var commanders = [];
 			
+			var battle_id_counter_index = 0;
+			var battle_id_counter_value = 1;
+			
 			battles.forEach(function(battle){
 				battle.countries.forEach(function(country){
 					var commander_name = country.leader;
@@ -169,7 +172,40 @@ WARS.init.wars = function(){
 						}
 					}
 				});
-				curr_war.add_battle(new Battle(battle));
+				var tmp_battle = new Battle(battle);
+				switch(battle_id_counter_index){
+					case 0:
+						tmp_battle.set_clickable_id([battle_id_counter_value, 0, 0]);
+						break;
+					case 1:
+						tmp_battle.set_clickable_id([0, battle_id_counter_value, 0]);
+						break;
+					case 2:
+						tmp_battle.set_clickable_id([battle_id_counter_value, battle_id_counter_value, 0]);
+						break;
+					case 3:
+						tmp_battle.set_clickable_id([0, battle_id_counter_value, battle_id_counter_value]);
+						break;
+					case 4:
+						tmp_battle.set_clickable_id([0, 0, battle_id_counter_value]);
+						break;
+					case 5:
+						tmp_battle.set_clickable_id([battle_id_counter_value, 0, battle_id_counter_value]);
+						break;
+					case 6:
+						tmp_battle.set_clickable_id([battle_id_counter_value, battle_id_counter_value, battle_id_counter_value]);
+						battle_id_counter_value-=0.01;
+						break;
+					default:
+						tmp_battle.set_clickable_id([battle_id_counter_value, 0, 0]);
+						battle_id_counter_value-=0.01;
+						break;
+				}
+				
+				battle_id_counter_index++;
+				battle_id_counter_index%=7;
+				
+				curr_war.add_battle(tmp_battle);
 			});
 			
 			commanders.sort(function (a, b){

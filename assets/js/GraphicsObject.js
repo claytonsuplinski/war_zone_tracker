@@ -22,6 +22,9 @@ function GraphicsObject(){
 	this.material = "";
 	this.scale = "";
 	this.clickable_object = "";
+	
+	this.selected_pixel = "";
+	this.selected_a_pixel = false;
 };
 
 GraphicsObject.prototype.init_buffers = function(){
@@ -63,8 +66,8 @@ GraphicsObject.prototype.init_buffers = function(){
 GraphicsObject.prototype.init_framebuffer = function(){
 	this.rttFramebuffer = gl.createFramebuffer();
 	gl.bindFramebuffer(gl.FRAMEBUFFER, this.rttFramebuffer);
-	this.rttFramebuffer.width = 512;
-	this.rttFramebuffer.height = 512;
+	this.rttFramebuffer.width = canvas.width;
+	this.rttFramebuffer.height = canvas.height;
 
 	this.rttTexture = gl.createTexture();
 	gl.bindTexture(gl.TEXTURE_2D, this.rttTexture);
@@ -113,12 +116,9 @@ GraphicsObject.prototype.set_shader = function(shader_program){
 GraphicsObject.prototype.draw_scene_on_framebuffer = function(draw_function){
 
 	gl.bindFramebuffer(gl.FRAMEBUFFER, this.rttFramebuffer);
-	gl.viewport(0, 0, canvas.width, this.rttFramebuffer.height);
-	gl.clearColor(1.0, 0.0, 0.0, 1.0);
-	gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
-	gl.clearColor(0.0, 0.0, 0.0, 1.0);
+	gl.viewport(0, 0, this.rttFramebuffer.width, this.rttFramebuffer.height);
 
-	mat4.perspective(45, window.innerWidth/window.innerHeight, 0.1, 100.0, pMatrix);
+	mat4.perspective(45, 1, 0.1, 100.0, pMatrix);
 
 	gl.uniform1i(this.shader_program.showSpecularHighlightsUniform, false);
 	gl.uniform3f(this.shader_program.ambientLightingColorUniform, 1, 1, 1);
@@ -129,6 +129,34 @@ GraphicsObject.prototype.draw_scene_on_framebuffer = function(draw_function){
 	
 	gl.bindTexture(gl.TEXTURE_2D, this.rttTexture);
 	gl.generateMipmap(gl.TEXTURE_2D);
+	
+	if(WARS.mouse.left_down){
+		if(!this.selected_a_pixel){
+			this.selected_pixel = new Uint8Array(4);
+			var mouse_x = parseInt(this.rttFramebuffer.width * WARS.mouse.x / window.innerWidth);
+			var mouse_y = this.rttFramebuffer.height - parseInt(this.rttFramebuffer.height * WARS.mouse.y / window.innerHeight);
+			gl.readPixels(mouse_x, mouse_y, 1, 1, gl.RGBA, gl.UNSIGNED_BYTE, this.selected_pixel);
+			//alert(JSON.stringify(this.selected_pixel) + " | " + mouse_x + " x " + mouse_y + " | " + this.rttFramebuffer.width + " x " + this.rttFramebuffer.height);
+			//alert(JSON.stringify(this.selected_pixel));
+			var self = this;
+			var selected_battles = curr_war.battles.filter(function (battle) { 
+				return (
+					Math.round(255*battle.clickable_id[0]) == self.selected_pixel[0] &&
+					Math.round(255*battle.clickable_id[1]) == self.selected_pixel[1] &&
+					Math.round(255*battle.clickable_id[2]) == self.selected_pixel[2]
+				);
+			});
+			if(selected_battles.length > 0){
+				var tmp_battle = selected_battles[0];
+				curr_war.select_battle(curr_war.battles.indexOf(tmp_battle));
+			}
+			this.selected_a_pixel = true;
+		}
+	}
+	else{
+		this.selected_a_pixel = false;
+	}
+	
 	gl.bindTexture(gl.TEXTURE_2D, null);
 	
 	gl.bindFramebuffer(gl.FRAMEBUFFER, null);

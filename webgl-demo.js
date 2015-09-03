@@ -94,7 +94,7 @@ function start() {
 }
 
 function draw_only_battles(){
-	gl.clearColor(1.0, 0.0, 0.0, 0.0);
+	gl.clearColor(0.0, 0.0, 0.0, 1.0);
 	gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
 
 	mat4.perspective(45, window.innerWidth/window.innerHeight, 0.1, 5000.0, pMatrix);
@@ -188,9 +188,9 @@ function drawScene() {
 	gl.uniform3f(test_framebuffer.shader_program.pointLightingDiffuseColorUniform, 0.8, 0.8, 0.8);
 	gl.uniform3f(test_framebuffer.shader_program.pointLightingSpecularColorUniform, 0.8, 0.8, 0.8);
 	
-	/*
-	test_framebuffer.draw_scene_on_framebuffer(draw_only_battles);
 	
+	test_framebuffer.draw_scene_on_framebuffer(draw_only_battles);
+/*	
 	mvPushMatrix();
 //	mat4.rotate(mvMatrix, degToRad(WARS.user.rotation.y), [0,1,0]);
 	
