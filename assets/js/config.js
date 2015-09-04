@@ -43,6 +43,16 @@ WARS.user.interpolation_percent = 0;
 WARS.user.interpolate_position = function(battle_object){
 	if(WARS.user.interpolation_percent == 0){
 		WARS.user.interpolate_start = {x: WARS.user.rotation.x, y: WARS.user.rotation.y};
+		var tmp_diff = Math.abs(WARS.user.rotation.y - WARS.user.interpolate_end.y);
+		var tmp_diff_minus = Math.abs(WARS.user.rotation.y - (WARS.user.interpolate_end.y - 360));
+		var tmp_diff_plus  = Math.abs(WARS.user.rotation.y - (WARS.user.interpolate_end.y + 360));
+		if(tmp_diff_minus < tmp_diff){
+			tmp_diff = tmp_diff_minus;
+			WARS.user.interpolate_end.y = WARS.user.interpolate_end.y - 360;
+		}
+		if(tmp_diff_plus < tmp_diff){
+			WARS.user.interpolate_end.y = WARS.user.interpolate_end.y + 360;
+		}
 	}
 	WARS.user.interpolation_percent += 0.025;
 

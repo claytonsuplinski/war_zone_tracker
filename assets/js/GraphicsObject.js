@@ -113,6 +113,16 @@ GraphicsObject.prototype.set_shader = function(shader_program){
 	this.shader_program = tmp;
 }
 
+GraphicsObject.prototype.get_click_pixel = function(){
+	this.selected_pixel = new Uint8Array(4);
+	var mouse_x = parseInt(this.rttFramebuffer.width * WARS.mouse.x / window.innerWidth);
+	var mouse_y = this.rttFramebuffer.height - parseInt(this.rttFramebuffer.height * WARS.mouse.y / window.innerHeight);
+	gl.readPixels(mouse_x, mouse_y, 1, 1, gl.RGBA, gl.UNSIGNED_BYTE, this.selected_pixel);
+	//alert(JSON.stringify(this.selected_pixel) + " | " + mouse_x + " x " + mouse_y + " | " + this.rttFramebuffer.width + " x " + this.rttFramebuffer.height);
+	//alert(JSON.stringify(this.selected_pixel));
+	this.selected_a_pixel = true;
+}
+
 GraphicsObject.prototype.draw_scene_on_framebuffer = function(draw_function){
 
 	gl.bindFramebuffer(gl.FRAMEBUFFER, this.rttFramebuffer);
@@ -132,29 +142,40 @@ GraphicsObject.prototype.draw_scene_on_framebuffer = function(draw_function){
 	
 	if(WARS.mouse.left_down){
 		if(!this.selected_a_pixel){
-			this.selected_pixel = new Uint8Array(4);
-			var mouse_x = parseInt(this.rttFramebuffer.width * WARS.mouse.x / window.innerWidth);
-			var mouse_y = this.rttFramebuffer.height - parseInt(this.rttFramebuffer.height * WARS.mouse.y / window.innerHeight);
-			gl.readPixels(mouse_x, mouse_y, 1, 1, gl.RGBA, gl.UNSIGNED_BYTE, this.selected_pixel);
-			//alert(JSON.stringify(this.selected_pixel) + " | " + mouse_x + " x " + mouse_y + " | " + this.rttFramebuffer.width + " x " + this.rttFramebuffer.height);
-			//alert(JSON.stringify(this.selected_pixel));
-			var self = this;
-			var selected_battles = curr_war.battles.filter(function (battle) { 
-				return (
-					Math.round(255*battle.clickable_id[0]) == self.selected_pixel[0] &&
-					Math.round(255*battle.clickable_id[1]) == self.selected_pixel[1] &&
-					Math.round(255*battle.clickable_id[2]) == self.selected_pixel[2]
-				);
-			});
-			if(selected_battles.length > 0){
-				var tmp_battle = selected_battles[0];
-				curr_war.select_battle(curr_war.battles.indexOf(tmp_battle));
-			}
-			this.selected_a_pixel = true;
+			this.get_click_pixel();
 		}
 	}
 	else{
-		this.selected_a_pixel = false;
+		if(this.selected_a_pixel){
+			var curr_pixel = this.selected_pixel;
+			this.get_click_pixel();
+			if(
+				curr_pixel[0] == this.selected_pixel[0] &&
+				curr_pixel[1] == this.selected_pixel[1] &&
+				curr_pixel[2] == this.selected_pixel[2] &&
+				curr_pixel[3] == this.selected_pixel[3]
+			){
+				var self = this;
+				var selected_battles = curr_war.battles.filter(function (battle) { 
+					return (
+						Math.round(255*battle.clickable_id[0]) == self.selected_pixel[0] &&
+						Math.round(255*battle.clickable_id[1]) == self.selected_pixel[1] &&
+						Math.round(255*battle.clickable_id[2]) == self.selected_pixel[2]
+					);
+				});
+				if(selected_battles.length > 0){
+					var tmp_battle = selected_battles[0];
+					curr_war.select_battle(curr_war.battles.indexOf(tmp_battle));
+				}
+				else{
+					curr_war.reset_battle_scales();
+				}
+			}
+			else{
+				curr_war.reset_battle_scales();
+			}
+			this.selected_a_pixel = false;
+		}
 	}
 	
 	gl.bindTexture(gl.TEXTURE_2D, null);

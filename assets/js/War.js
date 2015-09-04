@@ -17,7 +17,7 @@ War.prototype.set_battles_clickable = function(clickable){
 
 War.prototype.reset_battle_scales = function(){
 	this.battles.forEach(function(battle){
-		battle.scale = [WARS.constants.battle_scale, WARS.constants.battle_scale, WARS.constants.battle_scale];
+		battle.currently_selected = false;
 	});
 };
 
@@ -27,7 +27,7 @@ War.prototype.select_battle = function(index){
 	this.reset_battle_scales();
 
 	var battle_object = this.battles[index];
-	battle_object.scale = [2*WARS.constants.battle_scale, 2*WARS.constants.battle_scale, 2*WARS.constants.battle_scale];
+	battle_object.currently_selected = true;
 	
 	var battle = battle_object.battle;
 	
