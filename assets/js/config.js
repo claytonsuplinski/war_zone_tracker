@@ -94,6 +94,7 @@ WARS.init.wars = function(){
 	curr_war = new War();
 	
 	$("#war-name").html(WARS.war_name+' <span class="caret"></span>');
+	$("#wars-modal .modal-body").html("");
 
 	var tmp_dropdown = "";
 	Object.keys(WARS.data).forEach(function(war_name){
@@ -247,11 +248,24 @@ WARS.init.wars = function(){
 			
 			gallery = new Gallery(WARS.war_name.toLowerCase().replace(/\s+/g, '_'));
 		}
-		else{
-			tmp_dropdown += '<li><a onclick="WARS.init.war(&quot;'+war_name+'&quot;);">'+war_name+'</a></li>';
-		}
+		
+		var tmp_countries = '<table style="width:'+(countries.length*20)+'px;margin:auto;"><tr>';
+		countries.forEach(function(country){
+			tmp_countries += 
+				'<td class="war-modal-flag-icon" style="background-image:url(&quot;./assets/textures/'+
+									country.name.toLowerCase().replace(/\s+/g, '_')+'.png&quot;);"></td>';
+		});
+		tmp_countries += "</tr></table>";
+		
+		$("#wars-modal .modal-body").append(
+			'<div class="col-xs-12 modal-select flag-background" onclick="WARS.init.war(&quot;'+war_name+'&quot;);" style="padding-bottom:5px;">'+
+				'<div class="col-xs-12 modal-select-title">'+war_name+'</div>'+
+				'<div class="col-xs-12" style="overflow:auto;">'+
+					tmp_countries+
+				'</div>'+
+			'</div><br>'
+		);
 	});
-	$("#war-dropdown").html(tmp_dropdown);
 }
 
 WARS.init.project = function(){

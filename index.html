@@ -243,6 +243,14 @@
 		#battle-info{
 			display:none;
 		}
+		
+		.war-modal-flag-icon{
+			width:20px;height:20px;
+			background-size:200% 100%;
+			background-position:40%;
+			border-radius:5000px;
+			opacity:0.3;
+		}
 	
 	</style>
 
@@ -361,9 +369,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-				<a id="war-name" class="navbar-brand" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></a>
-				  <ul id="war-dropdown" class="dropdown-menu" aria-labelledby="dropdownMenu1">
-				  </ul>
+				<a id="war-name" class="navbar-brand" data-toggle="modal" data-target="#wars-modal"></a>
             </div>
             <div class="collapse navbar-collapse pull-right" id="navbar-collapse-1">
 			
@@ -419,7 +425,7 @@
 			</nav>
 		
 			<div id="left-battle-panel">
-				<div id="left-flag" class="battle-panel-flag"><img src="./assets/textures/united_states.png"/></div>
+				<div id="left-flag" class="battle-panel-flag"><img src=""/></div>
 				<div id="left-country" class="battle-panel-country col-xs-12">United States</div>
 				<div id="left-leader" class="col-xs-12">Ulysses S. Grant</div>
 				<div class="col-xs-6"><strong>Troops</strong></div><div id="left-troops" class="col-xs-6">15000</div>
@@ -428,7 +434,7 @@
 			</div>
 			
 			<div id="right-battle-panel">
-				<div id="right-flag" class="battle-panel-flag"><img src="./assets/textures/confederate_states.png"/></div>
+				<div id="right-flag" class="battle-panel-flag"><img src=""/></div>
 				<div id="right-country" class="battle-panel-country col-xs-12">Confederate States</div>
 				<div id="right-leader" class="col-xs-12">Robert E. Lee</div>
 				<div class="col-xs-6"><strong>Troops</strong></div><div id="right-troops" class="col-xs-6">13000</div>
@@ -460,6 +466,21 @@
         </div>
     </nav>
 	
+	<div class="modal fade" id="wars-modal" role="dialog">
+	  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h4 class="modal-title" id="myModalLabel">Wars</h4>
+		  </div>
+		  <div class="modal-body">
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-battle-modal" data-dismiss="modal">Close</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
 	<div class="modal fade" id="battles-modal" role="dialog">
 	  <div class="modal-dialog" role="document">
 		<div class="modal-content">
@@ -469,8 +490,7 @@
 		  <div class="modal-body">
 		  </div>
 		  <div class="modal-footer">
-			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			<button type="button" class="btn btn-primary">Tour</button>
+			<button type="button" class="btn btn-battle-modal" data-dismiss="modal">Close</button>
 		  </div>
 		</div>
 	  </div>
@@ -500,7 +520,7 @@
 		  <div class="modal-body">
 		  </div>
 		  <div class="modal-footer">
-			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			<button type="button" class="btn btn-battle-modal" data-dismiss="modal">Close</button>
 		  </div>
 		</div>
 	  </div>
