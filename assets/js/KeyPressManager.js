@@ -124,7 +124,7 @@ function init_mouse_controls(){
 		})
 		.bind('mousewheel DOMMouseScroll', function (event){
 			var tmp_delta = parseInt(parseInt(event.originalEvent.wheelDelta)/4 || -parseInt(event.originalEvent.detail)*8);
-			mouse_zoom(tmp_delta/12);
+			mouse_zoom(tmp_delta/40);
 		});
 		
 	$("body")
