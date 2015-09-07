@@ -316,8 +316,8 @@
 			gl_FragColor = vec4(
 				materialAmbientColor * ambientLightWeighting
 				+ materialDiffuseColor * diffuseLightWeighting
-				+ materialSpecularColor * specularLightWeighting
-				//+ materialEmissiveColor
+				//+ materialSpecularColor * specularLightWeighting //Definite cause of problem
+				+ materialEmissiveColor
 				,
 				alpha
 			);
