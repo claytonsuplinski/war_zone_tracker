@@ -101,6 +101,21 @@ setInterval(function(){
 
 function init_mouse_controls(){
 	$("#glcanvas")
+		.bind('touchstart', function(event){
+			var touch = event.originalEvent.touches[0];
+			alert(touch.pageX + " x " + touch.pageY);
+		})
+		.bind('touchmove', function(event){
+			var touch = event.originalEvent.touches[0];
+			alert(touch.pageX + " x " + touch.pageY);
+		})
+		.bind('touchend', function(event){
+			var touch = event.originalEvent.touches[0];
+			alert(touch.pageX + " x " + touch.pageY);
+		})
+		.bind('gesturechange', function(event){
+			alert(event.originalEvent.scale);
+		})
 		.mousedown(function (event){
 			WARS.mouse.x = event.pageX;
 			WARS.mouse.y = event.pageY;
