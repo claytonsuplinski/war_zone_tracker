@@ -105,8 +105,10 @@ function init_mouse_controls(){
 			WARS.mouse.x = event.pageX;
 			WARS.mouse.y = event.pageY;
 			if(event.which == 1){ // Left mouse
-				WARS.mouse.left_down = true;
-				$("#battle-info").hide('fade');
+				if(WARS.user.interpolation_percent == 0){
+					WARS.mouse.left_down = true;
+					$("#battle-info").hide('fade');
+				}
 			}
 			if(event.which == 3){ // Right mouse
 				WARS.mouse.right_down = true;
