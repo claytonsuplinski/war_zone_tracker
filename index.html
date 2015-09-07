@@ -255,29 +255,29 @@
 	</style>
 
 <script id="per-fragment-lighting-fs" type="x-shader/x-fragment">
-    precision mediump float;
+    precision highp float; 
 
-    varying vec2 vTextureCoord;
-    varying vec3 vTransformedNormal;
-    varying vec4 vPosition;
+    varying highp vec2 vTextureCoord;
+    varying highp vec3 vTransformedNormal;
+    varying highp vec4 vPosition;
 
-    uniform vec3 uMaterialAmbientColor;
-    uniform vec3 uMaterialDiffuseColor;
-    uniform vec3 uMaterialSpecularColor;
+    uniform highp vec3 uMaterialAmbientColor;
+    uniform highp vec3 uMaterialDiffuseColor;
+    uniform highp vec3 uMaterialSpecularColor;
     uniform float uMaterialShininess;
-    uniform vec3 uMaterialEmissiveColor;
+    uniform highp vec3 uMaterialEmissiveColor;
 
     uniform bool uShowSpecularHighlights;
     uniform bool uUseTextures;
 
-    uniform vec3 uAmbientLightingColor;
+    uniform highp vec3 uAmbientLightingColor;
 
-    uniform vec3 uPointLightingLocation;
-    uniform vec3 uPointLightingDiffuseColor;
-    uniform vec3 uPointLightingSpecularColor;
+    uniform highp vec3 uPointLightingLocation;
+    uniform highp vec3 uPointLightingDiffuseColor;
+    uniform highp vec3 uPointLightingSpecularColor;
 	uniform vec3 uClickableObject;
 
-    uniform sampler2D uSampler;
+    uniform highp sampler2D uSampler;
 
 
     void main(void) {
@@ -287,6 +287,7 @@
         vec3 normal = normalize(vTransformedNormal);
 
         vec3 specularLightWeighting = vec3(0.0, 0.0, 0.0);
+		
         if (uShowSpecularHighlights) {
             vec3 eyeDirection = normalize(-vPosition.xyz);
             vec3 reflectionDirection = reflect(-lightDirection, normal);
@@ -327,6 +328,8 @@
 </script>
 
 <script id="per-fragment-lighting-vs" type="x-shader/x-vertex">
+	precision highp float; 
+
     attribute vec3 aVertexPosition;
     attribute vec3 aVertexNormal;
     attribute vec2 aTextureCoord;
@@ -336,9 +339,9 @@
     uniform mat3 uNMatrix;
 	uniform vec3 uScale;
 
-    varying vec2 vTextureCoord;
-    varying vec3 vTransformedNormal;
-    varying vec4 vPosition;
+    varying highp vec2 vTextureCoord;
+    varying highp vec3 vTransformedNormal;
+    varying highp vec4 vPosition;
 
     void main(void) {
         vPosition = uMVMatrix * vec4(aVertexPosition*uScale, 1.0);

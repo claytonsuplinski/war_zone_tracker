@@ -114,42 +114,17 @@ function init_mouse_controls(){
 		})	
 		.mousemove(function(event) {
 			if(WARS.mouse.left_down){
-				WARS.user.rotation.y += (event.pageX - WARS.mouse.x);
-				WARS.user.rotation.x += (event.pageY - WARS.mouse.y)/2;
-				while(WARS.user.rotation.y < 0){
-					WARS.user.rotation.y += 360;
-				}
-				while(WARS.user.rotation.y > 360){
-					WARS.user.rotation.y -= 360;
-				}
-				if(WARS.user.rotation.x > 90){
-					WARS.user.rotation.x = 90;
-				}
-				if(WARS.user.rotation.x < -90){
-					WARS.user.rotation.x = -90;
-				}
+				mouse_pan(event);
 			}
 			if(WARS.mouse.right_down){
-				WARS.user.position.z -= (event.pageY - WARS.mouse.y)/4;
-				if(WARS.user.position.z > -WARS.constants.earth_radius-WARS.constants.zoom_offset){
-					WARS.user.position.z = -WARS.constants.earth_radius-WARS.constants.zoom_offset;
-				}
-				if(WARS.user.position.z < 5-WARS.constants.background_image_radius){
-					WARS.user.position.z = 5-WARS.constants.background_image_radius;
-				}
+				mouse_zoom(-(event.pageY - WARS.mouse.y)/4);
 			}
 			WARS.mouse.x = event.pageX;
 			WARS.mouse.y = event.pageY;
 		})
 		.bind('mousewheel DOMMouseScroll', function (event){
 			var tmp_delta = parseInt(parseInt(event.originalEvent.wheelDelta)/4 || -parseInt(event.originalEvent.detail)*8);
-			WARS.user.position.z += tmp_delta/4;
-			if(WARS.user.position.z > -WARS.constants.earth_radius-WARS.constants.zoom_offset){
-				WARS.user.position.z = -WARS.constants.earth_radius-WARS.constants.zoom_offset;
-			}
-			if(WARS.user.position.z < 5-WARS.constants.background_image_radius){
-				WARS.user.position.z = 5-WARS.constants.background_image_radius;
-			}
+			mouse_zoom(tmp_delta/4);
 		});
 		
 	$("body")
@@ -161,4 +136,31 @@ function init_mouse_controls(){
 				WARS.mouse.right_down = false;
 			}
 		});
+}
+
+function mouse_pan(event){
+	WARS.user.rotation.y += (event.pageX - WARS.mouse.x);
+	WARS.user.rotation.x += (event.pageY - WARS.mouse.y)/2;
+	while(WARS.user.rotation.y < 0){
+		WARS.user.rotation.y += 360;
+	}
+	while(WARS.user.rotation.y > 360){
+		WARS.user.rotation.y -= 360;
+	}
+	if(WARS.user.rotation.x > 90){
+		WARS.user.rotation.x = 90;
+	}
+	if(WARS.user.rotation.x < -90){
+		WARS.user.rotation.x = -90;
+	}
+}
+
+function mouse_zoom(tmp_delta){
+	WARS.user.position.z += tmp_delta;
+	if(WARS.user.position.z > -WARS.constants.earth_radius-WARS.constants.zoom_offset){
+		WARS.user.position.z = -WARS.constants.earth_radius-WARS.constants.zoom_offset;
+	}
+	if(WARS.user.position.z < 5-WARS.constants.background_image_radius){
+		WARS.user.position.z = 5-WARS.constants.background_image_radius;
+	}
 }
