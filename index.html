@@ -292,7 +292,7 @@
             vec3 eyeDirection = normalize(-vPosition.xyz);
             vec3 reflectionDirection = reflect(-lightDirection, normal);
 
-            float specularLightBrightness = pow(max(reflectionDirection.x*eyeDirection.x + reflectionDirection.y*eyeDirection.y + reflectionDirection.z*eyeDirection.z, 0.0), uMaterialShininess);
+            float specularLightBrightness = pow(max(reflectionDirection.x*eyeDirection.x + reflectionDirection.y*eyeDirection.y + reflectionDirection.z*eyeDirection.z, 0.1), uMaterialShininess);
             specularLightWeighting = uPointLightingSpecularColor * specularLightBrightness;
         }
 
