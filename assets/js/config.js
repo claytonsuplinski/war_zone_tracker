@@ -39,11 +39,13 @@ WARS.user.rotation.x = 15;
 WARS.user.rotation.y = 211;
 WARS.user.interpolate_start = {"x": 0, "y": 0};
 WARS.user.interpolate_end = {"x": 0, "y": 0};
+WARS.user.interpolate_previous_tick = 0;
 WARS.user.interpolation_percent = 0;
 WARS.user.interpolation_speed = 0.025;
 WARS.user.interpolate_position = function(battle_object){
 	var tmp_diff = 0;
 	if(WARS.user.interpolation_percent == 0){
+		WARS.user.interpolate_previous_tick = (new Date()).getTime();
 		WARS.user.interpolate_start = {x: WARS.user.rotation.x, y: WARS.user.rotation.y};
 		tmp_diff = Math.abs(WARS.user.rotation.y - WARS.user.interpolate_end.y);
 		var tmp_diff_minus = Math.abs(WARS.user.rotation.y - (WARS.user.interpolate_end.y - 360));
@@ -59,9 +61,11 @@ WARS.user.interpolate_position = function(battle_object){
 		
 		var tmp_total_diff = tmp_diff + Math.abs(WARS.user.rotation.x - WARS.user.interpolate_end.x);
 		WARS.user.interpolation_speed = 1 - Math.pow((tmp_total_diff / 360), 0.02);
+		WARS.user.interpolation_percent += WARS.user.interpolation_speed;
 	}
 	
-	WARS.user.interpolation_percent += WARS.user.interpolation_speed;
+	WARS.user.interpolation_percent += WARS.user.interpolation_speed * ((new Date()).getTime() - WARS.user.interpolate_previous_tick) / 15;
+	WARS.user.interpolate_previous_tick = (new Date()).getTime();
 	if(WARS.user.interpolation_percent > 1){
 		WARS.user.interpolation_percent = 1;
 	}
@@ -259,7 +263,7 @@ WARS.init.wars = function(){
 			gallery = new Gallery(WARS.war_name.toLowerCase().replace(/\s+/g, '_'));
 		}
 		
-		var tmp_countries = '<table style="width:'+(countries.length*20)+'px;margin:auto;"><tr>';
+		var tmp_countries = '<table style="width:'+(countries.length*25)+'px;margin:auto;"><tr>';
 		countries.forEach(function(country){
 			tmp_countries += 
 				'<td class="war-modal-flag-icon" style="background-image:url(&quot;./assets/textures/'+

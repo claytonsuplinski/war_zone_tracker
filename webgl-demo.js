@@ -1,9 +1,6 @@
-//var canvas;
-//var gl;
-
 var mvMatrix = mat4.create();
-    var mvMatrixStack = [];
-    var pMatrix = mat4.create();
+var mvMatrixStack = [];
+var pMatrix = mat4.create();
 
 function initWebGL(canvas) {
 	gl = null;
