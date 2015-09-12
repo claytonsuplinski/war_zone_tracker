@@ -4,7 +4,7 @@ WARS.window = {};
 WARS.window.width = 0;
 WARS.window.height = 0;
 
-WARS.war_name = "American Revolutionary War";
+WARS.war_name = "World War II";
 
 WARS.constants = {};
 WARS.constants.months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -24,6 +24,12 @@ WARS.functions.init_data = function(){
 };
 WARS.functions.get_date_string = function(d){
 	return WARS.constants.months[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+};
+WARS.functions.increment_battle_scale = function(val){
+	WARS.constants.battle_scale += val;
+	if(WARS.constants.battle_scale < 0){WARS.constants.battle_scale = 0;}
+	if(WARS.constants.battle_scale > 5){WARS.constants.battle_scale = 5;}
+	$("#battle-scale-value").html((WARS.constants.battle_scale*100).toFixed(0) + "%");
 };
 
 WARS.keys_pressed = [];

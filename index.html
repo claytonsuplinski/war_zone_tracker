@@ -122,6 +122,12 @@
 			-webkit-font-smoothing: antialiased;
 		}
 		
+		.btn-setting{
+			color:rgba(0,0,0,0.5);
+			background-color: #CCB78D; 
+			width:100%;
+		}
+		
 		#top-panel .container{
 			overflow:auto;
 		}
@@ -267,6 +273,10 @@
 			border-radius:5000px;
 			opacity:0.3;
 		}
+		
+		#battle-scale-value{
+			font-size:0.8em;
+		}
 	
 	</style>
 
@@ -410,7 +420,7 @@
 						</a>
                     </li>
 					<li>
-						<a>
+						<a data-toggle="modal" data-target="#settings-modal">
 							<i class="glyphicon glyphicon-cog"></i>
 						</a>
                     </li>
@@ -546,8 +556,34 @@
 	  </div>
 	</div>
 	
+	<div class="modal fade" id="settings-modal" role="dialog">
+	  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h4 class="modal-title" id="myModalLabel">Settings</h4>
+		  </div>
+		  <div class="modal-body">
+			<span class="col-xs-12">
+				<div class="col-xs-12 modal-select">
+					<div class="col-xs-12 modal-select-title">Battle Scale <span id="battle-scale-value">100%</span></div>
+					<div class="col-md-6 col-xs-12" onclick="WARS.functions.increment_battle_scale(-0.1);">
+						<button class="btn btn-xs btn-setting glyphicon glyphicon-minus"></button>
+					</div>
+					<div class="col-md-6 col-xs-12" onclick="WARS.functions.increment_battle_scale(0.1);">
+						<button class="btn btn-xs btn-setting glyphicon glyphicon-plus"></button>
+					</div>
+				</div>
+			</span>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-battle-modal" data-dismiss="modal">Close</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
 	
-	<canvas id="lesson16-canvas" style="border: none;" width="500" height="500"></canvas>
+	
+	<canvas style="border: none;" width="500" height="500"></canvas>
 	
 	<div id="test_image_table">
 	
