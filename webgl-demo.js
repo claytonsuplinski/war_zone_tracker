@@ -75,7 +75,7 @@ function start() {
 		WARS.init.project();
 		
 		earth = new Sphere(WARS.constants.earth_radius, 200, 200);
-		earth.set_texture("./assets/textures/earth.png");
+		earth.set_texture("./assets/textures/earth.jpg");
 		earth.set_shader(basic_shader);
 		earth_rotation = 0;
 		
