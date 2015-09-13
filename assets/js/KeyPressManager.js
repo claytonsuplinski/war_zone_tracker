@@ -52,7 +52,6 @@ setInterval(function(){
 		if (gl.checkFramebufferStatus(gl.FRAMEBUFFER) == gl.FRAMEBUFFER_COMPLETE) {
 			var pixels = new Uint8Array(4);
 			gl.readPixels(1, 1, 1, 1, gl.RGBA, gl.UNSIGNED_BYTE, pixels);
-			alert(JSON.stringify(pixels));
 			
 			var inner_html = "<table>";
 			

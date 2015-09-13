@@ -267,6 +267,16 @@ WARS.init.wars = function(){
 			});
 			
 			gallery = new Gallery(WARS.war_name.toLowerCase().replace(/\s+/g, '_'));
+			$( "#battles-search" ).autocomplete({
+				source: function(request, response) {
+					var results = $.ui.autocomplete.filter(curr_war.battle_names, request.term);
+					response(results.slice(0, 10));
+				},
+				select: function (event, ui) {
+					curr_war.select_battle(curr_war.battle_names.indexOf(ui.item.label));
+					$('#battles-modal').modal('hide');
+				}
+			});
 		}
 		
 		var tmp_countries = '<table style="width:'+(countries.length*25)+'px;margin:auto;"><tr>';

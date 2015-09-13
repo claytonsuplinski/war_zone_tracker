@@ -75,7 +75,7 @@
 		}
 		
 		.modal-body{
-			background: rgba(50, 43, 43, 0.5);
+			background: rgba(57, 44, 22, 0.72);
 			max-height:70vh;
 			overflow:auto;
 		}
@@ -276,6 +276,38 @@
 		
 		#battle-scale-value{
 			font-size:0.8em;
+		}
+		
+		.ui-autocomplete {
+		  z-index:3000000000;
+		}
+		
+		.ui-widget input{
+			font-family:'Cinzel';
+			font-size:1.1em;
+			border-width:0px;
+			text-align:center;
+			width:100%;
+			background:#565148;
+			color:#FFE0C6;
+		}
+		
+		.ui-widget-content{
+			border-width:0px;
+		}
+		
+		.ui-menu-item{
+			text-align:center;
+		}
+		
+		.ui-menu-item:nth-child(2n-1){
+			background:#B4A899;
+			color:rgba(0,0,0,0.6);
+		}
+		
+		.ui-menu-item:nth-child(2n){
+			background:#C5B6A3;
+			color:rgba(0,0,0,0.6);
 		}
 	
 	</style>
@@ -517,6 +549,9 @@
 		  <div class="modal-header">
 			<h4 class="modal-title" id="myModalLabel">Battles</h4>
 		  </div>
+		  <div class="ui-widget">
+			<input id="battles-search" placeholder="Search...">
+  		  </div>
 		  <div class="modal-body">
 		  </div>
 		  <div class="modal-footer">
@@ -584,10 +619,6 @@
 	
 	
 	<canvas style="border: none;" width="500" height="500"></canvas>
-	
-	<div id="test_image_table">
-	
-	</div>
 
 <script>
 

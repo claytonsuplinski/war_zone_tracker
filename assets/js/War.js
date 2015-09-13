@@ -2,11 +2,13 @@ function War(){
 	this.battles = "";
 	this.start_time = "";
 	this.end_time = "";
+	this.battle_names = "";
 	this.init_battles();
 };
 
 War.prototype.init_battles = function(){
 	this.battles = [];
+	this.battle_names = [];
 };
 
 War.prototype.set_battles_clickable = function(clickable){
@@ -91,6 +93,7 @@ War.prototype.add_battle = function(battle){
 	}
 	
 	this.battles.push(battle);
+	this.battle_names.push(battle.battle.name);
 	
 	$("#battles-modal .modal-body").append(
 					'<span class="col-xs-12 flag-background" data-dismiss="modal" style="'+
