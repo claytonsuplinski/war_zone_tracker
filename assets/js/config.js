@@ -159,7 +159,9 @@ WARS.init.wars = function(){
 				
 				$("#countries-modal .modal-body").append(
 					'<span class="col-xs-12 flag-background" style="'+
-						'background-image:url(&quot;./assets/textures/'+country.name.toLowerCase().replace(/\s+/g, '_')+'.png&quot;);">'+
+						'background-image:url(&quot;./assets/textures/'+country.name.toLowerCase().replace(/\s+/g, '_')+'.png&quot;);"'+
+						'data-dismiss="modal" data-toggle="modal" data-target="#countries-battles-modal" '+
+						'onclick="curr_war.select_country(&quot;'+country.name+'&quot;);">'+
 						'<div class="col-xs-12 modal-select">'+
 							'<div class="col-xs-12 modal-select-title">'+country.name+'</div>'+
 							leaders+
@@ -255,7 +257,9 @@ WARS.init.wars = function(){
 			commanders.forEach(function(commander){
 				$("#commanders-modal .modal-body").append(
 					'<span class="col-xs-12 flag-background" style="'+
-						'background-image:url(&quot;./assets/textures/'+commander.country.toLowerCase().replace(/\s+/g, '_')+'.png&quot;);">'+
+						'background-image:url(&quot;./assets/textures/'+commander.country.toLowerCase().replace(/\s+/g, '_')+'.png&quot;);" '+
+						'data-dismiss="modal" data-toggle="modal" data-target="#commanders-battles-modal" '+
+						'onclick="curr_war.select_commander(&quot;'+commander.name+'&quot;);">'+
 						'<div class="col-xs-12 modal-select">'+
 							'<div class="col-xs-12 modal-select-title">'+commander.name+'</div>'+
 							'<div class="col-xs-12">'+commander.country+'</div>'+

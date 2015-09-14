@@ -37,6 +37,70 @@ War.prototype.select_battle = function(index){
 	WARS.user.interpolate_position(battle_object);
 };
 
+War.prototype.select_country = function(country_param){
+	$("#countries-battles-modal .modal-body").html('');
+	
+	var found_a_match = false;
+	this.battles.forEach(function(battle, battle_index){
+		battle.battle.countries.forEach(function(country){
+			if(country.name == country_param){
+				if(!found_a_match){
+					$("#countries-battles-modal .modal-title").html(
+							'<img src="./assets/textures/' + country.name.toLowerCase().replace(/\s+/g, '_') + '.png" style="height:18px;width:36px;"> '+
+							country_param+ 
+							' <button type="button" class="btn btn-xs btn-battle-modal" data-dismiss="modal" data-toggle="modal" data-target="#countries-modal">'+
+								'Back'+
+							'</button>'
+					);					
+					found_a_match = true;
+				}
+				$("#countries-battles-modal .modal-body").append(
+					'<span class="col-xs-12 flag-background" data-dismiss="modal" style="'+
+						'background-image:url(&quot;./assets/textures/'+battle.battle.winner.toLowerCase().replace(/\s+/g, '_')+'.png&quot;);">'+
+						'<div class="col-xs-12 modal-select" onclick="curr_war.select_battle('+battle_index+');">'+
+							'<div class="col-xs-12 modal-select-title">'+battle.battle.name+'</div>'+
+							'<div class="col-md-6 col-xs-12">'+battle.battle.location.name+'</div>'+
+							'<div class="col-md-6 col-xs-12">'+battle.battle.start+'</div>'+
+						'</div>'+
+					'</span>'
+				);
+			}
+		});
+	});
+}
+
+War.prototype.select_commander = function(commander){
+	$("#commanders-battles-modal .modal-body").html('');
+	
+	var found_a_match = false;
+	this.battles.forEach(function(battle, battle_index){
+		battle.battle.countries.forEach(function(country){
+			if(country.leader == commander){
+				if(!found_a_match){
+					$("#commanders-battles-modal .modal-title").html(
+							'<img src="./assets/textures/' + country.name.toLowerCase().replace(/\s+/g, '_') + '.png" style="height:18px;width:36px;"> '+
+							commander + 
+							' <button type="button" class="btn btn-xs btn-battle-modal" data-dismiss="modal" data-toggle="modal" data-target="#commanders-modal">'+
+								'Back'+
+							'</button>'
+					);					
+					found_a_match = true;
+				}
+				$("#commanders-battles-modal .modal-body").append(
+					'<span class="col-xs-12 flag-background" data-dismiss="modal" style="'+
+						'background-image:url(&quot;./assets/textures/'+battle.battle.winner.toLowerCase().replace(/\s+/g, '_')+'.png&quot;);">'+
+						'<div class="col-xs-12 modal-select" onclick="curr_war.select_battle('+battle_index+');">'+
+							'<div class="col-xs-12 modal-select-title">'+battle.battle.name+'</div>'+
+							'<div class="col-md-6 col-xs-12">'+battle.battle.location.name+'</div>'+
+							'<div class="col-md-6 col-xs-12">'+battle.battle.start+'</div>'+
+						'</div>'+
+					'</span>'
+				);
+			}
+		});
+	});
+}
+
 War.prototype.load_battle_info = function(battle_object){
 	var battle = battle_object.battle;
 	
