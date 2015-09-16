@@ -12,7 +12,7 @@ WARS.constants.to_radians = Math.PI/180;
 WARS.constants.lon_offset = 180;
 WARS.constants.earth_radius = 10;
 WARS.constants.zoom_offset = 0.1;
-WARS.constants.background_image_radius = 50;
+WARS.constants.background_image_radius = 74;
 WARS.constants.gallery_size = 4;
 WARS.constants.battle_scale = 1;
 
@@ -133,6 +133,8 @@ WARS.init.wars = function(){
 		if(war_name == WARS.war_name){
 			$("#battles-modal .modal-body").html('');
 			$("#countries-modal .modal-body").html('');
+			curr_war.banners = [];
+			
 			countries.forEach(function(country){
 				WARS.models[country.name] = new Sphere(0.05, 30, 30);
 				var filename = country.name.toLowerCase().replace(/\s+/g, '_');
@@ -155,7 +157,8 @@ WARS.init.wars = function(){
 				country.leaders.forEach(function(leader){
 					leaders += '<div class="col-xs-12">'+leader.name+' - '+leader.title+'</div>';
 				});
-				
+			
+				curr_war.banners.push({name: filename, battles: (wins+losses)});
 				
 				$("#countries-modal .modal-body").append(
 					'<span class="col-xs-12 flag-background" style="'+

@@ -79,7 +79,11 @@ function start() {
 		earth.set_shader(basic_shader);
 		earth_rotation = 0;
 		
-		background_room = new Room();
+		//background_room = new Room();
+		
+		background_room = new OBJ("./assets/models/room.obj");
+		background_room.set_texture("./assets/models/room.png");
+		background_room.set_shader(basic_shader);
 		
 		test_framebuffer = new Rectangle(30, 30);
 		test_framebuffer.set_shader(basic_shader);
@@ -129,7 +133,7 @@ function drawScene() {
 	mat4.identity(mvMatrix);
 	
 	gl.uniform3f(basic_shader.shader_program.ambientLightingColorUniform, 0.6, 0.6, 0.6);
-	gl.uniform3f(basic_shader.shader_program.pointLightingLocationUniform, 0, 0, 5);
+	gl.uniform3f(basic_shader.shader_program.pointLightingLocationUniform, 0, 0, 0);
 	gl.uniform3f(basic_shader.shader_program.pointLightingDiffuseColorUniform, 1, 1, 1);
 
 	gl.uniform1i(basic_shader.shader_program.showSpecularHighlightsUniform, true);
@@ -146,11 +150,12 @@ function drawScene() {
 		mat4.rotate(mvMatrix, degToRad(WARS.user.rotation.y), [0,1,0]);
 	}
 	
+	mvPushMatrix();
+	mat4.translate(mvMatrix, [0,-75,0]);
 	background_room.draw();
+	mvPopMatrix();	
 	
 	gl.uniform3f(basic_shader.shader_program.ambientLightingColorUniform, 0.72, 0.7, 0.5);
-	gl.uniform3f(basic_shader.shader_program.pointLightingLocationUniform, 0, 0, 5);
-	gl.uniform3f(basic_shader.shader_program.pointLightingDiffuseColorUniform, 1, 1, 1);
 
 	gl.uniform1i(basic_shader.shader_program.showSpecularHighlightsUniform, true);
 	gl.uniform1i(basic_shader.shader_program.useTexturesUniform, false);
@@ -158,8 +163,6 @@ function drawScene() {
 	earth.draw();
 	
 	gl.uniform3f(basic_shader.shader_program.ambientLightingColorUniform, 0.1, 0.1, 0.1);
-	gl.uniform3f(basic_shader.shader_program.pointLightingLocationUniform, 0, 0, 5);
-	gl.uniform3f(basic_shader.shader_program.pointLightingDiffuseColorUniform, 1, 1, 1);
 
 	gl.uniform1i(basic_shader.shader_program.showSpecularHighlightsUniform, true);
 	gl.uniform1i(basic_shader.shader_program.useTexturesUniform, false);
@@ -169,14 +172,11 @@ function drawScene() {
 	curr_war.draw();
 	
 	gl.uniform3f(basic_shader.shader_program.ambientLightingColorUniform, 0.9, 0.9, 0.9);
-	gl.uniform3f(basic_shader.shader_program.pointLightingLocationUniform, 0, 0, 5);
-	gl.uniform3f(basic_shader.shader_program.pointLightingDiffuseColorUniform, 1, 1, 1);
 
 	gl.uniform1i(basic_shader.shader_program.showSpecularHighlightsUniform, true);
 	gl.uniform1i(basic_shader.shader_program.useTexturesUniform, false);
 	
-	gallery.draw();
-	
+	gallery.draw();	
 	
 	gl.uniform1i(test_framebuffer.shader_program.showSpecularHighlightsUniform, true);
 	gl.uniform3f(test_framebuffer.shader_program.pointLightingLocationUniform, -1, 2, -1);
