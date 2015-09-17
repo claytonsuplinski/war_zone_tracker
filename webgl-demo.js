@@ -82,7 +82,7 @@ function start() {
 		//background_room = new Room();
 		
 		background_room = new OBJ("./assets/models/room.obj");
-		background_room.set_texture("./assets/models/room.png");
+		background_room.set_texture("./assets/models/room.jpg");
 		background_room.set_shader(basic_shader);
 		
 		test_framebuffer = new Rectangle(30, 30);
