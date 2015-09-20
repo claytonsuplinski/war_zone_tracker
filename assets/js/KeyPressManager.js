@@ -73,15 +73,25 @@ function init_mouse_controls(){
 	$("#glcanvas")
 		.bind('touchstart', function(event){
 			var touch = event.originalEvent.touches[0];
-			alert(touch.pageX + " x " + touch.pageY);
+			//alert(touch.pageX + " x " + touch.pageY);
+			WARS.mouse.x = touch.pageX;
+			WARS.mouse.y = touch.pageY;
+			if(WARS.user.interpolation_percent == 0){
+				WARS.mouse.left_down = true;
+				$("#battle-info").hide('fade');
+			}
 		})
 		.bind('touchmove', function(event){
 			var touch = event.originalEvent.touches[0];
-			alert(touch.pageX + " x " + touch.pageY);
+			//alert(touch.pageX + " x " + touch.pageY);
+			if(WARS.mouse.left_down){
+				mouse_pan(touch);
+			}
 		})
 		.bind('touchend', function(event){
 			var touch = event.originalEvent.touches[0];
-			alert(touch.pageX + " x " + touch.pageY);
+			//alert(touch.pageX + " x " + touch.pageY);
+			WARS.mouse.left_down = false;
 		})
 		.bind('gesturechange', function(event){
 			alert(event.originalEvent.scale);
