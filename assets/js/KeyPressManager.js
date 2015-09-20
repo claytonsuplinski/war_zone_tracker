@@ -84,11 +84,14 @@ function init_mouse_controls(){
 		.bind('touchmove', function(event){
 			var touch = event.originalEvent.touches[0];
 			//alert(touch.pageX + " x " + touch.pageY);
+			WARS.mouse.x = touch.pageX;
+			WARS.mouse.y = touch.pageY;
 			if(WARS.mouse.left_down){
 				mouse_pan(touch);
 			}
 		})
 		.bind('touchend', function(event){
+			event.preventDefault();
 			var touch = event.originalEvent.touches[0];
 			//alert(touch.pageX + " x " + touch.pageY);
 			WARS.mouse.left_down = false;
