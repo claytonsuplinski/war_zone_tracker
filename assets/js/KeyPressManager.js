@@ -73,32 +73,34 @@ function init_mouse_controls(){
 	$("#glcanvas")
 		.bind('touchstart', function(event){
 			var touch = event.originalEvent.touches[0];
-			//alert(touch.pageX + " x " + touch.pageY);
 			WARS.mouse.x = touch.pageX;
 			WARS.mouse.y = touch.pageY;
-			if(WARS.user.interpolation_percent == 0){
+			if(WARS.user.interpolation_percent == 0 && !WARS.mouse.right_down){
 				WARS.mouse.left_down = true;
 				$("#battle-info").hide('fade');
 			}
 		})
 		.bind('touchmove', function(event){
+			event.preventDefault();
 			var touch = event.originalEvent.touches[0];
-			//alert(touch.pageX + " x " + touch.pageY);
 			WARS.mouse.x = touch.pageX;
 			WARS.mouse.y = touch.pageY;
-			if(WARS.mouse.left_down){
+			if(WARS.mouse.left_down && !WARS.mouse.right_down){
 				mouse_pan(touch);
 			}
 		})
 		.bind('touchend', function(event){
 			var touch = event.originalEvent.touches[0];
-			//alert(touch.pageX + " x " + touch.pageY);
 			WARS.mouse.left_down = false;
 		})
 		.bind('gesturechange', function(event){
-			//alert(event.originalEvent.scale);
 			event.preventDefault();
-			mouse_zoom(4*parseInt(event.originalEvent.scale));
+			var zoom_factor = parseFloat(event.originalEvent.scale);
+			mouse_zoom(zoom_factor - 1);
+			WARS.mouse.right_down = true;
+		})
+		.bind('gestureend', function(event){
+			WARS.mouse.right_down = false;
 		})
 		.mousedown(function (event){
 			WARS.mouse.x = event.pageX;
