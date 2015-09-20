@@ -210,6 +210,7 @@ WARS.init.wars = function(){
 WARS.init.project = function(){
 	WARS.init.models();
 	WARS.init.wars();
+	/*
 	$( "#time-select-slider" ).slider({
       range: true,
       min: curr_war.start_time.getTime(),
@@ -228,6 +229,7 @@ WARS.init.project = function(){
 	var date_2 = new Date(1970, 0, 1, 0, 0, 0, $( "#time-select-slider" ).slider( "values", 1 ));
     $( "#time-select-display" ).val( WARS.functions.get_date_string(date_1) +
       " - " + WARS.functions.get_date_string(date_2) );
+	  */
 }
 
 WARS.init.war = function(war_name){
