@@ -209,7 +209,7 @@ WARS.init.wars = function(){
 
 WARS.init.project = function(){
 	WARS.init.models();
-	WARS.init.wars();
+	//WARS.init.wars();
 	/*
 	$( "#time-select-slider" ).slider({
       range: true,
