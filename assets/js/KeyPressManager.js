@@ -94,7 +94,8 @@ function init_mouse_controls(){
 			WARS.mouse.left_down = false;
 		})
 		.bind('gesturechange', function(event){
-			alert(event.originalEvent.scale);
+			//alert(event.originalEvent.scale);
+			mouse_zoom(parseInt(event.originalEvent.scale));
 		})
 		.mousedown(function (event){
 			WARS.mouse.x = event.pageX;

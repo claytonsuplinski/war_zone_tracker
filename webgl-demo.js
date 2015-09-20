@@ -78,7 +78,6 @@ function start() {
 		
 		earth = new Sphere(WARS.constants.earth_radius, 200, 200);
 		if(max_texture_size < 4097){
-			alert('lr');
 			earth.set_texture("./assets/textures/earth_lr.jpg");
 		}
 		else{
