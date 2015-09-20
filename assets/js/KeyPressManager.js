@@ -83,11 +83,11 @@ function init_mouse_controls(){
 		.bind('touchmove', function(event){
 			event.preventDefault();
 			var touch = event.originalEvent.touches[0];
-			WARS.mouse.x = touch.pageX;
-			WARS.mouse.y = touch.pageY;
 			if(WARS.mouse.left_down && !WARS.mouse.right_down){
 				mouse_pan(touch);
 			}
+			WARS.mouse.x = touch.pageX;
+			WARS.mouse.y = touch.pageY;
 		})
 		.bind('touchend', function(event){
 			var touch = event.originalEvent.touches[0];
