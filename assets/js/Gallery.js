@@ -1,6 +1,7 @@
 function Gallery(war_name){
 	this.sides = "";
 	this.banners = "";
+	this.room = "";
 	this.frame = "";
 	this.rafter = "";
 	this.chandelier = "";
@@ -14,6 +15,10 @@ Gallery.prototype.init = function(){
 
 	this.sides = [];
 	this.banners = [];
+	
+	this.room = new OBJ("./assets/models/room.obj");
+	this.room.set_texture("./assets/models/room.jpg");
+	this.room.set_shader(basic_shader);
 	
 	this.chandelier = new OBJ("./assets/models/chandelier.obj");
 	this.chandelier.set_texture("./assets/models/chandelier.jpg");
@@ -58,6 +63,12 @@ Gallery.prototype.init = function(){
 };
 
 Gallery.prototype.draw = function(){	
+
+	mvPushMatrix();
+	mat4.translate(mvMatrix, [0,-75,0]);
+	this.room.draw();
+	mvPopMatrix();	
+
 	var self = this;
 	this.sides.forEach(function(side, index){
 		mvPushMatrix();

@@ -113,7 +113,7 @@ War.prototype.load_battle_info = function(battle_object){
 	
 	var country_1 = battle.countries[0];
 	
-	$("#left-flag img").attr("src","./assets/textures/"+country_1.name.toLowerCase().replace(/\s+/g, '_')+".png");
+	$(".left-flag img").attr("src","./assets/textures/"+country_1.name.toLowerCase().replace(/\s+/g, '_')+".png");
 	$("#left-country").html(country_1.name);
 	$("#left-leader").html(country_1.leader);
 	$("#left-troops").html(country_1.troops.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
@@ -121,14 +121,16 @@ War.prototype.load_battle_info = function(battle_object){
 	
 	if(battle.winner == country_1.name){
 		$("#left-result").html('<span class="victory">Victory</span>');
+		$(".left-result-sm").html('<span class="victory">W</span>');
 	}
 	else{
 		$("#left-result").html('<span class="defeat">Defeat</span>');
+		$(".left-result-sm").html('<span class="defeat">L</span>');
 	}
 	
 	var country_2 = battle.countries[1];
 	
-	$("#right-flag img").attr("src","./assets/textures/"+country_2.name.toLowerCase().replace(/\s+/g, '_')+".png");
+	$(".right-flag img").attr("src","./assets/textures/"+country_2.name.toLowerCase().replace(/\s+/g, '_')+".png");
 	$("#right-country").html(country_2.name);
 	$("#right-leader").html(country_2.leader);
 	$("#right-troops").html(country_2.troops.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
@@ -136,9 +138,11 @@ War.prototype.load_battle_info = function(battle_object){
 	
 	if(battle.winner == country_2.name){
 		$("#right-result").html('<span class="victory">Victory</span>');
+		$(".right-result-sm").html('<span class="victory">W</span>');
 	}
 	else{
 		$("#right-result").html('<span class="defeat">Defeat</span>');
+		$(".right-result-sm").html('<span class="defeat">L</span>');
 	}
 }
 

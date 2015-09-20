@@ -48,35 +48,6 @@ setInterval(function(){
 		}
     }
 	if(WARS.keys_pressed.indexOf(81) != -1) { // Q
-		var fb = test_framebuffer.rttFramebuffer;
-		if (gl.checkFramebufferStatus(gl.FRAMEBUFFER) == gl.FRAMEBUFFER_COMPLETE) {
-			var pixels = new Uint8Array(4);
-			gl.readPixels(1, 1, 1, 1, gl.RGBA, gl.UNSIGNED_BYTE, pixels);
-			
-			var inner_html = "<table>";
-			
-			for(var i=0; i<pixels.length/4; i+=4){
-				if((i/4)%test_framebuffer.rttFramebuffer.width == 0){
-					inner_html += '<tr>';
-				}
-				
-				inner_html += '<td style="width:1px;height:1px;background-color:rgba('+pixels[i]+', '+pixels[i+1]+
-						', '+pixels[i+2]+', '+pixels[i+3]+');"></td>';
-				
-				if((i/4)%test_framebuffer.rttFramebuffer.width == test_framebuffer.rttFramebuffer.width-1){
-					inner_html += '</tr>';
-				}
-			}
-			
-			inner_html += "</table>";
-			
-			$("#test_image_table").html(inner_html);
-		}
-	
-        // Go up
-		if(WARS.user.free_mode){
-			WARS.user.position.y++;
-		}
     }
 	if(WARS.keys_pressed.indexOf(90) != -1) { // Z
         // Go down

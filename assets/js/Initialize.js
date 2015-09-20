@@ -5,11 +5,15 @@ WARS.init.models = function(){
 	WARS.models.tie.set_shader(basic_shader);
 }
 
+WARS.init.initial_load = true;
 WARS.init.wars = function(){
 	curr_war = new War();
 	
 	$("#war-name").html(WARS.war_name+' <span class="caret"></span>');
-	$("#wars-modal .modal-body").html("");
+	
+	if(WARS.init.initial_load){
+		$("#wars-modal .modal-body").html("");
+	}
 
 	var tmp_dropdown = "";
 	Object.keys(WARS.data).forEach(function(war_name){
@@ -189,15 +193,18 @@ WARS.init.wars = function(){
 		});
 		tmp_countries += "</tr></table>";
 		
-		$("#wars-modal .modal-body").append(
-			'<div class="col-xs-12 modal-select flag-background" onclick="WARS.init.war(&quot;'+war_name+'&quot;);" style="padding-bottom:5px;">'+
-				'<div class="col-xs-12 modal-select-title">'+war_name+'</div>'+
-				'<div class="col-xs-12" style="overflow:auto;">'+
-					tmp_countries+
-				'</div>'+
-			'</div><br>'
-		);
+		if(WARS.init.initial_load){
+			$("#wars-modal .modal-body").append(
+				'<div class="col-xs-12 modal-select flag-background" onclick="WARS.init.war(&quot;'+war_name+'&quot;);" style="padding-bottom:5px;">'+
+					'<div class="col-xs-12 modal-select-title">'+war_name+'</div>'+
+					'<div class="col-xs-12" style="overflow:auto;">'+
+						tmp_countries+
+					'</div>'+
+				'</div><br>'
+			);
+		}
 	});
+	WARS.init.initial_load = false;
 }
 
 WARS.init.project = function(){

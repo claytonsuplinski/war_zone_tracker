@@ -21,6 +21,7 @@ function GraphicsObject(){
 	
 	this.material = "";
 	this.scale = "";
+	this.click_sampler = false;
 	this.clickable_object = "";
 	
 	this.selected_pixel = "";
@@ -63,7 +64,9 @@ GraphicsObject.prototype.init_buffers = function(){
 	this.vertex_indices_buffer.numItems = this.vertex_indices.length;
 };
 
-GraphicsObject.prototype.init_framebuffer = function(){
+GraphicsObject.prototype.init_framebuffer = function(click){
+	this.click_sampler = click;
+
 	this.rttFramebuffer = gl.createFramebuffer();
 	gl.bindFramebuffer(gl.FRAMEBUFFER, this.rttFramebuffer);
 	this.rttFramebuffer.width = canvas.width;
@@ -140,41 +143,43 @@ GraphicsObject.prototype.draw_scene_on_framebuffer = function(draw_function){
 	gl.bindTexture(gl.TEXTURE_2D, this.rttTexture);
 	gl.generateMipmap(gl.TEXTURE_2D);
 	
-	if(WARS.mouse.left_down){
-		if(!this.selected_a_pixel){
-			this.get_click_pixel();
+	if(this.click_sampler){
+		if(WARS.mouse.left_down){
+			if(!this.selected_a_pixel){
+				this.get_click_pixel();
+			}
 		}
-	}
-	else{
-		if(this.selected_a_pixel){
-			var curr_pixel = this.selected_pixel;
-			this.get_click_pixel();
-			if(
-				curr_pixel[0] == this.selected_pixel[0] &&
-				curr_pixel[1] == this.selected_pixel[1] &&
-				curr_pixel[2] == this.selected_pixel[2] &&
-				curr_pixel[3] == this.selected_pixel[3]
-			){
-				var self = this;
-				var selected_battles = curr_war.battles.filter(function (battle) { 
-					return (
-						Math.round(255*battle.clickable_id[0]) == self.selected_pixel[0] &&
-						Math.round(255*battle.clickable_id[1]) == self.selected_pixel[1] &&
-						Math.round(255*battle.clickable_id[2]) == self.selected_pixel[2]
-					);
-				});
-				if(selected_battles.length > 0){
-					var tmp_battle = selected_battles[0];
-					curr_war.select_battle(curr_war.battles.indexOf(tmp_battle));
+		else{
+			if(this.selected_a_pixel){
+				var curr_pixel = this.selected_pixel;
+				this.get_click_pixel();
+				if(
+					curr_pixel[0] == this.selected_pixel[0] &&
+					curr_pixel[1] == this.selected_pixel[1] &&
+					curr_pixel[2] == this.selected_pixel[2] &&
+					curr_pixel[3] == this.selected_pixel[3]
+				){
+					var self = this;
+					var selected_battles = curr_war.battles.filter(function (battle) { 
+						return (
+							Math.round(255*battle.clickable_id[0]) == self.selected_pixel[0] &&
+							Math.round(255*battle.clickable_id[1]) == self.selected_pixel[1] &&
+							Math.round(255*battle.clickable_id[2]) == self.selected_pixel[2]
+						);
+					});
+					if(selected_battles.length > 0){
+						var tmp_battle = selected_battles[0];
+						curr_war.select_battle(curr_war.battles.indexOf(tmp_battle));
+					}
+					else{
+						curr_war.reset_battle_scales();
+					}
 				}
 				else{
 					curr_war.reset_battle_scales();
 				}
+				this.selected_a_pixel = false;
 			}
-			else{
-				curr_war.reset_battle_scales();
-			}
-			this.selected_a_pixel = false;
 		}
 	}
 	
@@ -206,15 +211,6 @@ GraphicsObject.prototype.draw = function(params){
 	mvPushMatrix();
 	
 	if(this.is_framebuffer){
-		/*
-		gl.uniform3f(basic_shader.shader_program.materialAmbientColorUniform, 0.0, 0.0, 0.0);
-        gl.uniform3f(basic_shader.shader_program.materialDiffuseColorUniform, 0.0, 0.0, 0.0);
-        gl.uniform3f(basic_shader.shader_program.materialSpecularColorUniform, 0.5, 0.5, 0.5);
-        gl.uniform1f(basic_shader.shader_program.materialShininessUniform, 20);
-        gl.uniform3f(basic_shader.shader_program.materialEmissiveColorUniform, 1.5, 1.5, 1.5);
-        gl.uniform1i(basic_shader.shader_program.useTexturesUniform, true);
-		*/
-
         gl.bindBuffer(gl.ARRAY_BUFFER, this.v_buffer);
         gl.vertexAttribPointer(this.shader_program.vertexPositionAttribute, this.v_buffer.itemSize, gl.FLOAT, false, 0, 0);
 

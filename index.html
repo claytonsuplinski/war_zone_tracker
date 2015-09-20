@@ -54,6 +54,28 @@
 			width:100%;
 		}
 		
+		.container-sm{
+			padding:0px !important;
+		}
+		
+		.container-sm td{
+			text-align:center;
+		}
+		
+		@media (max-width: 767px) {
+			.navbar-collapse{
+				width:100%;
+			}
+			
+			#battle-top-panel .container{
+				padding:0px;
+			}
+			
+			#battle-top-panel .navbar-header{
+				margin:0px;
+			}
+		}
+		
 		#time-select-slider{
 			padding:0px;
 			margin:5px;
@@ -250,6 +272,16 @@
 			width:100%;
 			height:auto;
 			opacity:0.2;
+		}
+		
+		.battle-panel-flag-sm img{
+			width:auto;
+			height:50px;
+			opacity:0.2;
+		}
+		
+		.battle-panel-result-sm{
+			width:50px;
 		}
 		
 		#left-result, #right-result{
@@ -493,7 +525,7 @@
 			</nav>
 		
 			<div id="left-battle-panel">
-				<div id="left-flag" class="battle-panel-flag"><img src=""/></div>
+				<div class="left-flag battle-panel-flag"><img src=""/></div>
 				<div id="left-country" class="battle-panel-country col-xs-12">United States</div>
 				<div id="left-leader" class="col-xs-12">Ulysses S. Grant</div>
 				<div class="col-xs-6"><strong>Troops</strong></div><div id="left-troops" class="col-xs-6">15000</div>
@@ -502,7 +534,7 @@
 			</div>
 			
 			<div id="right-battle-panel">
-				<div id="right-flag" class="battle-panel-flag"><img src=""/></div>
+				<div class="right-flag battle-panel-flag"><img src=""/></div>
 				<div id="right-country" class="battle-panel-country col-xs-12">Confederate States</div>
 				<div id="right-leader" class="col-xs-12">Robert E. Lee</div>
 				<div class="col-xs-6"><strong>Troops</strong></div><div id="right-troops" class="col-xs-6">13000</div>
@@ -512,26 +544,46 @@
 		</div>
 	</div>
 	
-	<canvas id="glcanvas" width="1280" height="720" oncontextmenu="return false;">
+	<canvas id="glcanvas" width="2048" height="1024" oncontextmenu="return false;">
       Your browser doesn't appear to support the HTML5 <code>&lt;canvas&gt;</code> element.
     </canvas>
 
 	<nav id="bottom-panel" class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
-        <div class="container">
-			
-                <ul class="nav navbar-nav text-center" style="width:100%;">
-					<li style="width:100%;">
-						<a>
-								<div class="col-md-3 col-xs-12">
-									<input type="text" id="time-select-display" readonly style="border:0; color:#7E755C; font-weight:bold;width:100%;">
-								</div>
-								<div class="col-md-9 col-xs-12">
-									<div id="time-select-slider"></div>
-								</div>
-						</a>
-                    </li>
-                </ul>
+        <div class="container hidden-xs hidden-sm">
+			<ul class="nav navbar-nav text-center" style="width:100%;">
+				<li style="width:100%;">
+					<a>
+							<div class="col-md-3 col-xs-12">
+								<input type="text" id="time-select-display" readonly style="border:0; color:#7E755C; font-weight:bold;width:100%;">
+							</div>
+							<div class="col-md-9 col-xs-12">
+								<div id="time-select-slider"></div>
+							</div>
+					</a>
+				</li>
+			</ul>
         </div>
+		<div class="container hidden-md hidden-lg container-sm">
+			<table style="width:100%;">
+				<tr>
+					<td style="width:100px;">
+						<span class="left-flag  battle-panel-flag-sm"><img/></span>
+					</td>
+					<td style="width:30px;">
+						<span class="left-result-sm  battle-panel-result-sm"></span>
+					</td>
+					<td>
+						<span class="fa fa-info-circle"></span>
+					</td>
+					<td style="width:30px;">
+						<span class="right-result-sm battle-panel-result-sm"></span>
+					</td>
+					<td style="width:100px;">
+						<span class="right-flag battle-panel-flag-sm pull-right"><img/></span>
+					</td>
+				</tr>
+			</table>
+		</div>
     </nav>
 	
 	<div class="modal fade" id="wars-modal" role="dialog">
@@ -652,9 +704,6 @@
 		</div>
 	  </div>
 	</div>
-	
-	
-	<canvas style="border: none;" width="500" height="500"></canvas>
 
 <script>
 
