@@ -75,6 +75,7 @@ function start() {
 		WARS.init.project();
 		
 		max_texture_size = gl.getParameter(gl.MAX_TEXTURE_SIZE);
+		alert(max_texture_size);
 		
 		earth = new Sphere(WARS.constants.earth_radius, 200, 200);
 		if(max_texture_size < 4096){
