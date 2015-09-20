@@ -91,13 +91,13 @@ function init_mouse_controls(){
 			}
 		})
 		.bind('touchend', function(event){
-			event.preventDefault();
 			var touch = event.originalEvent.touches[0];
 			//alert(touch.pageX + " x " + touch.pageY);
 			WARS.mouse.left_down = false;
 		})
 		.bind('gesturechange', function(event){
 			//alert(event.originalEvent.scale);
+			event.preventDefault();
 			mouse_zoom(4*parseInt(event.originalEvent.scale));
 		})
 		.mousedown(function (event){
