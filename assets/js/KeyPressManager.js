@@ -8,6 +8,13 @@ document.addEventListener('keyup', function(event) {
 	WARS.keys_pressed.splice(WARS.keys_pressed.indexOf(event.keyCode), 1);
 });
 
+//Collapse mobile navbar on click
+$(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+    }
+});
+
 var test_pressed = false;
 setInterval(function(){
 	if(WARS.keys_pressed.indexOf(87) != -1) { // W
