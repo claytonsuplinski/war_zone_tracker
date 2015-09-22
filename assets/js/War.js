@@ -104,7 +104,11 @@ War.prototype.select_commander = function(commander){
 War.prototype.load_battle_info = function(battle_object){
 	var battle = battle_object.battle;
 	
+	$("#bottom-panel-sm-info-icon").show();
+	
 	$("#battle-name").html(battle.name);
+	$("#battle-info-modal .modal-title").html(battle.name);
+	
 	var start_date = battle_object.start_time;
 	$("#battle-start-date").html(WARS.constants.months[start_date.getMonth()] + " " + start_date.getDate() + ", " + start_date.getFullYear());
 	var end_date = battle_object.end_time;
@@ -112,36 +116,36 @@ War.prototype.load_battle_info = function(battle_object){
 	$("#battle-location").html(battle.location.name);
 	
 	var country_1 = battle.countries[0];
-	
-	$(".left-flag img").attr("src","./assets/textures/"+country_1.name.toLowerCase().replace(/\s+/g, '_')+".png");
-	$("#left-country").html(country_1.name);
-	$("#left-leader").html(country_1.leader);
-	$("#left-troops").html(country_1.troops.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
-	$("#left-casualities").html(country_1.casualities.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+	var country_1_filename = "./assets/textures/"+country_1.name.toLowerCase().replace(/\s+/g, '_')+".png";
+	$(".left-flag img, #battle-info-modal .country-2 img").attr("src", country_1_filename);
+	$("#left-country, #battle-info-modal .country-2 .country-name").html(country_1.name);
+	$("#left-leader, #battle-info-modal .country-2 .country-leader").html(country_1.leader);
+	$("#left-troops, #battle-info-modal .country-2 .country-troops").html(country_1.troops.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+	$("#left-casualities, #battle-info-modal .country-2 .country-casualities").html(country_1.casualities.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
 	
 	if(battle.winner == country_1.name){
-		$("#left-result").html('<span class="victory">Victory</span>');
+		$("#left-result, #battle-info-modal .country-2 .country-result").html('<span class="victory">Victory</span>');
 		$(".left-result-sm").html('<span class="victory">W</span>');
 	}
 	else{
-		$("#left-result").html('<span class="defeat">Defeat</span>');
+		$("#left-result, #battle-info-modal .country-2 .country-result").html('<span class="defeat">Defeat</span>');
 		$(".left-result-sm").html('<span class="defeat">L</span>');
 	}
 	
 	var country_2 = battle.countries[1];
-	
-	$(".right-flag img").attr("src","./assets/textures/"+country_2.name.toLowerCase().replace(/\s+/g, '_')+".png");
-	$("#right-country").html(country_2.name);
-	$("#right-leader").html(country_2.leader);
-	$("#right-troops").html(country_2.troops.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
-	$("#right-casualities").html(country_2.casualities.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+	var country_2_filename = "./assets/textures/"+country_2.name.toLowerCase().replace(/\s+/g, '_')+".png";
+	$(".right-flag img, #battle-info-modal .country-1 img").attr("src",country_2_filename);
+	$("#right-country, #battle-info-modal .country-1 .country-name").html(country_2.name);
+	$("#right-leader, #battle-info-modal .country-1 .country-leader").html(country_2.leader);
+	$("#right-troops, #battle-info-modal .country-1 .country-troops").html(country_2.troops.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+	$("#right-casualities, #battle-info-modal .country-1 .country-casualities").html(country_2.casualities.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
 	
 	if(battle.winner == country_2.name){
-		$("#right-result").html('<span class="victory">Victory</span>');
+		$("#right-result, #battle-info-modal .country-1 .country-result").html('<span class="victory">Victory</span>');
 		$(".right-result-sm").html('<span class="victory">W</span>');
 	}
 	else{
-		$("#right-result").html('<span class="defeat">Defeat</span>');
+		$("#right-result, #battle-info-modal .country-1 .country-result").html('<span class="defeat">Defeat</span>');
 		$(".right-result-sm").html('<span class="defeat">L</span>');
 	}
 }
