@@ -1,0 +1,317 @@
+		*{
+			font-family:'Cinzel';
+		}
+	
+		body{
+			margin:0px;
+			overflow:hidden;
+		}
+		
+		.navbar .container{
+			padding-left: 5%;
+			padding-right:5%;
+			margin:0px;
+			width:100%;
+		}
+		
+		.container-sm{
+			padding:0px !important;
+		}
+		
+		.container-sm td{
+			text-align:center;
+		}
+		
+		@media (max-width: 767px) {
+			.navbar-collapse{
+				width:100%;
+			}
+			
+			#battle-top-panel .container{
+				padding:0px;
+			}
+			
+			#battle-top-panel .navbar-header{
+				margin:0px;
+			}
+		}
+		
+		#time-select-slider{
+			padding:0px;
+			margin:5px;
+		}
+		
+		#time-select-display{
+			background:transparent;
+		}
+		
+		.navbar{
+			border-width:0px;
+			background:#141111;
+			background-image:url('./assets/textures/background.png');
+		}
+		
+		.modal-header, .modal-footer{
+			color:#BFA475;
+			background:#141111;
+			background-image:url('./assets/textures/background.png');
+			border-width:0px;
+		}
+		
+		.modal-content{
+			background:#141111;
+		}
+		
+		.modal-body{
+			background: #776951;
+			max-height:70vh;
+			overflow:auto;
+		}
+		
+		.modal-select{
+			background-color:rgba(50, 43, 43, 0.9);
+			color:#AE9580;
+			padding:5px;
+			text-align:center;
+			cursor:pointer;
+		}
+		
+		.modal-select:hover{
+			background-color:rgba(50, 43, 43, 0.97);
+		}
+		
+		.flag-background{
+			background-size:100% 100%;
+			padding:0px;
+			margin-bottom:15px;
+		}
+		
+		.modal-select-title{
+			background:rgba(0,0,0,0.5);
+			margin-bottom:5px;
+		}
+		
+		.modal-select div{
+			padding:2px;
+		}
+		
+		.btn-battle-modal{
+			background-color: hsl(33, 15%, 20%) !important; 
+			background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3a332b", endColorstr="#3a332b"); 
+			background-image: -khtml-gradient(linear, left top, left bottom, from(#3a332b), to(#3a332b)); 
+			background-image: -moz-linear-gradient(top, #3a332b, #3a332b); background-image: -ms-linear-gradient(top, #3a332b, #3a332b); 
+			background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3a332b), color-stop(100%, #3a332b)); 
+			background-image: -webkit-linear-gradient(top, #3a332b, #3a332b); 
+			background-image: -o-linear-gradient(top, #3a332b, #3a332b); 
+			background-image: linear-gradient(#3a332b, #3a332b); 
+			border-color: #3a332b #3a332b hsl(33, 15%, 20%); 
+			color: #fff !important; 
+			text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.00); 
+			-webkit-font-smoothing: antialiased;
+		}
+		
+		.btn-setting{
+			color:rgba(0,0,0,0.5);
+			background-color: #CCB78D; 
+			width:100%;
+		}
+		
+		#top-panel .container{
+			overflow:auto;
+		}
+		
+		#top-panel .navbar-header{
+			min-width:300px;
+		}
+		
+		#top-panel a{
+			cursor:pointer;
+			color:#BFA475;
+		}
+		
+		#top-panel a:hover{
+			color:#CB9C4C;
+		}
+		
+		#top-panel .navbar-brand{
+			font-family:'Arvo';
+		}
+		
+		#war-dropdown{
+			background:#201C1C;
+		}
+		
+		#top-panel .dropdown-menu{
+			text-align:center;
+			margin-left:8%;
+		}
+		
+		#top-panel .container{
+			z-index:1000;
+		}
+		
+		#top-panel .dropdown-menu a:hover{
+			background:transparent;
+		}
+		
+		#battle-top-panel{
+			margin-top:50px;
+			background:rgba(33, 28, 28, 0.9);
+			z-index:0;	
+		}
+		
+		#battle-top-panel *{
+			color:#AE9580;
+		}
+		
+		#battle-top-panel .container, #battle-top-panel .navbar-header, #battle-top-panel .navbar-header table,
+		#battle-bottom-panel .container, #battle-bottom-panel .navbar-header, #battle-location{
+			width:100%;
+			text-align:center;
+		}
+		
+		#battle-location:hover, #battle-location:active, #battle-location:focus{
+			color:#9D9D9D;
+		}
+		
+		#battle-top-panel .navbar-header table td{
+			text-align:center;
+			height:50px;
+		}
+		
+		#battle-start-date, #battle-end-date{
+			width:20%;
+		}
+		
+		#battle-name{
+			width:60%;
+			font-weight:bold;
+			text-align:center;
+			font-size:18px;
+		}
+		
+		#battle-bottom-panel{
+			margin-left:auto;
+			margin-right:auto;
+			margin-bottom:50px;
+			width:60%;
+			background:rgba(33, 28, 28, 0.9);
+		}
+		
+		#battle-info-modal .modal-select-title img{
+			width:36px;height:18px;
+		}
+		
+		#bottom-panel-sm-info-icon .fa-info-circle{
+			cursor:pointer;
+		}
+		
+		#left-battle-panel, #right-battle-panel{
+			position:fixed;
+			width:20%;
+			height:calc(100% - 150px);
+			top:100px;
+			background:rgba(6, 6, 6, 0.8);
+			overflow-y:auto;
+		}
+		
+		#left-battle-panel div, #right-battle-panel div{
+			text-align:center;
+			color:#666;
+			padding-top: 1em;
+		}
+		
+		#right-battle-panel{
+			right:0;
+		}
+		
+		.battle-panel-country{
+			color:#ccc !important;
+			width:100%;
+			text-align:center;
+			font-weight:bold;
+		}
+		
+		.battle-panel-flag{
+			padding:0px !important;
+		}
+		
+		.battle-panel-flag img{
+			width:100%;
+			height:auto;
+			opacity:0.2;
+		}
+		
+		.battle-panel-flag-sm img{
+			width:auto;
+			height:50px;
+			opacity:0.2;
+		}
+		
+		.battle-panel-result-sm{
+			width:50px;
+		}
+		
+		#left-result, #right-result{
+			position:absolute;
+			bottom:15px;
+			width:100%;
+			text-align:center;
+			font-size:24px;
+		}
+		
+		.victory{
+			color:#586189;
+		}
+		
+		.defeat{
+			color:#653330;
+		}
+		
+		#battle-info{
+			display:none;
+		}
+		
+		.war-modal-flag-icon{
+			width:25px;height:25px;
+			background-size:200% 100%;
+			background-position:40%;
+			border-radius:5000px;
+			opacity:0.3;
+		}
+		
+		#battle-scale-value{
+			font-size:0.8em;
+		}
+		
+		.ui-autocomplete {
+		  z-index:3000000000;
+		}
+		
+		.ui-widget input{
+			font-family:'Cinzel';
+			font-size:1.1em;
+			border-width:0px;
+			text-align:center;
+			width:100%;
+			background:#565148;
+			color:#FFE0C6;
+		}
+		
+		.ui-widget-content{
+			border-width:0px;
+		}
+		
+		.ui-menu-item{
+			text-align:center;
+		}
+		
+		.ui-menu-item:nth-child(2n-1){
+			background:#B4A899;
+			color:rgba(0,0,0,0.6);
+		}
+		
+		.ui-menu-item:nth-child(2n){
+			background:#C5B6A3;
+			color:rgba(0,0,0,0.6);
+		}

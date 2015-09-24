@@ -26,6 +26,9 @@ function GraphicsObject(){
 	
 	this.selected_pixel = "";
 	this.selected_a_pixel = false;
+	
+	this.glow = false;
+	this.glow_color = "";
 };
 
 GraphicsObject.prototype.init_buffers = function(){
@@ -121,8 +124,6 @@ GraphicsObject.prototype.get_click_pixel = function(){
 	var mouse_x = parseInt(this.rttFramebuffer.width * WARS.mouse.x / window.innerWidth);
 	var mouse_y = this.rttFramebuffer.height - parseInt(this.rttFramebuffer.height * WARS.mouse.y / window.innerHeight);
 	gl.readPixels(mouse_x, mouse_y, 1, 1, gl.RGBA, gl.UNSIGNED_BYTE, this.selected_pixel);
-	//alert(JSON.stringify(this.selected_pixel) + " | " + mouse_x + " x " + mouse_y + " | " + this.rttFramebuffer.width + " x " + this.rttFramebuffer.height);
-	//alert(JSON.stringify(this.selected_pixel));
 	this.selected_a_pixel = true;
 }
 
@@ -137,6 +138,8 @@ GraphicsObject.prototype.draw_scene_on_framebuffer = function(draw_function){
 	gl.uniform3f(this.shader_program.ambientLightingColorUniform, 1, 1, 1);
 	gl.uniform3f(this.shader_program.pointLightingLocationUniform, 0, 0, 0);
 	gl.uniform3f(this.shader_program.pointLightingDiffuseColorUniform, 0, 0, 0);
+	gl.uniform1i(this.shader_program.clickSampler, this.click_sampler);
+	gl.uniform1i(this.shader_program.glow, this.glow);
 
 	draw_function();
 	

@@ -69,6 +69,7 @@ function start() {
 		gl.clearDepth(1.0);                 // Clear everything
 		gl.enable(gl.DEPTH_TEST);           // Enable depth testing
 		gl.depthFunc(gl.LEQUAL);            // Near things obscure far things
+		gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
 			
 		basic_shader = new Shader("per-fragment-lighting-vs", "per-fragment-lighting-fs");  //"per-fragment-lighting-vs", "per-fragment-lighting-fs"
 
@@ -90,9 +91,10 @@ function start() {
 		clickable_battles.set_shader(basic_shader);
 		clickable_battles.init_framebuffer(true);
 		
-		test_glow_framebuffer = new Rectangle(30, 30);
+		test_glow_framebuffer = new Rectangle(2, 2);
 		test_glow_framebuffer.set_shader(basic_shader);
 		test_glow_framebuffer.init_framebuffer(false);
+		test_glow_framebuffer.glow = true;
 
 		setInterval(drawScene, 15);
 
@@ -142,6 +144,8 @@ function draw_entire_scene(){
 
 	gl.uniform1i(basic_shader.shader_program.showSpecularHighlightsUniform, true);
 	gl.uniform1i(basic_shader.shader_program.useTexturesUniform, false);
+	gl.uniform1i(basic_shader.shader_program.clickSampler, false);
+	gl.uniform1i(basic_shader.shader_program.glow, false);
 
 	if(WARS.user.free_mode){
 		mat4.rotate(mvMatrix, degToRad(WARS.user.rotation.x), [1,0,0]);
@@ -180,18 +184,19 @@ function draw_entire_scene(){
 
 function drawScene() {
 
-	draw_entire_scene();
-	
-	gl.uniform1i(clickable_battles.shader_program.showSpecularHighlightsUniform, true);
-	gl.uniform3f(clickable_battles.shader_program.pointLightingLocationUniform, -1, 2, -1);
+	mvPushMatrix();
+		draw_entire_scene();
+		
+		gl.uniform1i(clickable_battles.shader_program.showSpecularHighlightsUniform, true);
+		gl.uniform3f(clickable_battles.shader_program.pointLightingLocationUniform, -1, 2, -1);
 
-	gl.uniform3f(clickable_battles.shader_program.ambientLightingColorUniform, 0.2, 0.2, 0.2);
-	gl.uniform3f(clickable_battles.shader_program.pointLightingDiffuseColorUniform, 0.8, 0.8, 0.8);
-	gl.uniform3f(clickable_battles.shader_program.pointLightingSpecularColorUniform, 0.8, 0.8, 0.8);
+		gl.uniform3f(clickable_battles.shader_program.ambientLightingColorUniform, 0.2, 0.2, 0.2);
+		gl.uniform3f(clickable_battles.shader_program.pointLightingDiffuseColorUniform, 0.8, 0.8, 0.8);
+		gl.uniform3f(clickable_battles.shader_program.pointLightingSpecularColorUniform, 0.8, 0.8, 0.8);
+		
+		clickable_battles.draw_scene_on_framebuffer(draw_only_battles);
+	mvPopMatrix();
 	
-	clickable_battles.draw_scene_on_framebuffer(draw_only_battles);
-	
-	/*
 	gl.uniform1i(test_glow_framebuffer.shader_program.showSpecularHighlightsUniform, true);
 	gl.uniform3f(test_glow_framebuffer.shader_program.pointLightingLocationUniform, -1, 2, -1);
 
@@ -199,28 +204,18 @@ function drawScene() {
 	gl.uniform3f(test_glow_framebuffer.shader_program.pointLightingDiffuseColorUniform, 0.8, 0.8, 0.8);
 	gl.uniform3f(test_glow_framebuffer.shader_program.pointLightingSpecularColorUniform, 0.8, 0.8, 0.8);
 	
-	test_glow_framebuffer.draw_scene_on_framebuffer(draw_entire_scene);
+	test_glow_framebuffer.draw_scene_on_framebuffer(draw_only_battles);
+	
+	/*
+	mat4.ortho(-1.0, 1.0, -1.0, 1.0, 0.1, 100, pMatrix);
 	
 	mvPushMatrix();
-	
-	mat4.translate(mvMatrix, [0, 10, 0]);
-	
+	mat4.rotate(mvMatrix, degToRad(-WARS.user.rotation.y), [0,1,0]);
+	mat4.rotate(mvMatrix, degToRad(-WARS.user.rotation.x), [1,0,0]);
 	gl.enable(gl.BLEND);
 	gl.blendFunc(gl.SRC_ALPHA, gl.ONE);
 	test_glow_framebuffer.draw();
 	gl.disable(gl.BLEND);
 	mvPopMatrix();
 	*/
-	
-/*	
-	mvPushMatrix();
-//	mat4.rotate(mvMatrix, degToRad(WARS.user.rotation.y), [0,1,0]);
-	
-	gl.enable(gl.BLEND);
-	gl.blendFunc(gl.SRC_ALPHA, gl.ONE);
-	clickable_battles.draw();
-	gl.disable(gl.BLEND);
-	mvPopMatrix();
-	*/
-  
 }

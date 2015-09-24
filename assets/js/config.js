@@ -28,7 +28,7 @@ WARS.functions.get_date_string = function(d){
 WARS.functions.increment_battle_scale = function(val){
 	WARS.constants.battle_scale += val;
 	if(WARS.constants.battle_scale < 0){WARS.constants.battle_scale = 0;}
-	if(WARS.constants.battle_scale > 5){WARS.constants.battle_scale = 5;}
+	if(WARS.constants.battle_scale > 10){WARS.constants.battle_scale = 10;}
 	$("#battle-scale-value").html((WARS.constants.battle_scale*100).toFixed(0) + "%");
 };
 

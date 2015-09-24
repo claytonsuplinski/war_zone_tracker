@@ -48,6 +48,8 @@ Shader.prototype.init_shader = function(){
 	this.shader_program.pointLightingDiffuseColorUniform = gl.getUniformLocation(this.shader_program, "uPointLightingDiffuseColor");
 	this.shader_program.scale = gl.getUniformLocation(this.shader_program, "uScale");
 	this.shader_program.clickableObject = gl.getUniformLocation(this.shader_program, "uClickableObject");
+	this.shader_program.clickSampler = gl.getUniformLocation(this.shader_program, "uClickSampler");
+	this.shader_program.glow = gl.getUniformLocation(this.shader_program, "uGlow");
   
 };
 
