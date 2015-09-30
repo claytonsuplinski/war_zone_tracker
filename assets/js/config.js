@@ -32,7 +32,7 @@ WARS.models = {};
 
 WARS.functions = {};
 WARS.functions.init_data = function(){
-	$.getJSON('wars.json', function (data){
+	$.getJSON('./assets/data/wars.json', function (data){
 		WARS.data = data["wars"];
 	});
 };
