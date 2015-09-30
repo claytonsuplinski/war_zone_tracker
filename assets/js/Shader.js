@@ -50,6 +50,7 @@ Shader.prototype.init_shader = function(){
 	this.shader_program.clickableObject = gl.getUniformLocation(this.shader_program, "uClickableObject");
 	this.shader_program.clickSampler = gl.getUniformLocation(this.shader_program, "uClickSampler");
 	this.shader_program.glow = gl.getUniformLocation(this.shader_program, "uGlow");
+	this.shader_program.black = gl.getUniformLocation(this.shader_program, "uBlack");
   
 };
 

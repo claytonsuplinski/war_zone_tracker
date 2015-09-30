@@ -101,7 +101,7 @@ function start() {
 	}
 }
 
-function draw_only_battles(){
+function draw_visible_battles(){
 	gl.clearColor(0.0, 0.0, 0.0, 1.0);
 	gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
 
@@ -129,6 +129,8 @@ function draw_only_battles(){
 	curr_war.set_battles_clickable(true);
 	
 	curr_war.draw();
+
+	earth.draw({black: true});
 };
 
 function draw_entire_scene(){
@@ -194,8 +196,12 @@ function drawScene() {
 		gl.uniform3f(clickable_battles.shader_program.pointLightingDiffuseColorUniform, 0.8, 0.8, 0.8);
 		gl.uniform3f(clickable_battles.shader_program.pointLightingSpecularColorUniform, 0.8, 0.8, 0.8);
 		
-		clickable_battles.draw_scene_on_framebuffer(draw_only_battles);
+		clickable_battles.draw_scene_on_framebuffer(draw_visible_battles);
 	mvPopMatrix();
+	
+	/*
+	
+		//// Glow Stuff ////
 	
 	gl.uniform1i(test_glow_framebuffer.shader_program.showSpecularHighlightsUniform, true);
 	gl.uniform3f(test_glow_framebuffer.shader_program.pointLightingLocationUniform, -1, 2, -1);
@@ -204,9 +210,9 @@ function drawScene() {
 	gl.uniform3f(test_glow_framebuffer.shader_program.pointLightingDiffuseColorUniform, 0.8, 0.8, 0.8);
 	gl.uniform3f(test_glow_framebuffer.shader_program.pointLightingSpecularColorUniform, 0.8, 0.8, 0.8);
 	
-	test_glow_framebuffer.draw_scene_on_framebuffer(draw_only_battles);
+	test_glow_framebuffer.draw_scene_on_framebuffer(draw_visible_battles);
 	
-	/*
+	
 	mat4.ortho(-1.0, 1.0, -1.0, 1.0, 0.1, 100, pMatrix);
 	
 	mvPushMatrix();
@@ -218,4 +224,5 @@ function drawScene() {
 	gl.disable(gl.BLEND);
 	mvPopMatrix();
 	*/
+	
 }

@@ -29,6 +29,8 @@ function GraphicsObject(){
 	
 	this.glow = false;
 	this.glow_color = "";
+	
+	this.black = false;
 };
 
 GraphicsObject.prototype.init_buffers = function(){
@@ -193,12 +195,16 @@ GraphicsObject.prototype.draw_scene_on_framebuffer = function(draw_function){
 
 GraphicsObject.prototype.draw = function(params){
 
+	this.black = false;
 	if(params != undefined){
 		if(params.scale != undefined){
 			this.scale = params.scale;
 		}
 		if(params.clickable != undefined){
 			this.clickable_object = params.clickable;
+		}
+		if(params.black != undefined){
+			this.black = params.black;
 		}
 	}
 
@@ -210,6 +216,7 @@ GraphicsObject.prototype.draw = function(params){
 	gl.uniform3f(this.shader_program.scale, this.scale[0], this.scale[1], this.scale[2]);
 	gl.uniform3f(this.shader_program.clickableObject, this.clickable_object[0], this.clickable_object[1], this.clickable_object[2]);
 	gl.uniform1i(this.shader_program.useTexturesUniform, true);
+	gl.uniform1i(this.shader_program.black, this.black);
 	
 	mvPushMatrix();
 	

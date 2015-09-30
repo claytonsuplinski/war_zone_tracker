@@ -16,6 +16,20 @@ WARS.constants.background_image_radius = 74;
 WARS.constants.gallery_size = 4;
 WARS.constants.battle_scale = 1;
 
+WARS.keys_pressed = [];
+
+WARS.user = new User();
+
+WARS.date_range = {};
+
+WARS.mouse = {};
+WARS.mouse.left_down = false;
+WARS.mouse.right_down = false;
+WARS.mouse.x = "";
+WARS.mouse.y = "";
+
+WARS.models = {};
+
 WARS.functions = {};
 WARS.functions.init_data = function(){
 	$.getJSON('wars.json', function (data){
@@ -31,17 +45,3 @@ WARS.functions.increment_battle_scale = function(val){
 	if(WARS.constants.battle_scale > 10){WARS.constants.battle_scale = 10;}
 	$("#battle-scale-value").html((WARS.constants.battle_scale*100).toFixed(0) + "%");
 };
-
-WARS.keys_pressed = [];
-
-WARS.user = new User();
-
-WARS.date_range = {};
-
-WARS.mouse = {};
-WARS.mouse.left_down = false;
-WARS.mouse.right_down = false;
-WARS.mouse.x = "";
-WARS.mouse.y = "";
-
-WARS.models = {};
