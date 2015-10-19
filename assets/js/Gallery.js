@@ -16,21 +16,16 @@ Gallery.prototype.init = function(){
 	this.sides = [];
 	this.banners = [];
 	
-	this.room = new OBJ("./assets/models/room.obj");
-	this.room.set_texture("./assets/models/room.jpg");
+	this.room = new OBJ("./assets/models/room.obj", "./assets/models/room.jpg");
 	this.room.set_shader(basic_shader);
 	
-	this.chandelier = new OBJ("./assets/models/chandelier.obj");
-	this.chandelier.set_texture("./assets/models/chandelier.jpg");
+	this.chandelier = new OBJ("./assets/models/chandelier.obj", "./assets/models/chandelier.jpg");
 	this.chandelier.set_shader(basic_shader);
 	
-	this.rafter = new OBJ("./assets/models/frame.obj");
-	this.frame  = new OBJ("./assets/models/frame.obj");;
-	
-	this.rafter.set_texture("./assets/models/rafter.jpg");
+	this.rafter = new OBJ("./assets/models/frame.obj", "./assets/models/rafter.jpg");
 	this.rafter.set_shader(basic_shader);
 	
-	this.frame.set_texture("./assets/models/frame.jpg");
+	this.frame  = new OBJ("./assets/models/frame.obj", "./assets/models/frame.jpg");
 	this.frame.set_shader(basic_shader);
 	
 	this.frame.material.specular_color = {r:0.8, g:0.8, b:0.4};
@@ -43,9 +38,6 @@ Gallery.prototype.init = function(){
 		this.sides.push(tmp_rect);
 	}
 	
-	var tmp_banner = new OBJ("./assets/models/banner.obj");
-	tmp_banner.set_shader(basic_shader);
-	
 	curr_war.banners.sort(function (a, b){
 		var c = a.battles;
 		var d = b.battles;
@@ -55,8 +47,8 @@ Gallery.prototype.init = function(){
 	});
 	
 	for(var i=0; i<8; i++){
-		var banner = jQuery.extend({}, tmp_banner);
-		banner.set_texture("./assets/textures/"+curr_war.banners[i%curr_war.banners.length].name+".png");
+		var banner = new OBJ("./assets/models/banner.obj", "./assets/textures/"+curr_war.banners[i%curr_war.banners.length].name+".png");
+		banner.set_shader(basic_shader);
 		this.banners.push(banner);
 	}
 	
