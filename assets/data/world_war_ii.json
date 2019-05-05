@@ -1,0 +1,4571 @@
+{
+	"battles": [
+		{
+			"name": "Battle of the Bzura",
+			"start": "9/9/1939",
+			"end": "9/19/1939",
+			"winner": "Nazi Germany",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 8000,
+					"leader": "Gerd von Rundstedt",
+					"troops": 425000
+				},
+				{
+					"name": "Poland",
+					"casualities": 20000,
+					"leader": "Tadeusz Kutrzeba",
+					"troops": 225000
+				}
+			],
+			"location": {
+				"name": "Kutno, Poland",
+				"lat": 52.233,
+				"lon": 19.366
+			}
+		},
+		{
+			"name": "Battle of Mlawa",
+			"start": "9/1/1939",
+			"end": "9/3/1939",
+			"winner": "Nazi Germany",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 1800,
+					"leader": "Georg von Kuchler",
+					"troops": "?"
+				},
+				{
+					"name": "Poland",
+					"casualities": 1200,
+					"leader": "Wilhelm Liszka-Lawicz",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Mlawa, Poland",
+				"lat": 53.116,
+				"lon": 20.366
+			}
+		},
+		{
+			"name": "Battle of Tomaszow Lubelski",
+			"start": "9/17/1939",
+			"end": "9/26/1939",
+			"winner": "Nazi Germany",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": "?",
+					"leader": "Leonard Wecker",
+					"troops": "?"
+				},
+				{
+					"name": "Poland",
+					"casualities": "?",
+					"leader": "Antoni Szylling",
+					"troops": 39000
+				}
+			],
+			"location": {
+				"name": "Tomaszow Lubelski, Poland",
+				"lat": 50.45,
+				"lon": 23.4166
+			}
+		},
+		{
+			"name": "Battle of Kock",
+			"start": "10/2/1939",
+			"end": "10/5/1939",
+			"winner": "Poland",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 500,
+					"leader": "Gustov Anton von Wietersheim",
+					"troops": 30000
+				},
+				{
+					"name": "Poland",
+					"casualities": 300,
+					"leader": "Franciszek Kleeberg",
+					"troops": 18000
+				}
+			],
+			"location": {
+				"name": "Kock, Poland",
+				"lat": 51.65,
+				"lon": 22.45
+			}
+		},
+		{
+			"name": "Siege of Warsaw",
+			"start": "9/8/1939",
+			"end": "9/28/1939",
+			"winner": "Nazi Germany",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": "?",
+					"leader": "Johannes Blaskowitz",
+					"troops": 175000
+				},
+				{
+					"name": "Poland",
+					"casualities": 18000,
+					"leader": "Walerian Czuma",
+					"troops": 124000
+				}
+			],
+			"location": {
+				"name": "Warsaw, Poland",
+				"lat": 52.23,
+				"lon": 21.010
+			}
+		},
+		{
+			"name": "Battle of Lwow",
+			"start": "9/12/1939",
+			"end": "9/22/1939",
+			"winner": "Soviet Union",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 484,
+					"leader": "Ferdinand Schorner",
+					"troops": "?"
+				},
+				{
+					"name": "Soviet Union",
+					"casualities": 4,
+					"leader": "Filipp Golikov",
+					"troops": "?"
+				},
+				{
+					"name": "Poland",
+					"casualities": "?",
+					"leader": "Wladyslaw Langner",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Lwow, Poland",
+				"lat": 49.85,
+				"lon": 24.016
+			}
+		},
+		{
+			"name": "Battle of Wilno",
+			"start": "9/18/1939",
+			"end": "9/19/1939",
+			"winner": "Soviet Union",
+			"countries": [
+				{
+					"name": "Soviet Union",
+					"casualities": 13,
+					"leader": "Pyotr Akhlyustin",
+					"troops": "?"
+				},
+				{
+					"name": "Poland",
+					"casualities": "?",
+					"leader": "Jaroslaw Okulicz-Kozaryn",
+					"troops": 6500
+				}
+			],
+			"location": {
+				"name": "Vilnius, Lithuania",
+				"lat": 54.666,
+				"lon": 25.316
+			}
+		},
+		{
+			"name": "Battle of Grodno",
+			"start": "9/20/1939",
+			"end": "9/24/1939",
+			"winner": "Soviet Union",
+			"countries": [
+				{
+					"name": "Soviet Union",
+					"casualities": 210,
+					"leader": "Ivan Boldyn",
+					"troops": "?"
+				},
+				{
+					"name": "Poland",
+					"casualities": 644,
+					"leader": "Waclaw Jan Przezdziecki",
+					"troops": 4000
+				}
+			],
+			"location": {
+				"name": "Grodno, Poland",
+				"lat": 53.666,
+				"lon": 23.833
+			}
+		},
+		{
+			"name": "Battle of Szack",
+			"start": "9/28/1939",
+			"end": "",
+			"winner": "Soviet Union",
+			"countries": [
+				{
+					"name": "Soviet Union",
+					"casualities": 81,
+					"leader": "Iwan Russijanow",
+					"troops": "?"
+				},
+				{
+					"name": "Poland",
+					"casualities": 350,
+					"leader": "Wilhelm Orlik-Rueckemann",
+					"troops": 4000
+				}
+			],
+			"location": {
+				"name": "Szack, Poland",
+				"lat": 51.487,
+				"lon": 23.929
+			}
+		},
+		{
+			"name": "Battle of Wytyczno",
+			"start": "10/1/1939",
+			"end": "",
+			"winner": "Soviet Union",
+			"countries": [
+				{
+					"name": "Soviet Union",
+					"casualities": 80,
+					"leader": "?",
+					"troops": 1200
+				},
+				{
+					"name": "Poland",
+					"casualities": 200,
+					"leader": "Wilhelm Orlik-Rueckermann",
+					"troops": 2000
+				}
+			],
+			"location": {
+				"name": "Wytyczno, Poland",
+				"lat": 51.433,
+				"lon": 23.266
+			}
+		},
+		{
+			"name": "Saar Offensive",
+			"start": "9/7/1939",
+			"end": "9/16/1939",
+			"winner": "Nazi Germany",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 196,
+					"leader": "Erwin von Witzleben",
+					"troops": "?"
+				},
+				{
+					"name": "France",
+					"casualities": 22,
+					"leader": "Maurice Gamelin",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Saarland, Germany",
+				"lat": 49.166,
+				"lon": 7.25
+			}
+		},
+		{
+			"name": "Battle of Tolvajarvi",
+			"start": "12/12/1939",
+			"end": "",
+			"winner": "Finland",
+			"countries": [
+				{
+					"name": "Finland",
+					"casualities": 100,
+					"leader": "Paavo Talvela",
+					"troops": 4000
+				},
+				{
+					"name": "Soviet Union",
+					"casualities": 5000,
+					"leader": "General Baljajev",
+					"troops": 20000
+				}
+			],
+			"location": {
+				"name": "Tolvajarvi, Finland",
+				"lat": 62.288,
+				"lon": 31.49
+			}
+		},
+		{
+			"name": "Battle of Suomussalmi",
+			"start": "12/7/1939",
+			"end": "1/8/1940",
+			"winner": "Finland",
+			"countries": [
+				{
+					"name": "Finland",
+					"casualities": 1000,
+					"leader": "Hjalmar Siilasvuo",
+					"troops": 11000
+				},
+				{
+					"name": "Soviet Union",
+					"casualities": 27500,
+					"leader": "Ivan Dashitsev",
+					"troops": 55000
+				}
+			],
+			"location": {
+				"name": "Suomussalmi, Finland",
+				"lat": 64.883,
+				"lon": 28.916
+			}
+		},
+		{
+			"name": "Battle of Kollaa",
+			"start": "12/7/1939",
+			"end": "3/13/1940",
+			"winner": "Finland",
+			"countries": [
+				{
+					"name": "Finland",
+					"casualities": 1500,
+					"leader": "Woldemar Hagglund",
+					"troops": "?"
+				},
+				{
+					"name": "Soviet Union",
+					"casualities": 8000,
+					"leader": "Ivan Khabarov",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Kollaa River, Finland",
+				"lat": 62.027,
+				"lon": 32.255
+			}
+		},
+		{
+			"name": "Battle of Honkaniemi",
+			"start": "2/25/1940",
+			"end": "2/27/1940",
+			"winner": "Soviet Union",
+			"countries": [
+				{
+					"name": "Finland",
+					"casualities": 33,
+					"leader": "Voldemar Oinonen",
+					"troops": "?"
+				},
+				{
+					"name": "Soviet Union",
+					"casualities": "?",
+					"leader": "V. Kashuba",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Karelian Isthmus, Finland",
+				"lat": 60.65,
+				"lon": 28.783
+			}
+		},
+		{
+			"name": "Battle of Changsha",
+			"start": "9/17/1939",
+			"end": "10/6/1939",
+			"winner": "Republic of China",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 40000,
+					"leader": "Yasuji Okamura",
+					"troops": 100000
+				},
+				{
+					"name": "Republic of China",
+					"casualities": 40000,
+					"leader": "Chen Cheng",
+					"troops": 240000
+				}
+			],
+			"location": {
+				"name": "Changsha, China",
+				"lat": 28.196,
+				"lon": 112.972
+			}
+		},
+		{
+			"name": "1939-40 Winter Offensive",
+			"start": "11/1/1939",
+			"end": "3/30/1940",
+			"winner": "Imperial Japan",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 20000,
+					"leader": "Toshizo Nishio",
+					"troops": 850000
+				},
+				{
+					"name": "Republic of China",
+					"casualities": 70000,
+					"leader": "Xue Yue",
+					"troops": 550000
+				}
+			],
+			"location": {
+				"name": "Eastern China",
+				"lat": 31.833,
+				"lon": 117
+			}
+		},
+		{
+			"name": "Battle of the River Plate",
+			"start": "12/13/1939",
+			"end": "",
+			"winner": "United Kingdom",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 36,
+					"leader": "Hans Langsdorff",
+					"troops": "?"
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 72,
+					"leader": "Henry Harwood",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Argentina / Uruguay",
+				"lat": -35.666,
+				"lon": -55.783
+			}
+		},
+		{
+			"name": "Altmark Incident",
+			"start": "2/16/1940",
+			"end": "",
+			"winner": "United Kingdom",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 4,
+					"leader": "Heinrich Dau",
+					"troops": "?"
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 0,
+					"leader": "Philip Vian",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Jossingfjord, Norway",
+				"lat": 58.316,
+				"lon": 6.336
+			}
+		},
+		{
+			"name": "Action of 4 April 1941",
+			"start": "4/4/1941",
+			"end": "",
+			"winner": "Nazi Germany",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 0,
+					"leader": "Otto Kahler",
+					"troops": "?"
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 74,
+					"leader": "J.A. Blackburn",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Mid Atlantic Ocean",
+				"lat": 14.5,
+				"lon": -40.5
+			}
+		},
+		{
+			"name": "Battle of the Bismarck",
+			"start": "5/26/1941",
+			"end": "5/27/1941",
+			"winner": "United Kingdom",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 2200,
+					"leader": "Gunther Lutjens",
+					"troops": "?"
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 3,
+					"leader": "John Tovey",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Atlantic Ocean",
+				"lat": 48.39,
+				"lon": -4.53
+			}
+		},
+		{
+			"name": "Battle of the St. Lawrence",
+			"start": "5/1/1942",
+			"end": "11/1/1944",
+			"winner": "Canada",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": "?",
+					"leader": "Karl Donitz",
+					"troops": "?"
+				},
+				{
+					"name": "Canada",
+					"casualities": 340,
+					"leader": "Percy Nelles",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Gulf of St. Lawrence",
+				"lat": 48.6,
+				"lon": -61.4
+			}
+		},
+		{
+			"name": "Naval Battle of Casablanca",
+			"start": "11/8/1942",
+			"end": "11/16/1942",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 462,
+					"leader": "Ernst Kals",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": 174,
+					"leader": "Henry Kent Hewitt",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Casablanca, French Morocco",
+				"lat": 33.55,
+				"lon": -7.583
+			}
+		},
+		{
+			"name": "Battle of Barents Sea",
+			"start": "12/31/1942",
+			"end": "",
+			"winner": "United Kingdom",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 330,
+					"leader": "Oskar Kummetz",
+					"troops": "?"
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 250,
+					"leader": "Robert Burnett",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Barents Sea, Norway",
+				"lat": 73.25,
+				"lon": 29
+			}
+		},
+		{
+			"name": "Battle of the North Cape",
+			"start": "12/26/1943",
+			"end": "",
+			"winner": "United Kingdom",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 1932,
+					"leader": "Erich Bey",
+					"troops": "?"
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 11,
+					"leader": "Bruce Fraser",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "North Cape, Norway",
+				"lat": 72.516,
+				"lon": 28.25
+			}
+		},
+		{
+			"name": "Battle of Ushant",
+			"start": "6/9/1944",
+			"end": "",
+			"winner": "United Kingdom",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 39,
+					"leader": "Theodor von Bechtolsheim",
+					"troops": "?"
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 0,
+					"leader": "Basil Jones",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "English Channel",
+				"lat": 50,
+				"lon": -2
+			}
+		},
+		{
+			"name": "Battle of Pierres Noires",
+			"start": "7/5/1944",
+			"end": "",
+			"winner": "Canada",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": "?",
+					"leader": "Gerhard Palmgren",
+					"troops": "?"
+				},
+				{
+					"name": "Canada",
+					"casualities": 0,
+					"leader": "Dickson Carlile Wallace",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Iroise Sea",
+				"lat": 48.211,
+				"lon": -4.914
+			}
+		},
+		{
+			"name": "Battle of Point Judith",
+			"start": "5/5/1945",
+			"end": "5/6/1945",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 55,
+					"leader": "?",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": 12,
+					"leader": "F.C. McCune",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Point Judith, Rhode Island",
+				"lat": 41.361,
+				"lon": -71.481
+			}
+		},
+		{
+			"name": "Battle of Drobak Sound",
+			"start": "4/9/1940",
+			"end": "",
+			"winner": "Norway",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 800,
+					"leader": "Oskar Kummetz",
+					"troops": "?"
+				},
+				{
+					"name": "Norway",
+					"casualities": 0,
+					"leader": "Birger Eriksen",
+					"troops": 407
+				}
+			],
+			"location": {
+				"name": "Drobak Sound, Norway",
+				"lat": 59.7,
+				"lon": 10.592
+			}
+		},
+		{
+			"name": "Namsos Campaign",
+			"start": "4/1/1940",
+			"end": "5/1/1940",
+			"winner": "Nazi Germany",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": "?",
+					"leader": "?",
+					"troops": 6000
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 19,
+					"leader": "Adrian Carton De Wiart",
+					"troops": 6000
+				}
+			],
+			"location": {
+				"name": "Southern Norway",
+				"lat": 64.493,
+				"lon": 11.511
+			}
+		},
+		{
+			"name": "Battle of the Netherlands",
+			"start": "5/10/1940",
+			"end": "5/14/1940",
+			"winner": "Nazi Germany",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 2032,
+					"leader": "Fedor von Bock",
+					"troops": 750000
+				},
+				{
+					"name": "Netherlands",
+					"casualities": 2600,
+					"leader": "Henri Winkelman",
+					"troops": 280000
+				}
+			],
+			"location": {
+				"name": "Netherlands",
+				"lat": 51.916,
+				"lon": 4.5
+			}
+		},
+		{
+			"name": "Battle of Belgium",
+			"start": "5/10/1940",
+			"end": "5/28/1940",
+			"winner": "Nazi Germany",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 10232,
+					"leader": "Gerd von Rundstedt",
+					"troops": "?"
+				},
+				{
+					"name": "Belgium",
+					"casualities": 222443,
+					"leader": "King Leopold III",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Belgium and Luxembourg",
+				"lat": 50.797,
+				"lon": 5.680
+			}
+		},
+		{
+			"name": "Battle of France",
+			"start": "5/10/1940",
+			"end": "6/25/1940",
+			"winner": "Nazi Germany",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 163650,
+					"leader": "Walther von Brauchitsch",
+					"troops": 3650000
+				},
+				{
+					"name": "France",
+					"casualities": 360000,
+					"leader": "Maurice Gamelin",
+					"troops": 3450000
+				}
+			],
+			"location": {
+				"name": "France",
+				"lat": 48.856,
+				"lon": 2.350
+			}
+		},
+		{
+			"name": "Battle of Dunkirk",
+			"start": "5/26/1940",
+			"end": "6/4/1940",
+			"winner": "United Kingdom",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 30000,
+					"leader": "Gerd von Rundstedt",
+					"troops": 800000
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 11000,
+					"leader": "Lord Gort",
+					"troops": 400000
+				}
+			],
+			"location": {
+				"name": "Dunkirk, France",
+				"lat": 51.034,
+				"lon": 2.376
+			}
+		},
+		{
+			"name": "Attack on Mers-el-Kebir",
+			"start": "7/3/1940",
+			"end": "",
+			"winner": "United Kingdom",
+			"countries": [
+				{
+					"name": "Vichy France",
+					"casualities": 1297,
+					"leader": "Marcel-Bruno Gensoul",
+					"troops": "?"
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 2,
+					"leader": "James Somerville",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "French Algeria, North Africa",
+				"lat": 35.719,
+				"lon": -0.688
+			}
+		},
+		{
+			"name": "Battle of Britain",
+			"start": "7/10/1940",
+			"end": "10/31/1940",
+			"winner": "United Kingdom",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 2698,
+					"leader": "Adolf Hitler",
+					"troops": "?"
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 544,
+					"leader": "Winston Churchill",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "London, England",
+				"lat": 51.507,
+				"lon": -0.127
+			}
+		},
+		{
+			"name": "Italian Conquest of British Somaliland",
+			"start": "8/3/1940",
+			"end": "8/19/1940",
+			"winner": "Italy",
+			"countries": [
+				{
+					"name": "Italy",
+					"casualities": 465,
+					"leader": "Guglielmo Nasi",
+					"troops": 24000
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 50,
+					"leader": "Reade Godwin-Austen",
+					"troops": 5000
+				}
+			],
+			"location": {
+				"name": "British Somaliland",
+				"lat": 9.55,
+				"lon": 44.066
+			}
+		},
+		{
+			"name": "Japanese Invasion of French Indochina",
+			"start": "9/22/1940",
+			"end": "9/26/1940",
+			"winner": "Imperial Japan",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 2000,
+					"leader": "Akihito Nakamura",
+					"troops": 36000
+				},
+				{
+					"name": "Vichy France",
+					"casualities": 824,
+					"leader": "Maurice Martin",
+					"troops": 3000
+				}
+			],
+			"location": {
+				"name": "French Indochina",
+				"lat": 10.776,
+				"lon": 106.700
+			}
+		},
+		{
+			"name": "Battle of Dakar",
+			"start": "9/23/1940",
+			"end": "9/25/1940",
+			"winner": "Vichy France",
+			"countries": [
+				{
+					"name": "Vichy France",
+					"casualities": "?",
+					"leader": "Pierre Francois Boisson",
+					"troops": "?"
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": "?",
+					"leader": "John Cunningham",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Dakar, French West Africa",
+				"lat": 14.692,
+				"lon": -17.446
+			}
+		},
+		{
+			"name": "Battle of Pindus",
+			"start": "10/28/1940",
+			"end": "11/13/1940",
+			"winner": "Kingdom of Greece",
+			"countries": [
+				{
+					"name": "Italy",
+					"casualities": 1674,
+					"leader": "Mario Girotti",
+					"troops": 23000
+				},
+				{
+					"name": "Kingdom of Greece",
+					"casualities": "?",
+					"leader": "Konstantinos Davakis",
+					"troops": 32000
+				}
+			],
+			"location": {
+				"name": "Pindus Mountains",
+				"lat": 40.088,
+				"lon": 20.925
+			}
+		},
+		{
+			"name": "Battle of Gabon",
+			"start": "11/8/1940",
+			"end": "11/12/1940",
+			"winner": "France",
+			"countries": [
+				{
+					"name": "France",
+					"casualities": "?",
+					"leader": "Charles de Gaulle",
+					"troops": "?"
+				},
+				{
+					"name": "Vichy France",
+					"casualities": "?",
+					"leader": "Marcel Tetu",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "French Equitorial Africa",
+				"lat": 0.39,
+				"lon": 9.451
+			}
+		},
+		{
+			"name": "Battle of Taranto",
+			"start": "11/11/1940",
+			"end": "11/12/1940",
+			"winner": "United Kingdom",
+			"countries": [
+				{
+					"name": "Italy",
+					"casualities": 59,
+					"leader": "Inigo Campioni",
+					"troops": "?"
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 2,
+					"leader": "Andrew Cunningham",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Taranto, Italy",
+				"lat": 40.451,
+				"lon": 17.207
+			}
+		},
+		{
+			"name": "Hundred Regiments Offensive",
+			"start": "8/20/1940",
+			"end": "12/5/1940",
+			"winner": "Republic of China",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 12645,
+					"leader": "Hayao Tada",
+					"troops": 270000
+				},
+				{
+					"name": "Republic of China",
+					"casualities": 22000,
+					"leader": "Peng Dehuai",
+					"troops": 400000
+				}
+			],
+			"location": {
+				"name": "North China",
+				"lat": 37.45,
+				"lon": 116.3
+			}
+		},
+		{
+			"name": "Battle of Ko Chang",
+			"start": "1/17/1941",
+			"end": "",
+			"winner": "Vichy France",
+			"countries": [
+				{
+					"name": "Vichy France",
+					"casualities": "?",
+					"leader": "Regis Berenger",
+					"troops": "?"
+				},
+				{
+					"name": "Thailand",
+					"casualities": 36,
+					"leader": "Luang Phrom Viraphan",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Gulf of Thailand",
+				"lat": 12.001,
+				"lon": 102.451
+			}
+		},
+		{
+			"name": "Battle of Litani River",
+			"start": "6/9/1941",
+			"end": "",
+			"winner": "Australia",
+			"countries": [
+				{
+					"name": "Australia",
+					"casualities": "?",
+					"leader": "John Lavarack",
+					"troops": "?"
+				},
+				{
+					"name": "Vichy France",
+					"casualities": "?",
+					"leader": "?",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "French Lebanon",
+				"lat": 33.338,
+				"lon": 35.245
+			}
+		},
+		{
+			"name": "Battle of Damascus",
+			"start": "6/18/1941",
+			"end": "6/21/1941",
+			"winner": "United Kingdom",
+			"countries": [
+				{
+					"name": "Vichy France",
+					"casualities": "?",
+					"leader": "Henri Dentz",
+					"troops": "?"
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": "?",
+					"leader": "Henry Maitland Wilson",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Damascus, Syria",
+				"lat": 33.513,
+				"lon": 36.291
+			}
+		},
+		{
+			"name": "Battle of Beirut",
+			"start": "7/12/1941",
+			"end": "",
+			"winner": "France",
+			"countries": [
+				{
+					"name": "France",
+					"casualities": "?",
+					"leader": "Henry Maitland Wilson",
+					"troops": "?"
+				},
+				{
+					"name": "Vichy France",
+					"casualities": "?",
+					"leader": "Henri Dentz",
+					"troops": 45000
+				}
+			],
+			"location": {
+				"name": "Beirut, French Lebanon",
+				"lat": 33.886,
+				"lon": 35.513
+			}
+		},
+		{
+			"name": "Battle of Keren",
+			"start": "2/5/1941",
+			"end": "4/1/1941",
+			"winner": "United Kingdom",
+			"countries": [
+				{
+					"name": "Italy",
+					"casualities": 12147,
+					"leader": "Nicolangelo Carnimeo",
+					"troops": 23000
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 536,
+					"leader": "William Platt",
+					"troops": 13000
+				}
+			],
+			"location": {
+				"name": "Eritrea",
+				"lat": 15.776,
+				"lon": 38.451
+			}
+		},
+		{
+			"name": "Battle of Cape Matapan",
+			"start": "3/27/1941",
+			"end": "3/29/1941",
+			"winner": "United Kingdom",
+			"countries": [
+				{
+					"name": "Italy",
+					"casualities": 2300,
+					"leader": "Angelo Iachino",
+					"troops": "?"
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 3,
+					"leader": "Andrew Cunningham",
+					"troops": 0
+				}
+			],
+			"location": {
+				"name": "Cape Matapan, Greece",
+				"lat": 35.348,
+				"lon": 20.961
+			}
+		},
+		{
+			"name": "Battle of the Denmark Strait",
+			"start": "5/24/1941",
+			"end": "",
+			"winner": "Nazi Germany",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": "?",
+					"leader": "Gunther Lutjens",
+					"troops": "?"
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 1428,
+					"leader": "Lancelot Holland",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Denmark Strait",
+				"lat": 63.333,
+				"lon": -31.833
+			}
+		},
+		{
+			"name": "Invasion of Yugoslavia",
+			"start": "4/6/1941",
+			"end": "4/18/1941",
+			"winner": "Nazi Germany",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 3600,
+					"leader": "Walther von Brauchitsch",
+					"troops": 337096
+				},
+				{
+					"name": "Yugoslavia",
+					"casualities": 345000,
+					"leader": "Dusan Simovic",
+					"troops": 700000
+				}
+			],
+			"location": {
+				"name": "Yugoslavia",
+				"lat": 44.820,
+				"lon": 20.462
+			}
+		},
+		{
+			"name": "Battle of Greece",
+			"start": "4/6/1941",
+			"end": "4/30/1941",
+			"winner": "Nazi Germany",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 14854,
+					"leader": "Wilhelm List",
+					"troops": 1245000
+				},
+				{
+					"name": "Kingdom of Greece",
+					"casualities": 14311,
+					"leader": "Alexander Papagos",
+					"troops": 492612
+				}
+			],
+			"location": {
+				"name": "Greece",
+				"lat": 37.966,
+				"lon": 23.716
+			}
+		},
+		{
+			"name": "Battle of Crete",
+			"start": "5/20/1941",
+			"end": "6/1/1941",
+			"winner": "Nazi Germany",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 6698,
+					"leader": "Kurt Student",
+					"troops": 29000
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 4123,
+					"leader": "Bernard Freyberg",
+					"troops": 51800
+				}
+			],
+			"location": {
+				"name": "Crete, Greece",
+				"lat": 35.216,
+				"lon": 24.916
+			}
+		},
+		{
+			"name": "Battle of Smolensk",
+			"start": "7/6/1941",
+			"end": "8/5/1941",
+			"winner": "Nazi Germany",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": "?",
+					"leader": "Fedor von Bock",
+					"troops": 430000
+				},
+				{
+					"name": "Soviet Union",
+					"casualities": "?",
+					"leader": "Semyon Timoshenko",
+					"troops": 581600
+				}
+			],
+			"location": {
+				"name": "Russian SFSR, Soviet Union",
+				"lat": 54.782,
+				"lon": 32.045
+			}
+		},
+		{
+			"name": "Battle of Kiev",
+			"start": "8/23/1941",
+			"end": "9/26/1941",
+			"winner": "Nazi Germany",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 26856,
+					"leader": "Gerd von Rundstedt",
+					"troops": 500000
+				},
+				{
+					"name": "Soviet Union",
+					"casualities": 616304,
+					"leader": "Semyon Budyonny",
+					"troops": 850000
+				}
+			],
+			"location": {
+				"name": "Ukrainian SSR, Soviet Union",
+				"lat": 50.453,
+				"lon": 30.516
+			}
+		},
+		{
+			"name": "Battle of Moscow",
+			"start": "10/2/1941",
+			"end": "1/7/1942",
+			"winner": "Soviet Union",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 174000,
+					"leader": "Adolf Hitler",
+					"troops": 1929406
+				},
+				{
+					"name": "Soviet Union",
+					"casualities": 650000,
+					"leader": "Joseph Stalin",
+					"troops": 1400000
+				}
+			],
+			"location": {
+				"name": "Russian SFSR, Soviet Union",
+				"lat": 55.75,
+				"lon": 37.633
+			}
+		},
+		{
+			"name": "Battle of Gondar",
+			"start": "11/13/1941",
+			"end": "11/27/1941",
+			"winner": "United Kingdom",
+			"countries": [
+				{
+					"name": "Italy",
+					"casualities": 4000,
+					"leader": "Guglielmo Nasi",
+					"troops": 40000
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 32,
+					"leader": "William Platt",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Gondar, Ethiopia",
+				"lat": 12.6,
+				"lon": 37.466
+			}
+		},
+		{
+			"name": "Attack on Pearl Harbor",
+			"start": "12/7/1941",
+			"end": "",
+			"winner": "Imperial Japan",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 64,
+					"leader": "Chuichi Nagumo",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": 2403,
+					"leader": "Husband Kimmel",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Pearl Harbor, Hawaii",
+				"lat": 21.366,
+				"lon": -157.95
+			}
+		},
+		{
+			"name": "Second Battle of Changsha",
+			"start": "9/6/1941",
+			"end": "10/8/1941",
+			"winner": "Republic of China",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 1600,
+					"leader": "Korechika Anami",
+					"troops": 120000
+				},
+				{
+					"name": "Republic of China",
+					"casualities": "?",
+					"leader": "Xue Yue",
+					"troops": 110000
+				}
+			],
+			"location": {
+				"name": "Changsha, China",
+				"lat": 28.196,
+				"lon": 112.972
+			}
+		},
+		{
+			"name": "Battle of Shangguao",
+			"start": "3/14/1941",
+			"end": "4/9/1941",
+			"winner": "Republic of China",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 16000,
+					"leader": "Korechika Anami",
+					"troops": 65000
+				},
+				{
+					"name": "Republic of China",
+					"casualities": 20533,
+					"leader": "Luo Zhuoying",
+					"troops": 100000
+				}
+			],
+			"location": {
+				"name": "Shanggao, Jiangxi",
+				"lat": 28.183,
+				"lon": 114.883
+			}
+		},
+		{
+			"name": "Battle of Thailand",
+			"start": "12/8/1941",
+			"end": "",
+			"winner": "Imperial Japan",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": "?",
+					"leader": "Shojiro Iida",
+					"troops": "?"
+				},
+				{
+					"name": "Thailand",
+					"casualities": "?",
+					"leader": "Plaek Pibulsonggram",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Thailand",
+				"lat": 13.75,
+				"lon": 100.483
+			}
+		},
+		{
+			"name": "Battle of Hong Kong",
+			"start": "12/8/1941",
+			"end": "12/25/1941",
+			"winner": "Imperial Japan",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 1996,
+					"leader": "Takashi Sakai",
+					"troops": 52000
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 2113,
+					"leader": "Mark Aitchison Young",
+					"troops": 14000
+				}
+			],
+			"location": {
+				"name": "British Hong Kong",
+				"lat": 22.267,
+				"lon": 114.188
+			}
+		},
+		{
+			"name": "Battle of Guam",
+			"start": "12/8/1941",
+			"end": "12/10/1941",
+			"winner": "Imperial Japan",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 1,
+					"leader": "Tomitaro Horii",
+					"troops": 5900
+				},
+				{
+					"name": "United States",
+					"casualities": 17,
+					"leader": "George McMillin",
+					"troops": 547
+				}
+			],
+			"location": {
+				"name": "Mariana Islands, Pacific Ocean",
+				"lat": 13.5,
+				"lon": 144.8
+			}
+		},
+		{
+			"name": "Battle of Wake Island",
+			"start": "12/8/1941",
+			"end": "12/23/1941",
+			"winner": "Imperial Japan",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 820,
+					"leader": "Shigeyoshi Inoue",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": 122,
+					"leader": "Winfield Cunningham",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Wake Island, Pacific Ocean",
+				"lat": 19.29,
+				"lon": 166.601
+			}
+		},
+		{
+			"name": "Battle of Malaya",
+			"start": "12/8/1941",
+			"end": "1/31/1942",
+			"winner": "Imperial Japan",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 1793,
+					"leader": "Tomoyuki Yamashita",
+					"troops": 70000
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 5500,
+					"leader": "Arthur Percival",
+					"troops": 140000
+				}
+			],
+			"location": {
+				"name": "British Malaya",
+				"lat": 7,
+				"lon": 100
+			}
+		},
+		{
+			"name": "Battle of Makassar Strait",
+			"start": "2/4/1942",
+			"end": "",
+			"winner": "Imperial Japan",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": "?",
+					"leader": "Nishizo Tsukahara",
+					"troops": "?"
+				},
+				{
+					"name": "Netherlands",
+					"casualities": 70,
+					"leader": "Karel Doorman",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Bali Sea, Dutch East Indies",
+				"lat": -7.5,
+				"lon": 115.5
+			}
+		},
+		{
+			"name": "Battle of Singapore",
+			"start": "2/8/1942",
+			"end": "2/15/1942",
+			"winner": "Imperial Japan",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 1714,
+					"leader": "Tomoyuki Yamashita",
+					"troops": 36000
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 5000,
+					"leader": "Arthur Percival",
+					"troops": 85000
+				}
+			],
+			"location": {
+				"name": "Singapore, Straits Settlements",
+				"lat": 1.366,
+				"lon": 103.816
+			}
+		},
+		{
+			"name": "Battle of the Java Sea",
+			"start": "2/27/1942",
+			"end": "",
+			"winner": "Imperial Japan",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 36,
+					"leader": "Takeo Takagi",
+					"troops": "?"
+				},
+				{
+					"name": "Netherlands",
+					"casualities": 2300,
+					"leader": "Karel Doorman",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Java Sea",
+				"lat": -5,
+				"lon": 111
+			}
+		},
+		{
+			"name": "Battle of Badung Strait",
+			"start": "2/18/1942",
+			"end": "2/20/1942",
+			"winner": "Imperial Japan",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 25,
+					"leader": "Kyuji Kubo",
+					"troops": "?"
+				},
+				{
+					"name": "Netherlands",
+					"casualities": "?",
+					"leader": "Karel Doorman",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Badung Strait, Dutch East Indies",
+				"lat": -8.630,
+				"lon": 115.388
+			}
+		},
+		{
+			"name": "Battle of Java",
+			"start": "2/28/1942",
+			"end": "3/12/1942",
+			"winner": "Imperial Japan",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": "?",
+					"leader": "Hitoshi Imamura",
+					"troops": 34000
+				},
+				{
+					"name": "Netherlands",
+					"casualities": 860,
+					"leader": "Hein ter Poorten",
+					"troops": 34250
+				}
+			],
+			"location": {
+				"name": "Java",
+				"lat": -7.491,
+				"lon": 110.004
+			}
+		},
+		{
+			"name": "Indian Ocean Raid",
+			"start": "3/31/1942",
+			"end": "4/10/1942",
+			"winner": "Imperial Japan",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": "?",
+					"leader": "Chuichi Nagumo",
+					"troops": "?"
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": "?",
+					"leader": "James Somerville",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Indian Ocean",
+				"lat": 7,
+				"lon": 81
+			}
+		},
+		{
+			"name": "Battle of Christmas Island",
+			"start": "3/31/1942",
+			"end": "4/1/1942",
+			"winner": "Imperial Japan",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 0,
+					"leader": "Shoji Nishimura",
+					"troops": 850
+				},
+				{
+					"name": "United States",
+					"casualities": 0,
+					"leader": "?",
+					"troops": 32
+				}
+			],
+			"location": {
+				"name": "Christmas Island",
+				"lat": -10.483,
+				"lon": 105.633
+			}
+		},
+		{
+			"name": "Battle of Corregidor",
+			"start": "5/5/1942",
+			"end": "5/6/1942",
+			"winner": "Imperial Japan",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 900,
+					"leader": "Masaharu Homma",
+					"troops": 75000
+				},
+				{
+					"name": "United States",
+					"casualities": 800,
+					"leader": "Jonathan Wainwright",
+					"troops": 13000
+				}
+			],
+			"location": {
+				"name": "Luzon Island, Philippines",
+				"lat": 14.666,
+				"lon": 120.417
+			}
+		},
+		{
+			"name": "Japanese Conquest of Burma",
+			"start": "1/1/1942",
+			"end": "5/1/1942",
+			"winner": "Imperial Japan",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 2143,
+					"leader": "Shojiro Iida",
+					"troops": "?"
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 13463,
+					"leader": "Archibald Wavell",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Burma",
+				"lat": 16.85,
+				"lon": 96.183
+			}
+		},
+		{
+			"name": "Doolittle Raid",
+			"start": "4/18/1942",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 50,
+					"leader": "Naruhiko Higashikuni",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": 3,
+					"leader": "James Doolittle",
+					"troops": 80
+				}
+			],
+			"location": {
+				"name": "Tokyo, Japan",
+				"lat": 35.683,
+				"lon": 139.683
+			}
+		},
+		{
+			"name": "Battle of the Coral Sea",
+			"start": "5/4/1942",
+			"end": "5/8/1942",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 966,
+					"leader": "Shigeyoshi Inoue",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": 656,
+					"leader": "Chester Nimitz",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Coral Sea, Australia",
+				"lat": -18,
+				"lon": 158
+			}
+		},
+		{
+			"name": "Battle of Bir Hakeim",
+			"start": "5/26/1942",
+			"end": "6/11/1942",
+			"winner": "France",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 3300,
+					"leader": "Erwin Rommel",
+					"troops": 37000
+				},
+				{
+					"name": "France",
+					"casualities": 141,
+					"leader": "Marie-Pierre Koenig",
+					"troops": 3703
+				}
+			],
+			"location": {
+				"name": "Bir Hakeim, Libya",
+				"lat": 31.593,
+				"lon": 23.479
+			}
+		},
+		{
+			"name": "Battle of Midway",
+			"start": "6/3/1942",
+			"end": "6/7/1942",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 3057,
+					"leader": "Isoroku Yamamoto",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": 307,
+					"leader": "Chester Nimitz",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Midway Atoll",
+				"lat": 28.2,
+				"lon": -177.35
+			}
+		},
+		{
+			"name": "Convoy PQ 17",
+			"start": "6/27/1942",
+			"end": "7/10/1942",
+			"winner": "Nazi Germany",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": "?",
+					"leader": "Karl Donitz",
+					"troops": "?"
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 153,
+					"leader": "J. C. Tovey",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Arctic Ocean",
+				"lat": 64.383,
+				"lon": -21.666
+			}
+		},
+		{
+			"name": "Aleutian Islands Campaign",
+			"start": "6/3/1942",
+			"end": "8/15/1943",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 4350,
+					"leader": "Boshiro Hosogaya",
+					"troops": 8500
+				},
+				{
+					"name": "United States",
+					"casualities": 1481,
+					"leader": "Thomas Kinkaid",
+					"troops": 144000
+				}
+			],
+			"location": {
+				"name": "Aleutian Islands, Alaska",
+				"lat": 52.097,
+				"lon": -173.501
+			}
+		},
+		{
+			"name": "Attack on Sydney Harbor",
+			"start": "5/31/1942",
+			"end": "6/8/1942",
+			"winner": "Australia",
+			"countries": [
+				{
+					"name": "Australia",
+					"casualities": 21,
+					"leader": "Gerard Muirhead-Gould",
+					"troops": "?"
+				},
+				{
+					"name": "Imperial Japan",
+					"casualities": 6,
+					"leader": "Hankyu Sasaki",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "New South Wales, Australia",
+				"lat": -33.858,
+				"lon": 151.233
+			}
+		},
+		{
+			"name": "First Battle of El Alamein",
+			"start": "7/1/1942",
+			"end": "7/27/1942",
+			"winner": "United Kingdom",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 10000,
+					"leader": "Erwin Rommel",
+					"troops": 96000
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 13250,
+					"leader": "Claude Auchinleck",
+					"troops": 150000
+				}
+			],
+			"location": {
+				"name": "El Alamein, Egypt",
+				"lat": 30.833,
+				"lon": 28.95
+			}
+		},
+		{
+			"name": "Second Battle of El Alamein",
+			"start": "10/23/1942",
+			"end": "11/11/1942",
+			"winner": "United Kingdom",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 30542,
+					"leader": "Erwin Rommel",
+					"troops": 116000
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 13560,
+					"leader": "Harold Alexander",
+					"troops": 195000
+				}
+			],
+			"location": {
+				"name": "El Alamein, Egypt",
+				"lat": 30.833,
+				"lon": 28.95
+			}
+		},
+		{
+			"name": "Battle of Sevastopol",
+			"start": "10/30/1941",
+			"end": "7/4/1942",
+			"winner": "Nazi Germany",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 17123,
+					"leader": "Erich von Manstein",
+					"troops": 203800
+				},
+				{
+					"name": "Soviet Union",
+					"casualities": 18000,
+					"leader": "Ivan Yefimovich Petrov",
+					"troops": 118000
+				}
+			],
+			"location": {
+				"name": "Russian SFSR, Soviet Union",
+				"lat": 44.604,
+				"lon": 33.541
+			}
+		},
+		{
+			"name": "Kokoda Track Campaign",
+			"start": "7/21/1942",
+			"end": "11/16/1942",
+			"winner": "Australia",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 6600,
+					"leader": "Hisaichi Terauchi",
+					"troops": 13500
+				},
+				{
+					"name": "Australia",
+					"casualities": 625,
+					"leader": "Thomas Blamey",
+					"troops": 30000
+				}
+			],
+			"location": {
+				"name": "Papua New Guinea",
+				"lat": -8.87,
+				"lon": 147.737
+			}
+		},
+		{
+			"name": "Battle of Guadalcanal",
+			"start": "8/7/1942",
+			"end": "2/9/1943",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 31000,
+					"leader": "Isoroku Yamamoto",
+					"troops": 36200
+				},
+				{
+					"name": "United States",
+					"casualities": 7100,
+					"leader": "Robert Ghormley",
+					"troops": 60000
+				}
+			],
+			"location": {
+				"name": "Solomon Islands",
+				"lat": -9.445,
+				"lon": 160.02
+			}
+		},
+		{
+			"name": "Battle of Savo Island",
+			"start": "8/8/1942",
+			"end": "8/9/1942",
+			"winner": "Imperial Japan",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 58,
+					"leader": "Gunichi Mikawa",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": 1077,
+					"leader": "Richmond Turner",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Savo Island, Solomon Islands",
+				"lat": -9.133,
+				"lon": 159.816
+			}
+		},
+		{
+			"name": "Dieppe Raid",
+			"start": "8/19/1942",
+			"end": "",
+			"winner": "Nazi Germany",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 311,
+					"leader": "Gerd von Rundstedt",
+					"troops": 1500
+				},
+				{
+					"name": "Canada",
+					"casualities": 1600,
+					"leader": "J.H. Roberts",
+					"troops": 10500
+				}
+			],
+			"location": {
+				"name": "Dieppe, France",
+				"lat": 49.933,
+				"lon": 1.083
+			}
+		},
+		{
+			"name": "Battle of Stalingrad",
+			"start": "8/23/1942",
+			"end": "2/2/1943",
+			"winner": "Soviet Union",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 850000,
+					"leader": "Adolf Hitler",
+					"troops": 1040000
+				},
+				{
+					"name": "Soviet Union",
+					"casualities": 1129619,
+					"leader": "Joseph Stalin",
+					"troops": 1143000
+				}
+			],
+			"location": {
+				"name": "Russian SFSR, Soviet Union",
+				"lat": 48.7,
+				"lon": 44.516
+			}
+		},
+		{
+			"name": "Battle of the Eastern Solomons",
+			"start": "8/24/1942",
+			"end": "8/25/1942",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 290,
+					"leader": "Isoroku Yamamoto",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": 90,
+					"leader": "Robert Ghormley",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Santa Isabel, Solomon Islands",
+				"lat": -8.030,
+				"lon": 159.176
+			}
+		},
+		{
+			"name": "Battle of Milne Bay",
+			"start": "8/25/1942",
+			"end": "9/7/1942",
+			"winner": "Australia",
+			"countries": [
+				{
+					"name": "Australia",
+					"casualities": 181,
+					"leader": "Cyril Clowes",
+					"troops": 8824
+				},
+				{
+					"name": "Imperial Japan",
+					"casualities": 625,
+					"leader": "Gunichi Mikawa",
+					"troops": 1943
+				}
+			],
+			"location": {
+				"name": "Milne Bay, Papua",
+				"lat": -10.366,
+				"lon": 150.5
+			}
+		},
+		{
+			"name": "Battle of Buna-Gona",
+			"start": "11/16/1942",
+			"end": "1/22/1943",
+			"winner": "Australia",
+			"countries": [
+				{
+					"name": "Australia",
+					"casualities": 1991,
+					"leader": "Edmund Herring",
+					"troops": 20000
+				},
+				{
+					"name": "Imperial Japan",
+					"casualities": 7000,
+					"leader": "Yosuke Yokoyama",
+					"troops": 6500
+				}
+			],
+			"location": {
+				"name": "New Guinea",
+				"lat": -8.65,
+				"lon": 148.366
+			}
+		},
+		{
+			"name": "Battle of Wau",
+			"start": "1/29/1943",
+			"end": "1/31/1943",
+			"winner": "Australia",
+			"countries": [
+				{
+					"name": "Australia",
+					"casualities": 349,
+					"leader": "Thomas Blamey",
+					"troops": 3000
+				},
+				{
+					"name": "Imperial Japan",
+					"casualities": 1200,
+					"leader": "Hitoshi Imamura",
+					"troops": 4000
+				}
+			],
+			"location": {
+				"name": "Wau, New Guinea",
+				"lat": -7.338,
+				"lon": 146.716
+			}
+		},
+		{
+			"name": "Battle of the Bismarck Sea",
+			"start": "3/2/1943",
+			"end": "3/4/1943",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 2890,
+					"leader": "Gunichi Mikawa",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": 13,
+					"leader": "Ennis Whitehead",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Bismarck Sea",
+				"lat": -7.25,
+				"lon": 148.25
+			}
+		},
+		{
+			"name": "Salamaua-Lae Campaign",
+			"start": "4/22/1943",
+			"end": "9/16/1943",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": "?",
+					"leader": "Hatazo Adachi",
+					"troops": 10000
+				},
+				{
+					"name": "United States",
+					"casualities": "?",
+					"leader": "Douglas MacArthur",
+					"troops": 30000
+				}
+			],
+			"location": {
+				"name": "Morobe Province Territory, New Guinea",
+				"lat": -7.033,
+				"lon": 147.066
+			}
+		},
+		{
+			"name": "Battle of Cape Esperance",
+			"start": "10/11/1942",
+			"end": "10/12/1942",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 454,
+					"leader": "Aritomo Goto",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": 163,
+					"leader": "Norman Scott",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Guadalcanal",
+				"lat": -9.15,
+				"lon": 159.633
+			}
+		},
+		{
+			"name": "Battle of the Santa Cruz Islands",
+			"start": "10/25/1942",
+			"end": "10/27/1942",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 500,
+					"leader": "Isoroku Yamamoto",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": 266,
+					"leader": "William Halsey Jr.",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Solomon Islands",
+				"lat": -11,
+				"lon": 166.25
+			}
+		},
+		{
+			"name": "Operation Torch",
+			"start": "11/8/1942",
+			"end": "11/16/1942",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Vichy France",
+					"casualities": 1346,
+					"leader": "Francois Darlan",
+					"troops": 60000
+				},
+				{
+					"name": "United States",
+					"casualities": 479,
+					"leader": "Dwight D. Eisenhower",
+					"troops": 107000
+				}
+			],
+			"location": {
+				"name": "French Morocco and French Algeria",
+				"lat": 35.085,
+				"lon": -2.029
+			}
+		},
+		{
+			"name": "Naval Battle of Guadalcanal",
+			"start": "11/12/1942",
+			"end": "11/15/1942",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 1900,
+					"leader": "Isoroku Yamamoto",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": 1732,
+					"leader": "William Halsey",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Guadalcanal, Solomon Islands",
+				"lat": -9.186,
+				"lon": 159.89
+			}
+		},
+		{
+			"name": "Battle of Tassafaronga",
+			"start": "11/30/1942",
+			"end": "",
+			"winner": "Imperial Japan",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 197,
+					"leader": "Raizo Tanaka",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": 395,
+					"leader": "Carleton Wright",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Tassafaronga, Guadalcanal",
+				"lat": -9.366,
+				"lon": 159.866
+			}
+		},
+		{
+			"name": "Second Battle of Kharkov",
+			"start": "5/12/1942",
+			"end": "5/28/1942",
+			"winner": "Nazi Germany",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 20000,
+					"leader": "Fedor von Bock",
+					"troops": 350000
+				},
+				{
+					"name": "Soviet Union",
+					"casualities": 170958,
+					"leader": "Semyon Timoshenko",
+					"troops": 765300
+				}
+			],
+			"location": {
+				"name": "Ukrainian SSR, Soviet Union",
+				"lat": 50.0044,
+				"lon": 36.231
+			}
+		},
+		{
+			"name": "Battle of Madagascar",
+			"start": "5/5/1942",
+			"end": "11/6/1942",
+			"winner": "United Kingdom",
+			"countries": [
+				{
+					"name": "Vichy France",
+					"casualities": 150,
+					"leader": "Armand Annet",
+					"troops": 8000
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 107,
+					"leader": "Robert Sturges",
+					"troops": 15000
+				}
+			],
+			"location": {
+				"name": "Madagascar, Indian Ocean",
+				"lat": -12.266,
+				"lon": 49.283
+			}
+		},
+		{
+			"name": "Battle of Rennell Island",
+			"start": "1/29/1943",
+			"end": "1/30/1943",
+			"winner": "Imperial Japan",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 84,
+					"leader": "Isoroku Yamamoto",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": 85,
+					"leader": "William Halsey Jr.",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Rennell Island, Solomon Islands",
+				"lat": -11.416,
+				"lon": 160.933
+			}
+		},
+		{
+			"name": "Third Battle of Kharkov",
+			"start": "2/19/1943",
+			"end": "3/15/1943",
+			"winner": "Nazi Germany",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 4500,
+					"leader": "Erich von Manstein",
+					"troops": 70000
+				},
+				{
+					"name": "Soviet Union",
+					"casualities": 45219,
+					"leader": "Filipp Golikov",
+					"troops": 346000
+				}
+			],
+			"location": {
+				"name": "Ukrainian SSR, Soviet Union",
+				"lat": 49.966,
+				"lon": 36.316
+			}
+		},
+		{
+			"name": "Battle of Kasserine Pass",
+			"start": "2/19/1943",
+			"end": "2/24/1943",
+			"winner": "Nazi Germany",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 2000,
+					"leader": "Erwin Rommel",
+					"troops": 22000
+				},
+				{
+					"name": "United States",
+					"casualities": 10000,
+					"leader": "Lloyd Fredendall",
+					"troops": 30000
+				}
+			],
+			"location": {
+				"name": "Kasserine Pass, Tunisia",
+				"lat": 35.259,
+				"lon": 8.742
+			}
+		},
+		{
+			"name": "Case White",
+			"start": "1/20/1943",
+			"end": "3/30/1943",
+			"winner": "Yugoslavia",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 7000,
+					"leader": "Alexander Lohr",
+					"troops": 90000
+				},
+				{
+					"name": "Yugoslavia",
+					"casualities": 10000,
+					"leader": "Josip Broz Tito",
+					"troops": 20000
+				}
+			],
+			"location": {
+				"name": "West Bosnia",
+				"lat": 43.654,
+				"lon": 17.762
+			}
+		},
+		{
+			"name": "Battle of the Komandorski Islands",
+			"start": "3/27/1943",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 14,
+					"leader": "Boshiro Hosogaya",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": 7,
+					"leader": "Charles McMorris",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Bering Sea",
+				"lat": 53.098,
+				"lon": 168.2127
+			}
+		},
+		{
+			"name": "Battle of Attu",
+			"start": "5/11/1943",
+			"end": "5/30/1943",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 2850,
+					"leader": "Yasuyo Yamasaki",
+					"troops": 2900
+				},
+				{
+					"name": "United States",
+					"casualities": 549,
+					"leader": "John DeWitt",
+					"troops": 15000
+				}
+			],
+			"location": {
+				"name": "Aleutian Islands",
+				"lat": 52.879,
+				"lon": 173.156
+			}
+		},
+		{
+			"name": "Warsaw Ghetto Uprising",
+			"start": "4/19/1943",
+			"end": "5/16/1943",
+			"winner": "Nazi Germany",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 17,
+					"leader": "Jurgen Stroop",
+					"troops": 2090
+				},
+				{
+					"name": "Poland",
+					"casualities": 13000,
+					"leader": "Mordechaj Anielewicz",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Warsaw Ghetto, General Government",
+				"lat": 52.2461,
+				"lon": 20.9958
+			}
+		},
+		{
+			"name": "Case Black",
+			"start": "5/15/1943",
+			"end": "6/16/1943",
+			"winner": "Yugoslavia",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 913,
+					"leader": "Alexander Lohr",
+					"troops": 127000
+				},
+				{
+					"name": "Yugoslavia",
+					"casualities": 7022,
+					"leader": "Josip Broz Tito",
+					"troops": 22148
+				}
+			],
+			"location": {
+				"name": "Sutjeska River, Bosnia",
+				"lat": 43.346,
+				"lon": 18.687
+			}
+		},
+		{
+			"name": "Battle of Kursk",
+			"start": "7/5/1943",
+			"end": "8/23/1943",
+			"winner": "Soviet Union",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 198000,
+					"leader": "Erich von Manstein",
+					"troops": 940900
+				},
+				{
+					"name": "Soviet Union",
+					"casualities": 254470,
+					"leader": "Georgy Zhukov",
+					"troops": 2500000
+				}
+			],
+			"location": {
+				"name": "Kursk, Soviet Union",
+				"lat": 51.716,
+				"lon": 36.183
+			}
+		},
+		{
+			"name": "Allied Invasion of Sicily",
+			"start": "7/9/1943",
+			"end": "8/17/1943",
+			"winner": "United Kingdom",
+			"countries": [
+				{
+					"name": "Italy",
+					"casualities": 167000,
+					"leader": "Alfredo Guzzoni",
+					"troops": 290000
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 24850,
+					"leader": "Harold Alexander",
+					"troops": 467000
+				}
+			],
+			"location": {
+				"name": "Sicily, Italy",
+				"lat": 37.5,
+				"lon": 14
+			}
+		},
+		{
+			"name": "Allied Invasion of Italy",
+			"start": "9/3/1943",
+			"end": "9/16/1943",
+			"winner": "United Kingdom",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 3500,
+					"leader": "Albert Kesselring",
+					"troops": 100000
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 2009,
+					"leader": "Harold Alexander",
+					"troops": 189000
+				}
+			],
+			"location": {
+				"name": "Taranto, Italy",
+				"lat": 40.466,
+				"lon": 17.233
+			}
+		},
+		{
+			"name": "Battle of Kos",
+			"start": "10/3/1943",
+			"end": "10/4/1943",
+			"winner": "Nazi Germany",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 15,
+					"leader": "Friedrich-Wilhelm Muller",
+					"troops": 4000
+				},
+				{
+					"name": "Italy",
+					"casualities": 3145,
+					"leader": "Felice Leggio",
+					"troops": 4888
+				}
+			],
+			"location": {
+				"name": "Kos Island, Aegean Sea",
+				"lat": 36.790,
+				"lon": 27.071
+			}
+		},
+		{
+			"name": "Battle of Leros",
+			"start": "9/26/1943",
+			"end": "11/16/1943",
+			"winner": "Nazi Germany",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 512,
+					"leader": "Friedrich-Wilhelm Muller",
+					"troops": 2800
+				},
+				{
+					"name": "Italy",
+					"casualities": 854,
+					"leader": "Luigi Mascherpa",
+					"troops": 8000
+				}
+			],
+			"location": {
+				"name": "Leros Island, Aegean Sea",
+				"lat": 37.131,
+				"lon": 26.852
+			}
+		},
+		{
+			"name": "Second Battle of Smolensk",
+			"start": "8/7/1943",
+			"end": "10/2/1943",
+			"winner": "Soviet Union",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 12984,
+					"leader": "Gunther von Kluge",
+					"troops": 850000
+				},
+				{
+					"name": "Soviet Union",
+					"casualities": 107645,
+					"leader": "Andrei Yeremenko",
+					"troops": 1252600
+				}
+			],
+			"location": {
+				"name": "Smolensk, Soviet Union",
+				"lat": 54.78333,
+				"lon": 32.05
+			}
+		},
+		{
+			"name": "Second Battle of Kiev",
+			"start": "11/3/1943",
+			"end": "12/22/1943",
+			"winner": "Soviet Union",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": "?",
+					"leader": "Erich von Manstein",
+					"troops": "?"
+				},
+				{
+					"name": "Soviet Union",
+					"casualities": "?",
+					"leader": "Nikolai Vatutin",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Kiev, Soviet Union",
+				"lat": 50.45,
+				"lon": 30.52333
+			}
+		},
+		{
+			"name": "Operation Pointblank",
+			"start": "6/14/1943",
+			"end": "4/19/1944",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 230,
+					"leader": "Adolf Galland",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": 7,
+					"leader": "Curtis LeMay",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Regensburg, Germany",
+				"lat": 49.016,
+				"lon": 12.083
+			}
+		},
+		{
+			"name": "Battle of Tarawa",
+			"start": "11/20/1943",
+			"end": "11/23/1943",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 4690,
+					"leader": "Keiji Shibazaki",
+					"troops": 4819
+				},
+				{
+					"name": "United States",
+					"casualities": 3392,
+					"leader": "Julian Smith",
+					"troops": 35000
+				}
+			],
+			"location": {
+				"name": "Tarawa Atoll",
+				"lat": 1.4269,
+				"lon": 172.975
+			}
+		},
+		{
+			"name": "Battle of Makin",
+			"start": "11/20/1943",
+			"end": "11/23/1943",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 400,
+					"leader": "Seizo Ishikawa",
+					"troops": 800
+				},
+				{
+					"name": "United States",
+					"casualities": 763,
+					"leader": "Richmond Turner",
+					"troops": 6470
+				}
+			],
+			"location": {
+				"name": "Makin Atoll, Gilbert Islands",
+				"lat": 3.09,
+				"lon": 172.817
+			}
+		},
+		{
+			"name": "Battle for the Bernhardt Line",
+			"start": "12/1/1943",
+			"end": "1/15/1944",
+			"winner": "United Kingdom",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": "?",
+					"leader": "Albert Kesselring",
+					"troops": "?"
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": "?",
+					"leader": "Harold Alexander",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Mignano Gap, Italy",
+				"lat": 41.4,
+				"lon": 13.983
+			}
+		},
+		{
+			"name": "Battle of Cisterna",
+			"start": "1/30/1944",
+			"end": "2/2/1944",
+			"winner": "Nazi Germany",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": "?",
+					"leader": "Eberhard von Mackensen",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": "?",
+					"leader": "Mark Clark",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Anzio Beachhead, Italy",
+				"lat": 41.4,
+				"lon": 13.983
+			}
+		},
+		{
+			"name": "Battle of Monte Cassino",
+			"start": "1/17/1944",
+			"end": "5/18/1944",
+			"winner": "United Kingdom",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 20000,
+					"leader": "Albert Kesselring",
+					"troops": 140000
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 55000,
+					"leader": "Harold Alexander",
+					"troops": 240000
+				}
+			],
+			"location": {
+				"name": "Monte Cassino, Italy",
+				"lat": 41.483,
+				"lon": 13.816
+			}
+		},
+		{
+			"name": "Battle of Monte Castello",
+			"start": "11/25/1944",
+			"end": "2/22/1945",
+			"winner": "Brazil",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 70,
+					"leader": "Eccard Freiherr von Gablenz",
+					"troops": 9000
+				},
+				{
+					"name": "Brazil",
+					"casualities": 417,
+					"leader": "Mascarenhas de Moraes",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Monte Castello, Italy",
+				"lat": 44.221,
+				"lon": 10.954
+			}
+		},
+		{
+			"name": "Battle of Anzio",
+			"start": "1/22/1944",
+			"end": "6/5/1944",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 5000,
+					"leader": "Albert Kesselring",
+					"troops": 135000
+				},
+				{
+					"name": "United States",
+					"casualities": 7000,
+					"leader": "Mark Clark",
+					"troops": 150000
+				}
+			],
+			"location": {
+				"name": "Nettunia, Italy",
+				"lat": 41.443,
+				"lon": 12.624
+			}
+		},
+		{
+			"name": "Battle of Kwajalein",
+			"start": "1/31/1944",
+			"end": "2/3/1944",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 7800,
+					"leader": "Monzo Akiyama",
+					"troops": 8000
+				},
+				{
+					"name": "United States",
+					"casualities": 348,
+					"leader": "Richmond Turner",
+					"troops": 46670
+				}
+			],
+			"location": {
+				"name": "Marshall Islands",
+				"lat": 8.716,
+				"lon": 167.733
+			}
+		},
+		{
+			"name": "Battle of the Admin Box",
+			"start": "2/5/1944",
+			"end": "2/23/1944",
+			"winner": "United Kingdom",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 3106,
+					"leader": "Tokutaro Sakurai",
+					"troops": "?"
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 3506,
+					"leader": "Philip Christison",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Arakan, Burma",
+				"lat": 19.5,
+				"lon": 94
+			}
+		},
+		{
+			"name": "Battle of Eniwetok",
+			"start": "2/17/1944",
+			"end": "2/23/1944",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 3380,
+					"leader": "Yoshimi Nishida",
+					"troops": 3500
+				},
+				{
+					"name": "United States",
+					"casualities": 313,
+					"leader": "Harry Hill",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Marshall Islands",
+				"lat": 11.465,
+				"lon": 162.189
+			}
+		},
+		{
+			"name": "Battle of Imphal",
+			"start": "3/8/1944",
+			"end": "7/3/1944",
+			"winner": "United Kingdom",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 54879,
+					"leader": "Masakasu Kawabe",
+					"troops": "?"
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 12603,
+					"leader": "William Slim",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Manipur, British India",
+				"lat": 24.816,
+				"lon": 93.95
+			}
+		},
+		{
+			"name": "Battle of Kohima",
+			"start": "4/4/1944",
+			"end": "6/22/1944",
+			"winner": "United Kingdom",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 5764,
+					"leader": "Kotoku Sato",
+					"troops": 15000
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 4064,
+					"leader": "Montagu Stopford",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Nagaland, British India",
+				"lat": 25.666,
+				"lon": 94.1
+			}
+		},
+		{
+			"name": "Operation Ichi-Go",
+			"start": "4/19/1944",
+			"end": "12/31/1944",
+			"winner": "Imperial Japan",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 100000,
+					"leader": "Shunroku Hata",
+					"troops": 400000
+				},
+				{
+					"name": "Republic of China",
+					"casualities": 300000,
+					"leader": "Tang Enbo",
+					"troops": 390000
+				}
+			],
+			"location": {
+				"name": "Hunan and Guangxi",
+				"lat": 27.4,
+				"lon": 111.8
+			}
+		},
+		{
+			"name": "Operation Rosselsprung",
+			"start": "5/25/1944",
+			"end": "6/6/1944",
+			"winner": "Yugoslavia",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 789,
+					"leader": "Lothar Rendulic",
+					"troops": 20000
+				},
+				{
+					"name": "Yugoslavia",
+					"casualities": 2316,
+					"leader": "Josip Broz Tito",
+					"troops": 17000
+				}
+			],
+			"location": {
+				"name": "Drvar Region, Western Bosnia",
+				"lat": 44.366,
+				"lon": 16.383
+			}
+		},
+		{
+			"name": "Battle of Normandy",
+			"start": "6/6/1944",
+			"end": "8/30/1944",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 530000,
+					"leader": "Gerd von Rundstedt",
+					"troops": 1002200
+				},
+				{
+					"name": "United States",
+					"casualities": 225606,
+					"leader": "Dwight D. Eisenhower",
+					"troops": 2052299
+				}
+			],
+			"location": {
+				"name": "Normandy, France",
+				"lat": 49.333,
+				"lon": -0.566
+			}
+		},
+		{
+			"name": "Battle of Saipan",
+			"start": "6/15/1944",
+			"end": "7/9/1944",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 24000,
+					"leader": "Yoshitsugu Saito",
+					"troops": 32000
+				},
+				{
+					"name": "United States",
+					"casualities": 3426,
+					"leader": "Richmond Turner",
+					"troops": 71000
+				}
+			],
+			"location": {
+				"name": "Saipan, Mariana Islands",
+				"lat": 15.1833,
+				"lon": 145.75
+			}
+		},
+		{
+			"name": "Second Battle of Guam",
+			"start": "7/21/1944",
+			"end": "8/10/1944",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 18337,
+					"leader": "Takeshi Takashina",
+					"troops": 18657
+				},
+				{
+					"name": "United States",
+					"casualities": 1783,
+					"leader": "Roy Geiger",
+					"troops": 59401
+				}
+			],
+			"location": {
+				"name": "Guam, Mariana Islands",
+				"lat": 13.501,
+				"lon": 144.8
+			}
+		},
+		{
+			"name": "Battle of Tinian",
+			"start": "7/24/1944",
+			"end": "8/1/1944",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 5542,
+					"leader": "Kiyochi Ogata",
+					"troops": 8039
+				},
+				{
+					"name": "United States",
+					"casualities": 326,
+					"leader": "Harry Schmidt",
+					"troops": 41364
+				}
+			],
+			"location": {
+				"name": "Tinian, Mariana Islands",
+				"lat": 15,
+				"lon": 145.633
+			}
+		},
+		{
+			"name": "Operation Bagration",
+			"start": "6/22/1944",
+			"end": "8/19/1944",
+			"winner": "Soviet Union",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 381000,
+					"leader": "Ernst Busch",
+					"troops": 1036760
+				},
+				{
+					"name": "Soviet Union",
+					"casualities": 180040,
+					"leader": "Georgy Zhukov",
+					"troops": 2331700
+				}
+			],
+			"location": {
+				"name": "Belarus",
+				"lat": 53.916,
+				"lon": 27.55
+			}
+		},
+		{
+			"name": "Battle of the Philippine Sea",
+			"start": "6/19/1944",
+			"end": "6/20/1944",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 2987,
+					"leader": "Jisaburo Ozawa",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": "?",
+					"leader": "Raymond Spruance",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "The Philippine Sea",
+				"lat": 20,
+				"lon": 130
+			}
+		},
+		{
+			"name": "Battle of Tali-Ihantala",
+			"start": "6/25/1944",
+			"end": "7/9/1944",
+			"winner": "Finland",
+			"countries": [
+				{
+					"name": "Finland",
+					"casualities": 1100,
+					"leader": "Karl Lennart Oesch",
+					"troops": 50000
+				},
+				{
+					"name": "Soviet Union",
+					"casualities": 4500,
+					"leader": "Leonid Govorov",
+					"troops": 150000
+				}
+			],
+			"location": {
+				"name": "Karelian Isthmus",
+				"lat": 60.768,
+				"lon": 28.878
+			}
+		},
+		{
+			"name": "Warsaw Uprising",
+			"start": "8/1/1944",
+			"end": "10/2/1944",
+			"winner": "Nazi Germany",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 9000,
+					"leader": "Walter Model",
+					"troops": 25000
+				},
+				{
+					"name": "Poland",
+					"casualities": 10000,
+					"leader": "Tadeusz Bor-Komorowski",
+					"troops": 49000
+				}
+			],
+			"location": {
+				"name": "Warsaw, Poland",
+				"lat": 52.23,
+				"lon": 21.0108
+			}
+		},
+		{
+			"name": "Operation Dragoon",
+			"start": "8/15/1944",
+			"end": "9/14/1944",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 7000,
+					"leader": "Johannes Blaskowitz",
+					"troops": 300000
+				},
+				{
+					"name": "United States",
+					"casualities": 2050,
+					"leader": "Jacob Devers",
+					"troops": 200000
+				}
+			],
+			"location": {
+				"name": "Southern France",
+				"lat": 43.227,
+				"lon": 6.661
+			}
+		},
+		{
+			"name": "Battle of Arnhem",
+			"start": "9/17/1944",
+			"end": "9/26/1944",
+			"winner": "Nazi Germany",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 1300,
+					"leader": "Walter Model",
+					"troops": "?"
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 1984,
+					"leader": "Roy Urquhart",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Netherlands",
+				"lat": 51.9802,
+				"lon": 5.9003
+			}
+		},
+		{
+			"name": "Battle of Peleliu",
+			"start": "9/15/1944",
+			"end": "11/27/1944",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 10700,
+					"leader": "Kunio Nakagawa",
+					"troops": 10900
+				},
+				{
+					"name": "United States",
+					"casualities": 1508,
+					"leader": "William Rupertus",
+					"troops": 47561
+				}
+			],
+			"location": {
+				"name": "Peleliu, Palau Islands",
+				"lat": 7,
+				"lon": 134.25
+			}
+		},
+		{
+			"name": "Battle of Aachen",
+			"start": "10/2/1944",
+			"end": "10/21/1944",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 5000,
+					"leader": "Gerhard Wilck",
+					"troops": 13000
+				},
+				{
+					"name": "United States",
+					"casualities": 5000,
+					"leader": "Courtney Hodges",
+					"troops": 100000
+				}
+			],
+			"location": {
+				"name": "Aachen, Germany",
+				"lat": 50.766,
+				"lon": 6.1
+			}
+		},
+		{
+			"name": "Battle of the Sheldt",
+			"start": "10/2/1944",
+			"end": "11/8/1944",
+			"winner": "Canada",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 12000,
+					"leader": "Gustav-Adolf von Zangen",
+					"troops": 90000
+				},
+				{
+					"name": "Canada",
+					"casualities": 6367,
+					"leader": "Bertram Ramsay",
+					"troops": 60000
+				}
+			],
+			"location": {
+				"name": "Northern Belgium",
+				"lat": 51.416,
+				"lon": 4.166
+			}
+		},
+		{
+			"name": "Battle of Angaur",
+			"start": "9/17/1944",
+			"end": "10/22/1944",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 1350,
+					"leader": "Ushio Goto",
+					"troops": 1400
+				},
+				{
+					"name": "United States",
+					"casualities": 260,
+					"leader": "Paul Mueller",
+					"troops": 10000
+				}
+			],
+			"location": {
+				"name": "Palau Islands",
+				"lat": 6.9,
+				"lon": 134.133
+			}
+		},
+		{
+			"name": "Battle of Hurtgen Forest",
+			"start": "9/19/1944",
+			"end": "12/16/1944",
+			"winner": "Nazi Germany",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 28000,
+					"leader": "Walter Model",
+					"troops": 80000
+				},
+				{
+					"name": "United States",
+					"casualities": 33000,
+					"leader": "Omar Bradley",
+					"troops": 120000
+				}
+			],
+			"location": {
+				"name": "German-Belgian Border",
+				"lat": 50.708,
+				"lon": 6.362
+			}
+		},
+		{
+			"name": "Battle of Leyte",
+			"start": "10/17/1944",
+			"end": "12/26/1944",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 70000,
+					"leader": "Tomoyuki Yamashita",
+					"troops": 85000
+				},
+				{
+					"name": "United States",
+					"casualities": 3504,
+					"leader": "Douglas MacArthur",
+					"troops": 320000
+				}
+			],
+			"location": {
+				"name": "Leyte Island, Philippines",
+				"lat": 10.95,
+				"lon": 124.833
+			}
+		},
+		{
+			"name": "Battle of Leyte Gulf",
+			"start": "10/23/1944",
+			"end": "10/26/1944",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 12500,
+					"leader": "Takeo Kurita",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": 2800,
+					"leader": "William Halsey",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Leyte Gulf, Philippines",
+				"lat": 10.37,
+				"lon": 125.355
+			}
+		},
+		{
+			"name": "Operation Queen",
+			"start": "11/16/1944",
+			"end": "12/16/1944",
+			"winner": "Nazi Germany",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 38500,
+					"leader": "Walter Model",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": 38500,
+					"leader": "Omar Bradley",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Rur Valley, Germany",
+				"lat": 51.197,
+				"lon": 5.981
+			}
+		},
+		{
+			"name": "Battle of the Bulge",
+			"start": "12/16/1944",
+			"end": "1/25/1945",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 100000,
+					"leader": "Adolf Hitler",
+					"troops": 300000
+				},
+				{
+					"name": "United States",
+					"casualities": 89500,
+					"leader": "Dwight D. Eisenhower",
+					"troops": 610000
+				}
+			],
+			"location": {
+				"name": "The Ardennes",
+				"lat": 50.25,
+				"lon": 5.666
+			}
+		},
+		{
+			"name": "Operation Elephant",
+			"start": "1/26/1945",
+			"end": "1/31/1945",
+			"winner": "Canada",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 243,
+					"leader": "?",
+					"troops": "?"
+				},
+				{
+					"name": "Canada",
+					"casualities": 300,
+					"leader": "?",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Kapelsche Veer, Netherlands",
+				"lat": 51.692,
+				"lon": 4.985
+			}
+		},
+		{
+			"name": "Raid at Cabanatuan",
+			"start": "1/30/1945",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 1000,
+					"leader": "Tomoyuki Yamashita",
+					"troops": 1220
+				},
+				{
+					"name": "United States",
+					"casualities": 2,
+					"leader": "Henry Mucci",
+					"troops": 413
+				}
+			],
+			"location": {
+				"name": "Nueva Ecija, Philippines",
+				"lat": 15.509,
+				"lon": 121.044
+			}
+		},
+		{
+			"name": "Prague Offensive",
+			"start": "5/6/1945",
+			"end": "5/11/1945",
+			"winner": "Soviet Union",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 860000,
+					"leader": "Ferdinand Schorner",
+					"troops": 650000
+				},
+				{
+					"name": "Soviet Union",
+					"casualities": 49348,
+					"leader": "Ivan Konev",
+					"troops": 1770700
+				}
+			],
+			"location": {
+				"name": "Prague, Czechoslovakia",
+				"lat": 50.083,
+				"lon": 14.416
+			}
+		},
+		{
+			"name": "Operation Spring Awakening",
+			"start": "3/6/1945",
+			"end": "3/16/1945",
+			"winner": "Soviet Union",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 12358,
+					"leader": "Josef Dietrich",
+					"troops": 465050
+				},
+				{
+					"name": "Soviet Union",
+					"casualities": 8492,
+					"leader": "Fyodor Tolbukhin",
+					"troops": 431000
+				}
+			],
+			"location": {
+				"name": "Lake Balaton, Hungary",
+				"lat": 46.983,
+				"lon": 18.35
+			}
+		},
+		{
+			"name": "Battle of Bataan",
+			"start": "1/31/1945",
+			"end": "2/21/1945",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 2400,
+					"leader": "Rikichi Tsukada",
+					"troops": 2800
+				},
+				{
+					"name": "United States",
+					"casualities": 338,
+					"leader": "Charles Hall",
+					"troops": 35000
+				}
+			],
+			"location": {
+				"name": "Bataan Peninsula, Philippines",
+				"lat": 14.666,
+				"lon": 120.416
+			}
+		},
+		{
+			"name": "Battle of Manila",
+			"start": "2/3/1945",
+			"end": "3/3/1945",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 16665,
+					"leader": "Iwabuchi Sanji",
+					"troops": 12500
+				},
+				{
+					"name": "United States",
+					"casualities": 1010,
+					"leader": "Douglas MacArthur",
+					"troops": 35000
+				}
+			],
+			"location": {
+				"name": "Manila, Philippines",
+				"lat": 14.583,
+				"lon": 120.966
+			}
+		},
+		{
+			"name": "Battle of Luzon",
+			"start": "1/9/1945",
+			"end": "8/15/1945",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 214585,
+					"leader": "Tomoyuki Yamashita",
+					"troops": 287000
+				},
+				{
+					"name": "United States",
+					"casualities": 37870,
+					"leader": "Douglas MacArthur",
+					"troops": 280000
+				}
+			],
+			"location": {
+				"name": "Luzon, Philippines",
+				"lat": 16,
+				"lon": 121
+			}
+		},
+		{
+			"name": "Battle for the Recapture of Corregidor",
+			"start": "2/16/1945",
+			"end": "2/26/1945",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 6600,
+					"leader": "Rikichi Tsukada",
+					"troops": 6700
+				},
+				{
+					"name": "United States",
+					"casualities": 207,
+					"leader": "George Jones",
+					"troops": 7000
+				}
+			],
+			"location": {
+				"name": "Corregidor, Philippines",
+				"lat": 14.3855,
+				"lon": 120.5730
+			}
+		},
+		{
+			"name": "Los Banos Raid",
+			"start": "2/23/1945",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 80,
+					"leader": "T. Iwanaka",
+					"troops": 10000
+				},
+				{
+					"name": "United States",
+					"casualities": 3,
+					"leader": "Henry Burgress",
+					"troops": 1100
+				}
+			],
+			"location": {
+				"name": "Laguna, Philippines",
+				"lat": 14.161,
+				"lon": 121.242
+			}
+		},
+		{
+			"name": "Battle of Mindanao",
+			"start": "3/10/1945",
+			"end": "8/15/1945",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 6400,
+					"leader": "Gyosaku Morozumi",
+					"troops": 102000
+				},
+				{
+					"name": "United States",
+					"casualities": 886,
+					"leader": "Franklin Sibert",
+					"troops": 600000
+				}
+			],
+			"location": {
+				"name": "Mindanao Island, Philippines",
+				"lat": 8,
+				"lon": 125
+			}
+		},
+		{
+			"name": "Operation Varsity",
+			"start": "3/24/1945",
+			"end": "",
+			"winner": "United Kingdom",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 3500,
+					"leader": "Gunther Blumentritt",
+					"troops": 8000
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 2700,
+					"leader": "Bernard Montgomery",
+					"troops": 16870
+				}
+			],
+			"location": {
+				"name": "Wesel, Germany",
+				"lat": 51.658,
+				"lon": 6.617
+			}
+		},
+		{
+			"name": "Battle of the Visayas",
+			"start": "3/18/1945",
+			"end": "7/30/1945",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 14300,
+					"leader": "Sosaku Suzuki",
+					"troops": 32000
+				},
+				{
+					"name": "United States",
+					"casualities": 835,
+					"leader": "Robert Eichelberger",
+					"troops": 35500
+				}
+			],
+			"location": {
+				"name": "Visayas Region, Philippines",
+				"lat": 11,
+				"lon": 123.5
+			}
+		},
+		{
+			"name": "Battle of Central Burma",
+			"start": "1/1/1945",
+			"end": "3/1/1945",
+			"winner": "United Kingdom",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 6513,
+					"leader": "Hyotaro Kimura",
+					"troops": "?"
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 2307,
+					"leader": "Sir William Slim",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Central Burma",
+				"lat": 22,
+				"lon": 96
+			}
+		},
+		{
+			"name": "Battle of Iwo Jima",
+			"start": "2/19/1945",
+			"end": "3/26/1945",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 18375,
+					"leader": "Tadamichi Kuribayashi",
+					"troops": 21060
+				},
+				{
+					"name": "United States",
+					"casualities": 6821,
+					"leader": "Chester Nimitz",
+					"troops": 110000
+				}
+			],
+			"location": {
+				"name": "Iwo Jima, Volcano Islands",
+				"lat": 24.783,
+				"lon": 141.316
+			}
+		},
+		{
+			"name": "Battle of Halbe",
+			"start": "4/24/1945",
+			"end": "5/1/1945",
+			"winner": "Soviet Union",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 30000,
+					"leader": "Theodor Busse",
+					"troops": 210000
+				},
+				{
+					"name": "Soviet Union",
+					"casualities": 20000,
+					"leader": "Ivan Konev",
+					"troops": 280000
+				}
+			],
+			"location": {
+				"name": "Halbe, Germany",
+				"lat": 52.106,
+				"lon": 13.7008
+			}
+		},
+		{
+			"name": "Battle of Berlin",
+			"start": "4/16/1945",
+			"end": "5/2/1945",
+			"winner": "Soviet Union",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 100000,
+					"leader": "Adolf Hitler",
+					"troops": 766750
+				},
+				{
+					"name": "Soviet Union",
+					"casualities": 81116,
+					"leader": "Georgy Zhukov",
+					"troops": 2500000
+				}
+			],
+			"location": {
+				"name": "Berlin, Germany",
+				"lat": 52.516,
+				"lon": 13.383
+			}
+		},
+		{
+			"name": "Battle of Tarakan",
+			"start": "5/1/1945",
+			"end": "6/21/1945",
+			"winner": "Australia",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 1540,
+					"leader": "Tadai Tokoi",
+					"troops": 2200
+				},
+				{
+					"name": "Australia",
+					"casualities": 251,
+					"leader": "David Whitehead",
+					"troops": 15532
+				}
+			],
+			"location": {
+				"name": "Tarakan Island, Netherlands East Indies",
+				"lat": 3.35,
+				"lon": 117.566
+			}
+		},
+		{
+			"name": "Battle of Poljana",
+			"start": "5/14/1945",
+			"end": "5/15/1945",
+			"winner": "Yugoslavia",
+			"countries": [
+				{
+					"name": "Nazi Germany",
+					"casualities": 350,
+					"leader": "?",
+					"troops": 30000
+				},
+				{
+					"name": "Yugoslavia",
+					"casualities": 100,
+					"leader": "Kosta Nad",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Prevalje, Yugoslavia",
+				"lat": 46.544,
+				"lon": 14.873
+			}
+		},
+		{
+			"name": "Battle of West Hunan",
+			"start": "4/9/1945",
+			"end": "6/7/1945",
+			"winner": "Republic of China",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 27000,
+					"leader": "Ichiro Banzai",
+					"troops": 80000
+				},
+				{
+					"name": "Republic of China",
+					"casualities": 7737,
+					"leader": "He Yingqin",
+					"troops": 110000
+				}
+			],
+			"location": {
+				"name": "West Hunan",
+				"lat": 30.416,
+				"lon": 111.75
+			}
+		},
+		{
+			"name": "Battle of Okinawa",
+			"start": "3/26/1945",
+			"end": "6/22/1945",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 77166,
+					"leader": "Mitsuru Ushijima",
+					"troops": 97000
+				},
+				{
+					"name": "United States",
+					"casualities": 20195,
+					"leader": "Simon Buckner",
+					"troops": 541000
+				}
+			],
+			"location": {
+				"name": "Okinawa, Japan",
+				"lat": 26.5,
+				"lon": 128
+			}
+		},
+		{
+			"name": "Battle of North Borneo",
+			"start": "6/10/1945",
+			"end": "8/15/1945",
+			"winner": "Australia",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 1234,
+					"leader": "Baba Masao",
+					"troops": 8800
+				},
+				{
+					"name": "Australia",
+					"casualities": 114,
+					"leader": "George Wootten",
+					"troops": 30000
+				}
+			],
+			"location": {
+				"name": "North Borneo",
+				"lat": 5.833,
+				"lon": 118.116
+			}
+		},
+		{
+			"name": "Battle of Manchuria",
+			"start": "8/9/1945",
+			"end": "8/20/1945",
+			"winner": "Soviet Union",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 83737,
+					"leader": "Otozo Yamada",
+					"troops": 700000
+				},
+				{
+					"name": "Soviet Union",
+					"casualities": 9726,
+					"leader": "Aleksandr Vasilevsky",
+					"troops": 1685500
+				}
+			],
+			"location": {
+				"name": "Inner Mongolia",
+				"lat": 45,
+				"lon": 125
+			}
+		},
+		{
+			"name": "Atomic Bombing of Hiroshima",
+			"start": "8/6/1945",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 146000,
+					"leader": "Shunroku Hata",
+					"troops": 40000
+				},
+				{
+					"name": "United States",
+					"casualities": 20,
+					"leader": "William Parsons",
+					"troops": 1770
+				}
+			],
+			"location": {
+				"name": "Hiroshima, Japan",
+				"lat": 34.385,
+				"lon": 132.455
+			}
+		},
+		{
+			"name": "Atomic Bombing of Nagasaki",
+			"start": "8/9/1945",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Imperial Japan",
+					"casualities": 80000,
+					"leader": "Shunroku Hata",
+					"troops": 9000
+				},
+				{
+					"name": "United States",
+					"casualities": 0,
+					"leader": "William Parsons",
+					"troops": 1770
+				}
+			],
+			"location": {
+				"name": "Nagasaki, Japan",
+				"lat": 32.783,
+				"lon": 129.866
+			}
+		}
+	],
+	"countries": [
+		{
+			"name": "Australia",
+			"leaders": [
+				{
+					"name": "Robert Menzies",
+					"title": "Prime Minister"
+				}
+			]
+		},
+		{
+			"name": "Belgium",
+			"leaders": [
+				{
+					"name": "Leopold III",
+					"title": "King"
+				}
+			]
+		},
+		{
+			"name": "Brazil",
+			"leaders": [
+				{
+					"name": "Getuilo Vargas",
+					"title": "President"
+				}
+			]
+		},
+		{
+			"name": "Canada",
+			"leaders": [
+				{
+					"name": "William Lyon Mackenzie King",
+					"title": "Prime Minister"
+				}
+			]
+		},
+		{
+			"name": "France",
+			"leaders": [
+				{
+					"name": "Charles de Gaulle",
+					"title": "Commander"
+				}
+			]
+		},
+		{
+			"name": "Vichy France",
+			"leaders": [
+				{
+					"name": "Philippe Petain",
+					"title": "Prime Minister"
+				}
+			]
+		},
+		{
+			"name": "Finland",
+			"leaders": [
+				{
+					"name": "Kyosti Kallio",
+					"title": "President"
+				}
+			]
+		},
+		{
+			"name": "Imperial Japan",
+			"leaders": [
+				{
+					"name": "Hideki Tojo",
+					"title": "Prime Minister"
+				}
+			]
+		},
+		{
+			"name": "Italy",
+			"leaders": [
+				{
+					"name": "Benito Mussolini",
+					"title": "Prime Minister"
+				}
+			]
+		},
+		{
+			"name": "Kingdom of Greece",
+			"leaders": [
+				{
+					"name": "George II",
+					"title": "King"
+				}
+			]
+		},
+		{
+			"name": "Nazi Germany",
+			"leaders": [
+				{
+					"name": "Adolf Hitler",
+					"title": "Fuhrer"
+				}
+			]
+		},
+		{
+			"name": "Netherlands",
+			"leaders": [
+				{
+					"name": "Wilhelmina",
+					"title": "Queen"
+				}
+			]
+		},
+		{
+			"name": "Norway",
+			"leaders": [
+				{
+					"name": "Vidkun Quisling",
+					"title": "Minister President"
+				}
+			]
+		},
+		{
+			"name": "Poland",
+			"leaders": [
+				{
+					"name": "Ignacy Moscicki",
+					"title": "President"
+				}
+			]
+		},
+		{
+			"name": "Republic of China",
+			"leaders": [
+				{
+					"name": "Chiang Kai-shek",
+					"title": "Commander"
+				}
+			]
+		},
+		{
+			"name": "Soviet Union",
+			"leaders": [
+				{
+					"name": "Joseph Stalin",
+					"title": "Premier"
+				}
+			]
+		},
+		{
+			"name": "Thailand",
+			"leaders": [
+				{
+					"name": "Ananda Mahidol",
+					"title": "King"
+				}
+			]
+		},
+		{
+			"name": "United Kingdom",
+			"leaders": [
+				{
+					"name": "Winston Churchill",
+					"title": "Prime Minister"
+				}
+			]
+		},
+		{
+			"name": "United States",
+			"leaders": [
+				{
+					"name": "Franklin D. Roosevelt",
+					"title": "President"
+				},
+				{
+					"name": "Harry S. Truman",
+					"title": "President"
+				}
+			]
+		},
+		{
+			"name": "Yugoslavia",
+			"leaders": [
+				{
+					"name": "Josip Broz Tito",
+					"title": "Prime Minister"
+				}
+			]
+		}
+	]
+}

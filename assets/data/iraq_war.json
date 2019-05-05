@@ -1,0 +1,610 @@
+{
+	"battles": [
+		{
+			"name": "2003 Mosul Raid",
+			"start": "7/22/2003",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Iraq",
+					"casualities": 4,
+					"leader": "Uday Hussein",
+					"troops": 4
+				},
+				{
+					"name": "United States",
+					"casualities": 0,
+					"leader": "Frank Helmick",
+					"troops": 240
+				}
+			],
+			"location": {
+				"name": "Mosul, Iraq",
+				"lat": 36.3566,
+				"lon": 43.1640
+			}
+		},
+		{
+			"name": "Battle of Al Faw",
+			"start": "3/20/2003",
+			"end": "3/24/2003",
+			"winner": "United Kingdom",
+			"countries": [
+				{
+					"name": "Iraq",
+					"casualities": 150,
+					"leader": "?",
+					"troops": 1000
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 19,
+					"leader": "?",
+					"troops": 3500
+				}
+			],
+			"location": {
+				"name": "Al Faw, Iraq",
+				"lat": 29.9812,
+				"lon": 48.4676
+			}
+		},
+		{
+			"name": "Battle of Al Kut",
+			"start": "4/3/2003",
+			"end": "4/4/2003",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Iraq",
+					"casualities": 200,
+					"leader": "Saleh Hammadi Salmani",
+					"troops": 2750
+				},
+				{
+					"name": "United States",
+					"casualities": 1,
+					"leader": "Joe W. Dowdy",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Al Kut, Iraq",
+				"lat": 32.5168,
+				"lon": 45.8470
+			}
+		},
+		{
+			"name": "Battle of Baghdad",
+			"start": "4/3/2003",
+			"end": "4/12/2003",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Iraq",
+					"casualities": 2000,
+					"leader": "Saddam Hussein",
+					"troops": 45000
+				},
+				{
+					"name": "United States",
+					"casualities": 34,
+					"leader": "George W. Bush",
+					"troops": 30000
+				}
+			],
+			"location": {
+				"name": "Baghdad, Iraq",
+				"lat": 33.3152,
+				"lon": 44.3661
+			}
+		},
+		{
+			"name": "Battle of Basra",
+			"start": "3/21/2003",
+			"end": "4/6/2003",
+			"winner": "United Kingdom",
+			"countries": [
+				{
+					"name": "Iraq",
+					"casualities": 450,
+					"leader": "?",
+					"troops": "?"
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 11,
+					"leader": "?",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Basra, Iraq",
+				"lat": 30.5081,
+				"lon": 47.7835
+			}
+		},
+		{
+			"name": "Battle of the Karbala Gap",
+			"start": "4/2/2003",
+			"end": "4/4/2003",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Iraq",
+					"casualities": 750,
+					"leader": "Ra'ad al-Hamdani",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": 1,
+					"leader": "Buford Blount II",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Karbala, Iraq",
+				"lat": 32.6068,
+				"lon": 44.0104
+			}
+		},
+		{
+			"name": "Battle of Debecka Pass",
+			"start": "4/6/2003",
+			"end": "4/7/2003",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Iraq",
+					"casualities": 14,
+					"leader": "?",
+					"troops": 100
+				},
+				{
+					"name": "United States",
+					"casualities": 18,
+					"leader": "?",
+					"troops": 180
+				}
+			],
+			"location": {
+				"name": "Kirkuk, Iraq",
+				"lat": 35.4656,
+				"lon": 44.3804
+			}
+		},
+		{
+			"name": "Battle of Al Hillah",
+			"start": "3/31/2003",
+			"end": "4/2/2003",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Iraq",
+					"casualities": 1200,
+					"leader": "?",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": 1,
+					"leader": "Joseph Anderson",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Hillah, Iraq",
+				"lat": 32.4773,
+				"lon": 44.4276
+			}
+		},
+		{
+			"name": "Battle of Najaf",
+			"start": "3/24/2003",
+			"end": "4/4/2003",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Iraq",
+					"casualities": 650,
+					"leader": "Mizban Khadr al-Hadi",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": 4,
+					"leader": "William S. Wallace",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Najaf, Iraq",
+				"lat": 32.0274,
+				"lon": 44.3331
+			}
+		},
+		{
+			"name": "Battle of Nasiriyah",
+			"start": "3/23/2003",
+			"end": "3/29/2003",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Iraq",
+					"casualities": 400,
+					"leader": "Ali Hassan al-Majid",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": 32,
+					"leader": "Richard Natonski",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Nasiriyah, Iraq",
+				"lat": 31.0452,
+				"lon": 46.2666
+			}
+		},
+		{
+			"name": "Operation Viking Hammer",
+			"start": "3/28/2003",
+			"end": "3/30/2003",
+			"winner": "Kurdistan",
+			"countries": [
+				{
+					"name": "Ansar al-Islam",
+					"casualities": 175,
+					"leader": "Abu Musab al-Zarqawi",
+					"troops": 700
+				},
+				{
+					"name": "Kurdistan",
+					"casualities": 30,
+					"leader": "Jalal Talabani",
+					"troops": 7000
+				}
+			],
+			"location": {
+				"name": "Halabja, Iraq",
+				"lat": 35.1655,
+				"lon": 45.9896
+			}
+		},
+		{
+			"name": "Battle of Samawah",
+			"start": "3/30/2003",
+			"end": "4/4/2003",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Iraq",
+					"casualities": 46,
+					"leader": "Mizban Khidar Hadi",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": 1,
+					"leader": "Charles Swannack",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Samawah, Iraq",
+				"lat": 31.3188,
+				"lon": 45.2806
+			}
+		},
+		{
+			"name": "Battle of Umm Qasr",
+			"start": "3/21/2003",
+			"end": "3/25/2003",
+			"winner": "United Kingdom",
+			"countries": [
+				{
+					"name": "Iraq",
+					"casualities": 35,
+					"leader": "Ali Ibrahim",
+					"troops": "?"
+				},
+				{
+					"name": "United Kingdom",
+					"casualities": 14,
+					"leader": "Jim Dulton",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Umm Qasr, Iraq",
+				"lat": 30.0398,
+				"lon": 47.9268
+			}
+		},
+		{
+			"name": "First Battle of Fallujah",
+			"start": "4/4/2004",
+			"end": "5/1/2004",
+			"winner": "Al-Qaeda",
+			"countries": [
+				{
+					"name": "Al-Qaeda",
+					"casualities": 200,
+					"leader": "Omar Hadid",
+					"troops": 3600
+				},
+				{
+					"name": "United States",
+					"casualities": 27,
+					"leader": "James T. Conway",
+					"troops": 2200
+				}
+			],
+			"location": {
+				"name": "Fallujah, Iraq",
+				"lat": 33.3443,
+				"lon": 43.7812
+			}
+		},
+		{
+			"name": "Second Battle of Fallujah",
+			"start": "11/7/2004",
+			"end": "12/23/2004",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Al-Qaeda",
+					"casualities": 2000,
+					"leader": "Abu Musab al-Zarqawi",
+					"troops": 3800
+				},
+				{
+					"name": "United States",
+					"casualities": 100,
+					"leader": "Richard F. Natonski",
+					"troops": 13350
+				}
+			],
+			"location": {
+				"name": "Fallujah, Iraq",
+				"lat": 33.3444,
+				"lon": 43.7813
+			}
+		},
+		{
+			"name": "Operation Matador",
+			"start": "5/8/2005",
+			"end": "5/19/2005",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Al-Qaeda",
+					"casualities": 125,
+					"leader": "Sulaiman Khalid Darwaish",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": 9,
+					"leader": "Stephen W. Davis",
+					"troops": 1000
+				}
+			],
+			"location": {
+				"name": "Ubaydi, Iraq",
+				"lat": 34.4299,
+				"lon": 41.2281
+			}
+		},
+		{
+			"name": "Battle of Haditha",
+			"start": "8/1/2005",
+			"end": "8/4/2005",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Al-Qaeda",
+					"casualities": 40,
+					"leader": "?",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": 21,
+					"leader": "Stephen W. Davis",
+					"troops": 1000
+				}
+			],
+			"location": {
+				"name": "Haditha, Iraq",
+				"lat": 34.1252,
+				"lon": 42.3742
+			}
+		},
+		{
+			"name": "Lake Tharthar Raid",
+			"start": "3/23/2005",
+			"end": "",
+			"winner": "Iraq",
+			"countries": [
+				{
+					"name": "Al-Qaeda",
+					"casualities": 84,
+					"leader": "?",
+					"troops": 120
+				},
+				{
+					"name": "Iraq",
+					"casualities": 7,
+					"leader": "?",
+					"troops": 30
+				}
+			],
+			"location": {
+				"name": "Lake Tharthar, Iraq",
+				"lat": 33.9847,
+				"lon": 43.2522
+			}
+		},
+		{
+			"name": "Battle of Tal Afar",
+			"start": "9/1/2005",
+			"end": "9/18/2005",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Al-Qaeda",
+					"casualities": 163,
+					"leader": "?",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": 19,
+					"leader": "H. R. McMaster",
+					"troops": 8500
+				}
+			],
+			"location": {
+				"name": "Tal Afar, Iraq",
+				"lat": 36.3624,
+				"lon": 42.4037
+			}
+		},
+		{
+			"name": "Battle of Ramadi",
+			"start": "5/15/2006",
+			"end": "11/15/2006",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Al-Qaeda",
+					"casualities": 900,
+					"leader": "?",
+					"troops": 5000
+				},
+				{
+					"name": "United States",
+					"casualities": 110,
+					"leader": "Sean MacFarland",
+					"troops": 5500
+				}
+			],
+			"location": {
+				"name": "Ramadi, Iraq",
+				"lat": 33.4353,
+				"lon": 43.2812
+			}
+		},
+		{
+			"name": "Battle of Baqubah",
+			"start": "3/10/2007",
+			"end": "8/19/2007",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Al-Qaeda",
+					"casualities": 227,
+					"leader": "?",
+					"troops": 2500
+				},
+				{
+					"name": "United States",
+					"casualities": 22,
+					"leader": "Stephen Townsend",
+					"troops": 5000
+				}
+			],
+			"location": {
+				"name": "Baqubah, Iraq",
+				"lat": 33.7596,
+				"lon": 44.6067
+			}
+		},
+		{
+			"name": "The Battle of Haifa Street",
+			"start": "1/6/2007",
+			"end": "1/9/2007",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Al-Qaeda",
+					"casualities": 133,
+					"leader": "?",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": 20,
+					"leader": "?",
+					"troops": 900
+				}
+			],
+			"location": {
+				"name": "Baghdad, Iraq",
+				"lat": 33.3153,
+				"lon": 44.3662
+			}
+		}
+	],
+	"countries": [
+		{
+			"name": "Al-Qaeda",
+			"leaders": [
+				{
+					"name": "Osama bin Laden",
+					"title": "Leader"
+				}
+			]
+		},
+		{
+			"name": "Ansar al-Islam",
+			"leaders": [
+				{
+					"name": "Abu Abdullah al-Shafi'i",
+					"title": "Leader"
+				}
+			]
+		},
+		{
+			"name": "Iraq",
+			"leaders": [
+				{
+					"name": "Saddam Hussein",
+					"title": "President"
+				}
+			]
+		},
+		{
+			"name": "Kurdistan",
+			"leaders": [
+				{
+					"name": "Masoud Barzani",
+					"title": "President"
+				}
+			]
+		},
+		{
+			"name": "United Kingdom",
+			"leaders": [
+				{
+					"name": "Tony Blair",
+					"title": "Prime Minister"
+				}
+			]
+		},
+		{
+			"name": "United States",
+			"leaders": [
+				{
+					"name": "George W. Bush",
+					"title": "President"
+				}
+			]
+		}
+	]
+}

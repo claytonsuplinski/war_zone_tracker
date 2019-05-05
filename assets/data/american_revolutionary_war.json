@@ -1,0 +1,1548 @@
+{
+	"battles": [
+		{
+			"name": "Battles of Lexington and Concord",
+			"start": "4/19/1775",
+			"end": "4/19/1775",
+			"winner": "Massachusetts Bay",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 73,
+					"leader": "Francis Smith",
+					"troops": 1500
+				},
+				{
+					"name": "Massachusetts Bay",
+					"casualities": 49,
+					"leader": "John Parker",
+					"troops": 3960
+				}
+			],
+			"location": {
+				"name": "Middlesex County, Massachusetts",
+				"lat": 42.449,
+				"lon": -71.230
+			}
+		},
+		{
+			"name": "Capture of Fort Ticonderoga",
+			"start": "5/10/1775",
+			"end": "5/10/1775",
+			"winner": "Massachusetts Bay",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 0,
+					"leader": "William Delaplace",
+					"troops": 78
+				},
+				{
+					"name": "Massachusetts Bay",
+					"casualities": 0,
+					"leader": "Benedict Arnold",
+					"troops": 168
+				}
+			],
+			"location": {
+				"name": "Essex County, New York",
+				"lat": 43.841,
+				"lon": -73.388
+			}
+		},
+		{
+			"name": "Battle of Chelsea Creek",
+			"start": "5/27/1775",
+			"end": "5/28/1775",
+			"winner": "United Colonies",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 2,
+					"leader": "Samuel Graves",
+					"troops": 500
+				},
+				{
+					"name": "United Colonies",
+					"casualities": 0,
+					"leader": "John Stark",
+					"troops": 900
+				}
+			],
+			"location": {
+				"name": "Suffolk County, Massachusetts",
+				"lat": 42.381,
+				"lon": -71.032
+			}
+		},
+		{
+			"name": "Battle of Machias",
+			"start": "6/11/1775",
+			"end": "6/12/1775",
+			"winner": "Massachusetts Bay",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 5,
+					"leader": "James Moore",
+					"troops": 40
+				},
+				{
+					"name": "Massachusetts Bay",
+					"casualities": 10,
+					"leader": "Jeremiah O'Brien",
+					"troops": 55
+				}
+			],
+			"location": {
+				"name": "Machias, Massachusetts",
+				"lat": 44.714,
+				"lon": -67.460
+			}
+		},
+		{
+			"name": "Battle of Bunker Hill",
+			"start": "6/17/1775",
+			"end": "6/17/1775",
+			"winner": "Great Britain",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 1054,
+					"leader": "William Howe",
+					"troops": 3000
+				},
+				{
+					"name": "United Colonies",
+					"casualities": 450,
+					"leader": "Israel Putnam",
+					"troops": 2400
+				}
+			],
+			"location": {
+				"name": "Charlestown, Massachusetts",
+				"lat": 42.376,
+				"lon": -71.060
+			}
+		},
+		{
+			"name": "Battle of Gloucester",
+			"start": "8/8/1775",
+			"end": "8/9/1775",
+			"winner": "Massachusetts Bay",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 1,
+					"leader": "John Linzee",
+					"troops": "?"
+				},
+				{
+					"name": "Massachusetts Bay",
+					"casualities": 2,
+					"leader": "Joseph Foster",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Cape Ann, Massachusetts",
+				"lat": 42.606,
+				"lon": -70.663
+			}
+		},
+		{
+			"name": "Battle of Kemp's Landing",
+			"start": "11/15/1775",
+			"end": "11/15/1775",
+			"winner": "Great Britain",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 0,
+					"leader": "John Murray",
+					"troops": 120
+				},
+				{
+					"name": "Virginia Colony",
+					"casualities": 7,
+					"leader": "Joseph Hutchings",
+					"troops": 170
+				}
+			],
+			"location": {
+				"name": "Kemp's Landing, Virginia",
+				"lat": 36.826,
+				"lon": -76.160
+			}
+		},
+		{
+			"name": "Siege of Savage's Old Fields",
+			"start": "11/19/1775",
+			"end": "11/21/1775",
+			"winner": "South Carolina Patriots",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 4,
+					"leader": "Patrick Cunningham",
+					"troops": 1900
+				},
+				{
+					"name": "South Carolina Patriots",
+					"casualities": 1,
+					"leader": "Andrew Williamson",
+					"troops": 560
+				}
+			],
+			"location": {
+				"name": "Ninety Six, South Carolina",
+				"lat": 34.173,
+				"lon": -82.021
+			}
+		},
+		{
+			"name": "Battle of Great Bridge",
+			"start": "12/9/1775",
+			"end": "12/9/1775",
+			"winner": "Virginia Colony",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 62,
+					"leader": "Samuel Leslie",
+					"troops": 409
+				},
+				{
+					"name": "Virginia Colony",
+					"casualities": 0,
+					"leader": "William Woodford",
+					"troops": 861
+				}
+			],
+			"location": {
+				"name": "Great Bridge, Virgina",
+				"lat": 36.714,
+				"lon": -76.238
+			}
+		},
+		{
+			"name": "Battle of Quebec",
+			"start": "12/31/1775",
+			"end": "12/31/1775",
+			"winner": "Great Britain",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 5,
+					"leader": "Guy Carleton",
+					"troops": 1800
+				},
+				{
+					"name": "United Colonies",
+					"casualities": 50,
+					"leader": "Benedict Arnold",
+					"troops": 1200
+				}
+			],
+			"location": {
+				"name": "Quebec City, Quebec",
+				"lat": 46.816,
+				"lon": -71.216
+			}
+		},
+		{
+			"name": "Battle of Moore's Creek Bridge",
+			"start": "2/27/1776",
+			"end": "2/27/1776",
+			"winner": "United Colonies",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 50,
+					"leader": "Donald MacDonald",
+					"troops": 800
+				},
+				{
+					"name": "United Colonies",
+					"casualities": 1,
+					"leader": "James Moore",
+					"troops": 1050
+				}
+			],
+			"location": {
+				"name": "Pender County, North Carolina",
+				"lat": 34.223,
+				"lon": -77.912
+			}
+		},
+		{
+			"name": "Battle of the Rice Boats",
+			"start": "3/2/1776",
+			"end": "3/3/1776",
+			"winner": "Great Britain",
+			"countries": [
+				{
+					"name": "United Colonies",
+					"casualities": 0,
+					"leader": "Lachlan McIntosh",
+					"troops": 800
+				},
+				{
+					"name": "Great Britain",
+					"casualities": 0,
+					"leader": "Andrew Barclay",
+					"troops": 300
+				}
+			],
+			"location": {
+				"name": "Savannah, Georgia",
+				"lat": 32.081,
+				"lon": -81.085
+			}
+		},
+		{
+			"name": "Battle of Nassau",
+			"start": "3/3/1776",
+			"end": "3/4/1776",
+			"winner": "United Colonies",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 0,
+					"leader": "Montfort Browne",
+					"troops": 110
+				},
+				{
+					"name": "United Colonies",
+					"casualities": 0,
+					"leader": "Esek Hopkins",
+					"troops": 260
+				}
+			],
+			"location": {
+				"name": "Nassau, Bahamas",
+				"lat": 25.066,
+				"lon": -77.333
+			}
+		},
+		{
+			"name": "Battle of Saint-Pierre",
+			"start": "3/25/1776",
+			"end": "3/25/1776",
+			"winner": "United Colonies",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 6,
+					"leader": "Michel Blais",
+					"troops": 46
+				},
+				{
+					"name": "United Colonies",
+					"casualities": 6,
+					"leader": "John Dubois",
+					"troops": 230
+				}
+			],
+			"location": {
+				"name": "Saint-Pierre, Quebec",
+				"lat": 46.916,
+				"lon": -70.633
+			}
+		},
+		{
+			"name": "Battle of Block Island",
+			"start": "4/6/1776",
+			"end": "4/6/1776",
+			"winner": "Great Britain",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 1,
+					"leader": "Tryingham Howe",
+					"troops": "?"
+				},
+				{
+					"name": "United Colonies",
+					"casualities": 10,
+					"leader": "Esek Hopkins",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Block Island, Rhode Island",
+				"lat": 40.934,
+				"lon": -71.018
+			}
+		},
+		{
+			"name": "Battle of the Cedars",
+			"start": "5/18/1776",
+			"end": "5/27/1776",
+			"winner": "Great Britain",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 1,
+					"leader": "George Forster",
+					"troops": 255
+				},
+				{
+					"name": "United Colonies",
+					"casualities": 6,
+					"leader": "Isaac Butterfield",
+					"troops": 500
+				}
+			],
+			"location": {
+				"name": "Les Cedres, Quebec",
+				"lat": 45.3,
+				"lon": -74.05
+			}
+		},
+		{
+			"name": "Battle of Trois-Rivieres",
+			"start": "6/8/1776",
+			"end": "6/8/1776",
+			"winner": "Great Britain",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 8,
+					"leader": "Sir Guy Carleton",
+					"troops": 1000
+				},
+				{
+					"name": "United Colonies",
+					"casualities": 50,
+					"leader": "William Thompson",
+					"troops": 2000
+				}
+			],
+			"location": {
+				"name": "Trois-Rivieres, Quebec",
+				"lat": 46.35,
+				"lon": -72.55
+			}
+		},
+		{
+			"name": "Battle of Sullivan's Island",
+			"start": "6/28/1776",
+			"end": "6/28/1776",
+			"winner": "United Colonies",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 220,
+					"leader": "Peter Parker",
+					"troops": 2200
+				},
+				{
+					"name": "United Colonies",
+					"casualities": 12,
+					"leader": "William Moultrie",
+					"troops": 6000
+				}
+			],
+			"location": {
+				"name": "Sullivan's Island, South Carolina",
+				"lat": 32.759,
+				"lon": -79.857
+			}
+		},
+		{
+			"name": "Battle of Turtle Gut Island",
+			"start": "6/29/1776",
+			"end": "6/29/1776",
+			"winner": "United Colonies",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 36,
+					"leader": "Charles Hudson",
+					"troops": "?"
+				},
+				{
+					"name": "United Colonies",
+					"casualities": 1,
+					"leader": "John Barry",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Wildwood Crest, New Jersey",
+				"lat": 38.958,
+				"lon": -74.841
+			}
+		},
+		{
+			"name": "Battle of Lindley's Fort",
+			"start": "7/15/1776",
+			"end": "7/15/1776",
+			"winner": "South Carolina Patriots",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 0,
+					"leader": "",
+					"troops": 190
+				},
+				{
+					"name": "South Carolina Patriots",
+					"casualities": 0,
+					"leader": "Jonathan Downs",
+					"troops": 150
+				}
+			],
+			"location": {
+				"name": "Laurens County, South Carolina",
+				"lat": 34.500,
+				"lon": -82.018
+			}
+		},
+		{
+			"name": "Battle of Long Island",
+			"start": "8/27/1776",
+			"end": "8/27/1776",
+			"winner": "Great Britain",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 64,
+					"leader": "William Howe",
+					"troops": 20000
+				},
+				{
+					"name": "United States",
+					"casualities": 300,
+					"leader": "George Washington",
+					"troops": 10000
+				}
+			],
+			"location": {
+				"name": "Long Island, New York",
+				"lat": 40.666,
+				"lon": -73.966
+			}
+		},
+		{
+			"name": "Landing at Kip's Bay",
+			"start": "9/15/1776",
+			"end": "9/15/1776",
+			"winner": "Great Britain",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 12,
+					"leader": "Sir Henry Clinton",
+					"troops": 4000
+				},
+				{
+					"name": "United States",
+					"casualities": 50,
+					"leader": "George Washington",
+					"troops": 500
+				}
+			],
+			"location": {
+				"name": "Manhattan, New York",
+				"lat": 40.728,
+				"lon": -73.994
+			}
+		},
+		{
+			"name": "Battle of Harlem Heights",
+			"start": "9/16/1776",
+			"end": "9/16/1776",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 390,
+					"leader": "Alexander Leslie",
+					"troops": 5000
+				},
+				{
+					"name": "United States",
+					"casualities": 30,
+					"leader": "George Washington",
+					"troops": 1800
+				}
+			],
+			"location": {
+				"name": "Manhattan, New York",
+				"lat": 40.728,
+				"lon": -73.994
+			}
+		},
+		{
+			"name": "Battle of Valcour Island",
+			"start": "10/11/1776",
+			"end": "10/11/1776",
+			"winner": "Great Britain",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 40,
+					"leader": "Guy Carleton",
+					"troops": 2100
+				},
+				{
+					"name": "United States",
+					"casualities": 80,
+					"leader": "Benedict Arnold",
+					"troops": 500
+				}
+			],
+			"location": {
+				"name": "Clinton County, New York",
+				"lat": 44.533,
+				"lon": -73.333
+			}
+		},
+		{
+			"name": "Battle of White Plains",
+			"start": "10/28/1776",
+			"end": "10/28/1776",
+			"winner": "Great Britain",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 47,
+					"leader": "William Howe",
+					"troops": 7500
+				},
+				{
+					"name": "United States",
+					"casualities": 50,
+					"leader": "George Washington",
+					"troops": 3100
+				}
+			],
+			"location": {
+				"name": "White Plains, New York",
+				"lat": 41.04,
+				"lon": -73.778
+			}
+		},
+		{
+			"name": "Battle of Fort Cumberland",
+			"start": "11/10/1776",
+			"end": "11/29/1776",
+			"winner": "Great Britain",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 13,
+					"leader": "Joseph Goreham",
+					"troops": 200
+				},
+				{
+					"name": "United States",
+					"casualities": 1,
+					"leader": "Jonathan Eddy",
+					"troops": 400
+				}
+			],
+			"location": {
+				"name": "Westmorland County, New Brunswick",
+				"lat": 45.865,
+				"lon": -64.290
+			}
+		},
+		{
+			"name": "Battle of Fort Washington",
+			"start": "11/16/1776",
+			"end": "11/16/1776",
+			"winner": "Great Britain",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 84,
+					"leader": "William Howe",
+					"troops": 8000
+				},
+				{
+					"name": "United States",
+					"casualities": 59,
+					"leader": "Robert Magaw",
+					"troops": 3000
+				}
+			],
+			"location": {
+				"name": "Manahattan, New York",
+				"lat": 40.728,
+				"lon": -73.994
+			}
+		},
+		{
+			"name": "Ambush of Geary",
+			"start": "12/14/1776",
+			"end": "12/14/1776",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 1,
+					"leader": "Francis Geary",
+					"troops": 8
+				},
+				{
+					"name": "United States",
+					"casualities": 0,
+					"leader": "John Schenck",
+					"troops": 8
+				}
+			],
+			"location": {
+				"name": "East Amwell Township, New Jersey",
+				"lat": 40.434,
+				"lon": -74.823
+			}
+		},
+		{
+			"name": "Battle of Iron Works Hill",
+			"start": "12/22/1776",
+			"end": "12/23/1776",
+			"winner": "Great Britain",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 0,
+					"leader": "Carl von Donop",
+					"troops": 2000
+				},
+				{
+					"name": "United States",
+					"casualities": 0,
+					"leader": "Samuel Griffin",
+					"troops": 600
+				}
+			],
+			"location": {
+				"name": "Mount Holly, New Jersey",
+				"lat": 39.995,
+				"lon": -74.786
+			}
+		},
+		{
+			"name": "Battle of Trenton",
+			"start": "12/26/1776",
+			"end": "12/26/1776",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 22,
+					"leader": "Johann Rall",
+					"troops": 1500
+				},
+				{
+					"name": "United States",
+					"casualities": 2,
+					"leader": "George Washington",
+					"troops": 2400
+				}
+			],
+			"location": {
+				"name": "Trenton, New Jersey",
+				"lat": 40.223,
+				"lon": -74.764
+			}
+		},
+		{
+			"name": "Second Battle of Trenton",
+			"start": "1/2/1777",
+			"end": "1/2/1777",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 365,
+					"leader": "Charles Cornwallis",
+					"troops": 5000
+				},
+				{
+					"name": "United States",
+					"casualities": 100,
+					"leader": "George Washington",
+					"troops": 6000
+				}
+			],
+			"location": {
+				"name": "Trenton, New Jersey",
+				"lat": 40.223,
+				"lon": -74.764
+			}
+		},
+		{
+			"name": "Battle of Princeton",
+			"start": "1/3/1777",
+			"end": "1/3/1777",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 100,
+					"leader": "Charles Cornwallis",
+					"troops": 1200
+				},
+				{
+					"name": "United States",
+					"casualities": 44,
+					"leader": "George Washington",
+					"troops": 4500
+				}
+			],
+			"location": {
+				"name": "Princeton, New Jersey",
+				"lat": 40.327,
+				"lon": -74.673
+			}
+		},
+		{
+			"name": "Battle of Millstone",
+			"start": "1/20/1777",
+			"end": "1/20/1777",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 25,
+					"leader": "Robert Abercromby",
+					"troops": 500
+				},
+				{
+					"name": "United States",
+					"casualities": 5,
+					"leader": "Philemon Dickenson",
+					"troops": 450
+				}
+			],
+			"location": {
+				"name": "Manville, New Jersey",
+				"lat": 40.541,
+				"lon": -74.589
+			}
+		},
+		{
+			"name": "Battle of Punk Hill",
+			"start": "3/8/1777",
+			"end": "3/8/1777",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 4,
+					"leader": "William Howe",
+					"troops": 3000
+				},
+				{
+					"name": "United States",
+					"casualities": 0,
+					"leader": "William Maxwell",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Bonhamtown, New Jersey",
+				"lat": 40.523,
+				"lon": -74.357
+			}
+		},
+		{
+			"name": "Battle of Bound Brook",
+			"start": "4/13/1777",
+			"end": "4/13/1777",
+			"winner": "Great Britain",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 0,
+					"leader": "Charles Cornwallis",
+					"troops": 4000
+				},
+				{
+					"name": "United States",
+					"casualities": 120,
+					"leader": "Benjamin Lincoln",
+					"troops": 500
+				}
+			],
+			"location": {
+				"name": "Bound Brook, New Jersey",
+				"lat": 40.567,
+				"lon": -74.537
+			}
+		},
+		{
+			"name": "Battle of Thomas Creek",
+			"start": "5/17/1777",
+			"end": "5/17/1777",
+			"winner": "Great Britain",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 0,
+					"leader": "Mark Prevost",
+					"troops": 250
+				},
+				{
+					"name": "United States",
+					"casualities": 8,
+					"leader": "John Baker",
+					"troops": 200
+				}
+			],
+			"location": {
+				"name": "Duval County, Florida",
+				"lat": 30.505,
+				"lon": -81.791
+			}
+		},
+		{
+			"name": "Meigs Raid",
+			"start": "5/24/1777",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 6,
+					"leader": "James Raymond",
+					"troops": 110
+				},
+				{
+					"name": "United States",
+					"casualities": 0,
+					"leader": "Return Meigs",
+					"troops": 364
+				}
+			],
+			"location": {
+				"name": "Sag Harbor, New York",
+				"lat": 41,
+				"lon": -72.3
+			}
+		},
+		{
+			"name": "Siege of Fort Ticonderoga",
+			"start": "7/2/1777",
+			"end": "7/6/1777",
+			"winner": "Great Britain",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 5,
+					"leader": "John Burgoyne",
+					"troops": 7800
+				},
+				{
+					"name": "United States",
+					"casualities": 7,
+					"leader": "Arthur St. Clair",
+					"troops": 3000
+				}
+			],
+			"location": {
+				"name": "Fort Ticonderoga, New York",
+				"lat": 43.841,
+				"lon":  -73.388
+			}
+		},
+		{
+			"name": "Battle of Hubbardton",
+			"start": "7/7/1777",
+			"end": "",
+			"winner": "Great Britain",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 60,
+					"leader": "Simon Fraser",
+					"troops": 1030
+				},
+				{
+					"name": "United States",
+					"casualities": 41,
+					"leader": "Ebenezer Francis",
+					"troops": 1200
+				}
+			],
+			"location": {
+				"name": "Hubbardton, Vermont",
+				"lat": 43.7,
+				"lon": -73.133
+			}
+		},
+		{
+			"name": "Battle of Fort Ann",
+			"start": "7/8/1777",
+			"end": "",
+			"winner": "Great Britain",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 13,
+					"leader": "John Hill",
+					"troops": 200
+				},
+				{
+					"name": "United States",
+					"casualities": 200,
+					"leader": "Pierse Long",
+					"troops": 1000
+				}
+			],
+			"location": {
+				"name": "Fort Ann, New York",
+				"lat": 43.426,
+				"lon": -73.480
+			}
+		},
+		{
+			"name": "Battle of Oriskany",
+			"start": "8/6/1777",
+			"end": "",
+			"winner": "Great Britain",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 72,
+					"leader": "Sir John Johnson",
+					"troops": 500
+				},
+				{
+					"name": "United States",
+					"casualities": 385,
+					"leader": "Nicholas Herkimer",
+					"troops": 820
+				}
+			],
+			"location": {
+				"name": "Oneida County, New York",
+				"lat": 43.176,
+				"lon": -75.37
+			}
+		},
+		{
+			"name": "Second Battle of Machias",
+			"start": "8/13/1777",
+			"end": "8/14/1777",
+			"winner": "Great Britain",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 3,
+					"leader": "George Collier",
+					"troops": 123
+				},
+				{
+					"name": "United States",
+					"casualities": 1,
+					"leader": "Jonathan Eddy",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Machias, Maine",
+				"lat": 44.714,
+				"lon": -67.460
+			}
+		},
+		{
+			"name": "Battle of Bennington",
+			"start": "8/16/1777",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 207,
+					"leader": "Friedrich Baum",
+					"troops": 1450
+				},
+				{
+					"name": "United States",
+					"casualities": 30,
+					"leader": "John Stark",
+					"troops": 2350
+				}
+			],
+			"location": {
+				"name": "Walloomsac, New York",
+				"lat": 42.938,
+				"lon": -73.304
+			}
+		},
+		{
+			"name": "Battle of Staten Island",
+			"start": "8/22/1777",
+			"end": "",
+			"winner": "Great Britain",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 5,
+					"leader": "John Campbell",
+					"troops": 1300
+				},
+				{
+					"name": "United States",
+					"casualities": 10,
+					"leader": "John Sullivan",
+					"troops": 1000
+				}
+			],
+			"location": {
+				"name": "Staten Island, New York",
+				"lat": 40.576,
+				"lon": -74.144
+			}
+		},
+		{
+			"name": "Battle of Setauket",
+			"start": "8/22/1777",
+			"end": "",
+			"winner": "Great Britain",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 0,
+					"leader": "Richard Hewlett",
+					"troops": 250
+				},
+				{
+					"name": "United States",
+					"casualities": 0,
+					"leader": "Samuel Holden Parsons",
+					"troops": 500
+				}
+			],
+			"location": {
+				"name": "Setauket, New York",
+				"lat": 40.93,
+				"lon": -73.101
+			}
+		},
+		{
+			"name": "Battle of Cooch's Bridge",
+			"start": "9/3/1777",
+			"end": "",
+			"winner": "Great Britain",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 30,
+					"leader": "William Howe",
+					"troops": 1750
+				},
+				{
+					"name": "United States",
+					"casualities": 20,
+					"leader": "William Maxwell",
+					"troops": 1000
+				}
+			],
+			"location": {
+				"name": "Newark, Delaware",
+				"lat": 39.679,
+				"lon": -75.758
+			}
+		},
+		{
+			"name": "Battle of Brandywine",
+			"start": "9/11/1777",
+			"end": "",
+			"winner": "Great Britain",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 587,
+					"leader": "William Howe",
+					"troops": 15500
+				},
+				{
+					"name": "United States",
+					"casualities": 1300,
+					"leader": "George Washington",
+					"troops": 14600
+				}
+			],
+			"location": {
+				"name": "Chadds Ford Township, Pennsylvania",
+				"lat": 39.872,
+				"lon": -75.59
+			}
+		},
+		{
+			"name": "First Battle of Saratoga",
+			"start": "9/19/1777",
+			"end": "",
+			"winner": "Great Britain",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 220,
+					"leader": "John Burgoyne",
+					"troops": 7200
+				},
+				{
+					"name": "United States",
+					"casualities": 45,
+					"leader": "Horatio Gates",
+					"troops": 9000
+				}
+			],
+			"location": {
+				"name": "Saratoga County, New York",
+				"lat": 42.998,
+				"lon": -73.637
+			}
+		},
+		{
+			"name": "Battle of Paoli",
+			"start": "9/20/1777",
+			"end": "",
+			"winner": "Great Britain",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 4,
+					"leader": "Charles Grey",
+					"troops": 1800
+				},
+				{
+					"name": "United States",
+					"casualities": 53,
+					"leader": "Anthony Wayne",
+					"troops": 2500
+				}
+			],
+			"location": {
+				"name": "Willistown Township, Pennsylvania",
+				"lat": 39.983,
+				"lon": -75.483
+			}
+		},
+		{
+			"name": "Battle of Germantown",
+			"start": "10/4/1777",
+			"end": "",
+			"winner": "Great Britain",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 71,
+					"leader": "William Howe",
+					"troops": 9000
+				},
+				{
+					"name": "United States",
+					"casualities": 152,
+					"leader": "George Washington",
+					"troops": 11000
+				}
+			],
+			"location": {
+				"name": "Germantown, Pennsylvania",
+				"lat": 40.043,
+				"lon": -75.181
+			}
+		},
+		{
+			"name": "Battle of Forts Clinton and Montgomery",
+			"start": "10/6/1777",
+			"end": "",
+			"winner": "Great Britain",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 41,
+					"leader": "Henry Clinton",
+					"troops": 2100
+				},
+				{
+					"name": "United States",
+					"casualities": 75,
+					"leader": "George Clinton",
+					"troops": 600
+				}
+			],
+			"location": {
+				"name": "Orange County, New York",
+				"lat": 41.322,
+				"lon": -73.989
+			}
+		},
+		{
+			"name": "Second Battle of Saratoga",
+			"start": "10/7/1777",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 220,
+					"leader": "John Burgoyne",
+					"troops": 6600
+				},
+				{
+					"name": "United States",
+					"casualities": 45,
+					"leader": "Horatio Gates",
+					"troops": 15000
+				}
+			],
+			"location": {
+				"name": "Saratoga County, New York",
+				"lat": 42.9988,
+				"lon": -73.6375
+			}
+		},
+		{
+			"name": "Battle of Red Bank",
+			"start": "10/22/1777",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Hesse-Kassel",
+					"casualities": 82,
+					"leader": "Karl von Donop",
+					"troops": 1200
+				},
+				{
+					"name": "United States",
+					"casualities": 14,
+					"leader": "Christopher Greene",
+					"troops": 400
+				}
+			],
+			"location": {
+				"name": "Fort Mercer, New Jersey",
+				"lat": 39.867,
+				"lon": -75.185
+			}
+		},
+		{
+			"name": "Battle of Gloucester",
+			"start": "11/25/1777",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 20,
+					"leader": "Charles Cornwallis",
+					"troops": 350
+				},
+				{
+					"name": "United States",
+					"casualities": 1,
+					"leader": "Marquis de Lafayette",
+					"troops": 350
+				}
+			],
+			"location": {
+				"name": "National Park, New Jersey",
+				"lat": 39.867,
+				"lon": -75.185
+			}
+		},
+		{
+			"name": "Battle of White Marsh",
+			"start": "12/5/1777",
+			"end": "12/8/1777",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 19,
+					"leader": "William Howe",
+					"troops": 10000
+				},
+				{
+					"name": "United States",
+					"casualities": 150,
+					"leader": "George Washington",
+					"troops": 9500
+				}
+			],
+			"location": {
+				"name": "Fort Washington, Pennsylvania",
+				"lat": 40.138,
+				"lon": -75.191
+			}
+		},
+		{
+			"name": "Battle of Matson's Ford",
+			"start": "12/11/1777",
+			"end": "",
+			"winner": "Great Britain",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": "?",
+					"leader": "Charles Cornwallis",
+					"troops": 3500
+				},
+				{
+					"name": "United States",
+					"casualities": 6,
+					"leader": "John Lacey",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Conshohocken, Pennsylvania",
+				"lat": 40.077,
+				"lon": -75.301
+			}
+		},
+		{
+			"name": "Battle of Barbados",
+			"start": "3/7/1778",
+			"end": "",
+			"winner": "Great Britain",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 5,
+					"leader": "Nicholas Vincent",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": 301,
+					"leader": "Nicholas Biddle",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "Barbados",
+				"lat": 13.1,
+				"lon": -59.616
+			}
+		},
+		{
+			"name": "Battle of Quinton's Bridge",
+			"start": "3/18/1778",
+			"end": "",
+			"winner": "Great Britain",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 0,
+					"leader": "Charles Mawhood",
+					"troops": 1200
+				},
+				{
+					"name": "United States",
+					"casualities": 40,
+					"leader": "Asher Holmes",
+					"troops": 300
+				}
+			],
+			"location": {
+				"name": "Quinton Township, New Jersey",
+				"lat": 39.529,
+				"lon": -75.392
+			}
+		},
+		{
+			"name": "North Channel Naval Duel",
+			"start": "4/24/1778",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Great Britain",
+					"casualities": 5,
+					"leader": "George Burdon",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": 3,
+					"leader": "John Paul Jones",
+					"troops": "?"
+				}
+			],
+			"location": {
+				"name": "North Channel, Irish Sea",
+				"lat": 54.724,
+				"lon": -5.45
+			}
+		}
+	],
+	"countries": [
+		{
+			"name": "Great Britain",
+			"leaders": [
+				{
+					"name": "George III",
+					"title": "King"
+				}
+			]
+		},
+		{
+			"name": "Hesse-Kassel",
+			"leaders": [
+				{
+					"name": "Frederick II",
+					"title": "Landgrave"
+				}
+			]
+		},
+		{
+			"name": "Massachusetts Bay",
+			"leaders": [
+				{
+					"name": "Samuel Adams",
+					"title": "Leader"
+				},
+				{
+					"name": "John Hancock",
+					"title": "Leader"
+				}
+			]
+		},
+		{
+			"name": "South Carolina Patriots",
+			"leaders": [
+				{
+					"name": "Nathanael Greene",
+					"title": "Major General"
+				}
+			]
+		},
+		{
+			"name": "United Colonies",
+			"leaders": [
+				{
+					"name": "George Washington",
+					"title": "General"
+				}
+			]
+		},
+		{
+			"name": "United States",
+			"leaders": [
+				{
+					"name": "George Washington",
+					"title": "President"
+				}
+			]
+		},
+		{
+			"name": "Virginia Colony",
+			"leaders": [
+				{
+					"name": "Patrick Henry",
+					"title": "Governor"
+				}
+			]
+		}
+	]
+}

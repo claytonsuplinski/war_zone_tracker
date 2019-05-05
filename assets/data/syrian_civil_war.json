@@ -1,0 +1,40 @@
+{
+	"battles": [
+		{
+			"name": "",
+			"start": "",
+			"end": "",
+			"winner": "",
+			"countries": [
+				{
+					"name": "",
+					"casualities": 0,
+					"leader": "",
+					"troops": 6000
+				},
+				{
+					"name": "",
+					"casualities": 0,
+					"leader": "",
+					"troops": 85
+				}
+			],
+			"location": {
+				"name": "",
+				"lat": 32.752,
+				"lon": -79.874
+			}
+		}
+	],
+	"countries": [
+		{
+			"name": "United States",
+			"leaders": [
+				{
+					"name": "",
+					"title": "President"
+				}
+			]
+		}
+	]
+}

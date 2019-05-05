@@ -220,31 +220,6 @@ GraphicsObject.prototype.draw = function(params){
 	
 	mvPushMatrix();
 	
-	if(this.is_framebuffer){
-        gl.bindBuffer(gl.ARRAY_BUFFER, this.v_buffer);
-        gl.vertexAttribPointer(this.shader_program.vertexPositionAttribute, this.v_buffer.itemSize, gl.FLOAT, false, 0, 0);
-
-        gl.bindBuffer(gl.ARRAY_BUFFER, this.vn_buffer);
-        gl.vertexAttribPointer(this.shader_program.vertexNormalAttribute, this.vn_buffer.itemSize, gl.FLOAT, false, 0, 0);
-
-        gl.bindBuffer(gl.ARRAY_BUFFER, this.vt_buffer);
-        gl.vertexAttribPointer(this.shader_program.textureCoordAttribute, this.vt_buffer.itemSize, gl.FLOAT, false, 0, 0);
-
-        gl.activeTexture(gl.TEXTURE0);
-        gl.bindTexture(gl.TEXTURE_2D, this.rttTexture);
-        gl.uniform1i(this.shader_program.samplerUniform, 0);
-
-		gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, this.vertex_indices_buffer);
-        setMatrixUniforms();
-        gl.drawElements(gl.TRIANGLES, this.vertex_indices_buffer.numItems, gl.UNSIGNED_SHORT, 0);
-	}
-	else{
-		if(this.texture != ""){
-			gl.activeTexture(gl.TEXTURE0);
-			gl.bindTexture(gl.TEXTURE_2D, this.texture);
-			gl.uniform1i(this.shader_program.samplerUniform, 0);
-		}
-
 		gl.bindBuffer(gl.ARRAY_BUFFER, this.v_buffer);
 		gl.vertexAttribPointer(this.shader_program.vertexPositionAttribute, this.v_buffer.itemSize, gl.FLOAT, false, 0, 0);
 
@@ -253,12 +228,14 @@ GraphicsObject.prototype.draw = function(params){
 
 		gl.bindBuffer(gl.ARRAY_BUFFER, this.vn_buffer);
 		gl.vertexAttribPointer(this.shader_program.vertexNormalAttribute, this.vn_buffer.itemSize, gl.FLOAT, false, 0, 0);
-
+		
+		gl.activeTexture(gl.TEXTURE0);
+		gl.bindTexture(gl.TEXTURE_2D, (this.is_framebuffer ? this.rttTexture : this.texture));
+		gl.uniform1i(this.shader_program.samplerUniform, 0);
+	
 		gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, this.vertex_indices_buffer);
 		setMatrixUniforms();
-
 		gl.drawElements(gl.TRIANGLES, this.vertex_indices_buffer.numItems, gl.UNSIGNED_SHORT, 0);
-	}
 	
 	mvPopMatrix();
 

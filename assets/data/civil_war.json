@@ -1,0 +1,299 @@
+{
+	"battles": [
+		{
+			"name": "Battle of Fort Sumter",
+			"start": "4/12/1861",
+			"end": "4/14/1861",
+			"winner": "Confederate States",
+			"countries": [
+				{
+					"name": "Confederate States",
+					"casualities": 0,
+					"leader": "P.G.T. Beauregard",
+					"troops": 6000
+				},
+				{
+					"name": "United States",
+					"casualities": 0,
+					"leader": "Robert Anderson",
+					"troops": 85
+				}
+			],
+			"location": {
+				"name": "Charleston County, South Carolina",
+				"lat": 32.752,
+				"lon": -79.874
+			}
+		},
+		{
+			"name": "First Battle of Bull Run",
+			"start": "7/21/1861",
+			"end": "",
+			"winner": "Confederate States",
+			"countries": [
+				{
+					"name": "Confederate States",
+					"casualities": 1982,
+					"leader": "P.G.T. Beauregard",
+					"troops": 34000
+				},
+				{
+					"name": "United States",
+					"casualities": 2896,
+					"leader": "Irvin McDowell",
+					"troops": 35000
+				}
+			],
+			"location": {
+				"name": "Fairfax County, Virginia",
+				"lat": 38.814,
+				"lon": -77.522
+			}
+		},
+		{
+			"name": "Battle of Gettysburg",
+			"start": "7/1/1863",
+			"end": "7/3/1863",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Confederate States",
+					"casualities": 23231,
+					"leader": "Robert E. Lee",
+					"troops": 71699
+				},
+				{
+					"name": "United States",
+					"casualities": 23055,
+					"leader": "George Meade",
+					"troops": 93921
+				}
+			],
+			"location": {
+				"name": "Gettysburg, Pennsylvania",
+				"lat": 39.811,
+				"lon": -77.224
+			}
+		},
+		{
+			"name": "Siege of Vicksburg",
+			"start": "5/18/1863",
+			"end": "7/4/1863",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Confederate States",
+					"casualities": 32697,
+					"leader": "John Pemberton",
+					"troops": 33000
+				},
+				{
+					"name": "United States",
+					"casualities": 4835,
+					"leader": "Ulysses S. Grant",
+					"troops": 77000
+				}
+			],
+			"location": {
+				"name": "Warren County, Mississippi",
+				"lat": 32.343,
+				"lon": -90.851
+			}
+		},
+		{
+			"name": "Battle of Antietam",
+			"start": "9/17/1862",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Confederate States",
+					"casualities": 10316,
+					"leader": "Robert E. Lee",
+					"troops": 38000
+				},
+				{
+					"name": "United States",
+					"casualities": 12401,
+					"leader": "George McClellan",
+					"troops": 75500
+				}
+			],
+			"location": {
+				"name": "Washington County, Maryland",
+				"lat": 39.473,
+				"lon": -77.744
+			}
+		},
+		{
+			"name": "Battle of Fredericksburg",
+			"start": "12/11/1862",
+			"end": "12/15/1862",
+			"winner": "Confederate States",
+			"countries": [
+				{
+					"name": "Confederate States",
+					"casualities": 5377,
+					"leader": "Robert E. Lee",
+					"troops": 72500
+				},
+				{
+					"name": "United States",
+					"casualities": 12653,
+					"leader": "Ambrose Burnside",
+					"troops": 114000
+				}
+			],
+			"location": {
+				"name": "Spotsylvania County, Virginia",
+				"lat": 38.299,
+				"lon": -77.47
+			}
+		},
+		{
+			"name": "Battle of Franklin",
+			"start": "11/30/1864",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Confederate States",
+					"casualities": 6252,
+					"leader": "John Bell Hood",
+					"troops": 27000
+				},
+				{
+					"name": "United States",
+					"casualities": 2326,
+					"leader": "John Schofield",
+					"troops": 27000
+				}
+			],
+			"location": {
+				"name": "Williamson County, Tennessee",
+				"lat": 35.917,
+				"lon": -86.873
+			}
+		},
+		{
+			"name": "Battle of Shiloh",
+			"start": "4/6/1862",
+			"end": "4/7/1862",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Confederate States",
+					"casualities": 10699,
+					"leader": "P.G.T. Beauregard",
+					"troops": 44699
+				},
+				{
+					"name": "United States",
+					"casualities": 13047,
+					"leader": "Ulysses S. Grant",
+					"troops": 66812
+				}
+			],
+			"location": {
+				"name": "Hardin County, Tennessee",
+				"lat": 35.15,
+				"lon": -88.321
+			}
+		},
+		{
+			"name": "Seven Days Battles",
+			"start": "6/25/1862",
+			"end": "7/1/1862",
+			"winner": "Confederate States",
+			"countries": [
+				{
+					"name": "Confederate States",
+					"casualities": 20204,
+					"leader": "Robert E. Lee",
+					"troops": 92000
+				},
+				{
+					"name": "United States",
+					"casualities": 15855,
+					"leader": "George McClellan",
+					"troops": 104100
+				}
+			],
+			"location": {
+				"name": "Hanover County, Virginia",
+				"lat": 37.76,
+				"lon": -77.49
+			}
+		},
+		{
+			"name": "Battle of Petersburg",
+			"start": "6/9/1864",
+			"end": "3/25/1865",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Confederate States",
+					"casualities": 28000,
+					"leader": "Robert E. Lee",
+					"troops": 52000
+				},
+				{
+					"name": "United States",
+					"casualities": 42000,
+					"leader": "Ulysses S. Grant",
+					"troops": 125000
+				}
+			],
+			"location": {
+				"name": "Petersburg, Virginia",
+				"lat": 37.217,
+				"lon": -77.377
+			}
+		},
+		{
+			"name": "Battle of Chancellorsville",
+			"start": "4/30/1863",
+			"end": "5/6/1863",
+			"winner": "Confederate States",
+			"countries": [
+				{
+					"name": "Confederate States",
+					"casualities": 13303,
+					"leader": "Robert E. Lee",
+					"troops": 60892
+				},
+				{
+					"name": "United States",
+					"casualities": 17197,
+					"leader": "Joseph Hooker",
+					"troops": 133868
+				}
+			],
+			"location": {
+				"name": "Spotsylvania County, Virginia",
+				"lat": 38.3105,
+				"lon": -77.6484
+			}
+		}
+	],
+	"countries": [
+		{
+			"name": "Confederate States",
+			"leaders": [
+				{
+					"name": "Jefferson Davis",
+					"title": "President"
+				}
+			]
+		},
+		{
+			"name": "United States",
+			"leaders": [
+				{
+					"name": "Abraham Lincoln",
+					"title": "President"
+				}
+			]
+		}
+	]
+}

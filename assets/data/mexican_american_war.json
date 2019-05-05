@@ -1,0 +1,1208 @@
+{
+	"battles": [
+		{
+			"name": "Thornton Ambush",
+			"start": "4/25/1846",
+			"end": "",
+			"winner": "Mexico",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": "?",
+					"leader": "Anastasio Torrejón",
+					"troops": 1600
+				},
+				{
+					"name": "United States",
+					"casualities": 11,
+					"leader": "Seth Thornton",
+					"troops": 80
+				}
+			],
+			"location": {
+				"name": "Brownsville, Texas",
+				"lat":  25.9017,
+				"lon": -97.4975
+			}
+		},
+		{
+			"name": "Siege of Fort Texas",
+			"start": "5/3/1846",
+			"end": "5/9/1846",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 2,
+					"leader": "Mariano Arista",
+					"troops": 1600
+				},
+				{
+					"name": "United States",
+					"casualities": 2,
+					"leader": "Jacob Brown",
+					"troops": 500
+				}
+			],
+			"location": {
+				"name": "Brownsville, Texas",
+				"lat":  25.9016,
+				"lon": -97.4974
+			}
+		},
+		{
+			"name": "Battle of Palo Alto",
+			"start": "5/8/1846",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 102,
+					"leader": "Mariano Arista",
+					"troops": 3709
+				},
+				{
+					"name": "United States",
+					"casualities": 4,
+					"leader": "Zachary Taylor",
+					"troops": 2288
+				}
+			],
+			"location": {
+				"name": "Brownsville, Texas",
+				"lat":  25.9016,
+				"lon": -97.4977
+			}
+		},
+		{
+			"name": "Battle of Resaca de la Palma",
+			"start": "5/9/1846",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 154,
+					"leader": "Mariano Arista",
+					"troops": 4000
+				},
+				{
+					"name": "United States",
+					"casualities": 33,
+					"leader": "Zachary Taylor",
+					"troops": 1700
+				}
+			],
+			"location": {
+				"name": "Brownsville, Texas",
+				"lat":  25.9018,
+				"lon": -97.4979
+			}
+		},
+		{
+			"name": "Battle of Monterey",
+			"start": "7/7/1846",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 0,
+					"leader": "Mariano Silva",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": 0,
+					"leader": "John D. Sloat",
+					"troops": 225
+				}
+			],
+			"location": {
+				"name": "Monterey, California",
+				"lat":  36.6002,
+				"lon": -121.8947
+			}
+		},
+		{
+			"name": "Battle of Yerba Buena",
+			"start": "7/9/1846",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 0,
+					"leader": "José de Jesús Noé",
+					"troops": 0
+				},
+				{
+					"name": "United States",
+					"casualities": 0,
+					"leader": "John B. Montgomery",
+					"troops": 247
+				}
+			],
+			"location": {
+				"name": "Yerba Buena, California",
+				"lat":  37.7749,
+				"lon": -122.4194
+			}
+		},
+		{
+			"name": "Battle of Santa Fe",
+			"start": "8/15/1846",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": "?",
+					"leader": "Manuel Armijo",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": "?",
+					"leader": "Stephen W. Kearny",
+					"troops": 1700
+				}
+			],
+			"location": {
+				"name": "Santa Fe, New Mexico",
+				"lat":  35.6870,
+				"lon": -105.9378
+			}
+		},
+		{
+			"name": "Battle of Monterrey",
+			"start": "9/21/1846",
+			"end": "9/24/1846",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 367,
+					"leader": "Pedro de Ampudia",
+					"troops": 7303
+				},
+				{
+					"name": "United States",
+					"casualities": 488,
+					"leader": "Zachary Taylor",
+					"troops": 6220
+				}
+			],
+			"location": {
+				"name": "Monterrey, Nuevo León",
+				"lat":  25.6866,
+				"lon": -100.3161
+			}
+		},
+		{
+			"name": "Siege of Los Angeles",
+			"start": "9/22/1846",
+			"end": "9/30/1846",
+			"winner": "Mexico",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 0,
+					"leader": "Jose Maria Castro",
+					"troops": 150
+				},
+				{
+					"name": "United States",
+					"casualities": 0,
+					"leader": "Robert F. Stockton",
+					"troops": 48
+				}
+			],
+			"location": {
+				"name": "Los Angeles, Alta California",
+				"lat":  34.0522,
+				"lon": -118.2437
+			}
+		},
+		{
+			"name": "Battle of Chino",
+			"start": "9/26/1846",
+			"end": "9/27/1846",
+			"winner": "Mexico",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 1,
+					"leader": "José del Carmen Lugo",
+					"troops": 50
+				},
+				{
+					"name": "California Republic",
+					"casualities": 0,
+					"leader": "Benjamin Davis Wilson",
+					"troops": 24
+				}
+			],
+			"location": {
+				"name": "Chino, California",
+				"lat":  34.0122,
+				"lon": -117.6889
+			}
+		},
+		{
+			"name": "Battle of Dominguez Rancho",
+			"start": "10/8/1846",
+			"end": "",
+			"winner": "Mexico",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": "?",
+					"leader": "José Antonio Carrillo",
+					"troops": 90
+				},
+				{
+					"name": "United States",
+					"casualities": 4,
+					"leader": "William Mervine",
+					"troops": 285
+				}
+			],
+			"location": {
+				"name": "Dominguez Hills, California",
+				"lat":  33.8634,
+				"lon": -118.2553
+			}
+		},
+		{
+			"name": "First Battle of Tabasco",
+			"start": "10/24/1846",
+			"end": "10/26/1846",
+			"winner": "Mexico",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 5,
+					"leader": "Juan B. Traconis",
+					"troops": 253
+				},
+				{
+					"name": "United States",
+					"casualities": 250,
+					"leader": "Matthew C. Perry",
+					"troops": 700
+				}
+			],
+			"location": {
+				"name": "Villahermosa, Tabasco",
+				"lat":  17.9895,
+				"lon": -92.9475
+			}
+		},
+		{
+			"name": "Battle of Natividad",
+			"start": "11/16/1846",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 3,
+					"leader": "Manuel de Jesus Castro",
+					"troops": 90
+				},
+				{
+					"name": "United States",
+					"casualities": 5,
+					"leader": "Charles Burroughs",
+					"troops": 70
+				}
+			],
+			"location": {
+				"name": "Salinas Valley, California",
+				"lat":  36.6777,
+				"lon": -121.6555
+			}
+		},
+		{
+			"name": "Battle of San Pasqual",
+			"start": "12/6/1846",
+			"end": "12/7/1846",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 0,
+					"leader": "Andrés Pico",
+					"troops": 75
+				},
+				{
+					"name": "United States",
+					"casualities": 17,
+					"leader": "Stephen Watts Kearny",
+					"troops": 150
+				}
+			],
+			"location": {
+				"name": "San Pasqual Valley, California",
+				"lat":  33.0832,
+				"lon": -116.9911
+			}
+		},
+		{
+			"name": "Capture of Tucson",
+			"start": "12/16/1846",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": "?",
+					"leader": "Antonio Comaduron",
+					"troops": 200
+				},
+				{
+					"name": "United States",
+					"casualities": "?",
+					"leader": "Philip St. George Cooke",
+					"troops": 360
+				}
+			],
+			"location": {
+				"name": "Tucson, Sonora",
+				"lat":  32.2440,
+				"lon": -111.1682
+			}
+		},
+		{
+			"name": "Battle of El Brazito",
+			"start": "12/25/1846",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 43,
+					"leader": "Antonio Ponce de Léon",
+					"troops": 500
+				},
+				{
+					"name": "United States",
+					"casualities": 0,
+					"leader": "Alexander W. Doniphan",
+					"troops": 850
+				}
+			],
+			"location": {
+				"name": "Las Cruces, New Mexico",
+				"lat":  32.3199,
+				"lon": -106.7637
+			}
+		},
+		{
+			"name": "Battle of Rio San Gabriel",
+			"start": "1/8/1847",
+			"end": "1/9/1847",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 2,
+					"leader": "José María Flores",
+					"troops": 350
+				},
+				{
+					"name": "United States",
+					"casualities": 2,
+					"leader": "Stephen Watts Kearny",
+					"troops": 607
+				}
+			],
+			"location": {
+				"name": "Los Angeles, California",
+				"lat":  34.0521,
+				"lon": -118.2437
+			}
+		},
+		{
+			"name": "Battle of La Mesa",
+			"start": "1/9/1847",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 1,
+					"leader": "José María Flores",
+					"troops": 300
+				},
+				{
+					"name": "United States",
+					"casualities": 1,
+					"leader": "Robert F. Stockton",
+					"troops": 607
+				}
+			],
+			"location": {
+				"name": "Vernon, California",
+				"lat":  34.0039,
+				"lon": -118.2301
+			}
+		},
+		{
+			"name": "Battle of Cañada",
+			"start": "1/24/1847",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 36,
+					"leader": "Thomas Ortiz",
+					"troops": 1750
+				},
+				{
+					"name": "United States",
+					"casualities": 2,
+					"leader": "Sterling Price",
+					"troops": 353
+				}
+			],
+			"location": {
+				"name": "Santa Cruz, New Mexico",
+				"lat":  35.9922,
+				"lon": -106.0472
+			}
+		},
+		{
+			"name": "First Battle of Mora",
+			"start": "1/24/1847",
+			"end": "",
+			"winner": "Mexico",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 25,
+					"leader": "?",
+					"troops": 175
+				},
+				{
+					"name": "United States",
+					"casualities": 1,
+					"leader": "Israel R. Hendley",
+					"troops": 80
+				}
+			],
+			"location": {
+				"name": "Mora, New Mexico",
+				"lat":  35.9742,
+				"lon": -105.3301
+			}
+		},
+		{
+			"name": "Battle of Embudo Pass",
+			"start": "1/29/1847",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 20,
+					"leader": "?",
+					"troops": 650
+				},
+				{
+					"name": "United States",
+					"casualities": 1,
+					"leader": "Sterling Price",
+					"troops": 180
+				}
+			],
+			"location": {
+				"name": "Dixon, Mexico",
+				"lat":  36.1989,
+				"lon": -105.8885
+			}
+		},
+		{
+			"name": "Second Battle of Mora",
+			"start": "2/1/1847",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": "?",
+					"leader": "?",
+					"troops": 200
+				},
+				{
+					"name": "United States",
+					"casualities": 0,
+					"leader": "Jesse I. Morin",
+					"troops": 200
+				}
+			],
+			"location": {
+				"name": "Mora, New Mexico",
+				"lat":  35.9741,
+				"lon": -105.3300
+			}
+		},
+		{
+			"name": "Siege of Pueblo de Taos",
+			"start": "2/3/1847",
+			"end": "2/5/1847",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 150,
+					"leader": "Pablo Chávez",
+					"troops": 650
+				},
+				{
+					"name": "United States",
+					"casualities": 9,
+					"leader": "Sterling Price",
+					"troops": 478
+				}
+			],
+			"location": {
+				"name": "Pueblo de Taos, New Mexico",
+				"lat":  36.4386,
+				"lon": -105.5445
+			}
+		},
+		{
+			"name": "Battle of Buena Vista",
+			"start": "2/22/1847",
+			"end": "2/23/1847",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 591,
+					"leader": "Antonio López de Santa Anna",
+					"troops": 15142
+				},
+				{
+					"name": "United States",
+					"casualities": 267,
+					"leader": "Zachary Taylor",
+					"troops": 4594
+				}
+			],
+			"location": {
+				"name": "Puerto de la Angostura, Coahuila",
+				"lat":  29.250,
+				"lon": -100.900
+			}
+		},
+		{
+			"name": "Battle of the Sacramento River",
+			"start": "2/28/1847",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 300,
+					"leader": "Angel Trias Alvarez",
+					"troops": 4120
+				},
+				{
+					"name": "United States",
+					"casualities": 1,
+					"leader": "Alexander Doniphan",
+					"troops": 940
+				}
+			],
+			"location": {
+				"name": "Sacramento River Pass, Mexico",
+				"lat":  28.7808,
+				"lon": -106.1658
+			}
+		},
+		{
+			"name": "Siege of Veracruz",
+			"start": "3/9/1847",
+			"end": "3/29/1847",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 350,
+					"leader": "Juan Morales",
+					"troops": 3360
+				},
+				{
+					"name": "United States",
+					"casualities": 13,
+					"leader": "Winfield Scott",
+					"troops": 8600
+				}
+			],
+			"location": {
+				"name": "Veracruz, Mexico",
+				"lat":  19.1737,
+				"lon": -96.1342
+			}
+		},
+		{
+			"name": "Battle of Cerro Gordo",
+			"start": "4/18/1847",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 1000,
+					"leader": "Antonio López de Santa Anna",
+					"troops": 8700
+				},
+				{
+					"name": "United States",
+					"casualities": 263,
+					"leader": "Winfield Scott",
+					"troops": 12000
+				}
+			],
+			"location": {
+				"name": "Xalapa, Veracruz, Mexico",
+				"lat":  19.426,
+				"lon": -96.685
+			}
+		},
+		{
+			"name": "First Battle of Tuxpan",
+			"start": "4/18/1847",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": "?",
+					"leader": "Martin Perfecto de Cos",
+					"troops": 350
+				},
+				{
+					"name": "United States",
+					"casualities": 2,
+					"leader": "Matthew C. Perry",
+					"troops": 1519
+				}
+			],
+			"location": {
+				"name": "Tuxpan, Veracruz",
+				"lat":  20.9561,
+				"lon": -97.4063
+			}
+		},
+		{
+			"name": "Battle of Red River Canyon",
+			"start": "5/26/1847",
+			"end": "5/27/1847",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 17,
+					"leader": "?",
+					"troops": 500
+				},
+				{
+					"name": "United States",
+					"casualities": 1,
+					"leader": "Major Edmondson",
+					"troops": 200
+				}
+			],
+			"location": {
+				"name": "Wagon Mound, New Mexico",
+				"lat":  36.0089,
+				"lon": -104.7064
+			}
+		},
+		{
+			"name": "Second Battle of Tabasco",
+			"start": "6/15/1847",
+			"end": "6/16/1847",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 30,
+					"leader": "Domingo Echagaray",
+					"troops": 600
+				},
+				{
+					"name": "United States",
+					"casualities": 0,
+					"leader": "Matthew C. Perry",
+					"troops": 1050
+				}
+			],
+			"location": {
+				"name": "Villahermosa, Tabasco",
+				"lat":  17.9894,
+				"lon": -92.9474
+			}
+		},
+		{
+			"name": "Battle of Las Vegas",
+			"start": "7/6/1847",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 10,
+					"leader": "?",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": 0,
+					"leader": "Major Edmonson",
+					"troops": 64
+				}
+			],
+			"location": {
+				"name": "Las Vegas, New Mexico",
+				"lat":  35.5942,
+				"lon": -105.2228
+			}
+		},
+		{
+			"name": "Battle of Cienega Creek",
+			"start": "7/9/1847",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": "?",
+					"leader": "?",
+					"troops": 200
+				},
+				{
+					"name": "United States",
+					"casualities": 5,
+					"leader": "Captain Morin",
+					"troops": 31
+				}
+			],
+			"location": {
+				"name": "Cienega Creek, New Mexico",
+				"lat":  36.4359,
+				"lon": -105.5943
+			}
+		},
+		{
+			"name": "Battle of Contreras",
+			"start": "8/19/1847",
+			"end": "8/20/1847",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 700,
+					"leader": "Gabriel Valencia",
+					"troops": 7000
+				},
+				{
+					"name": "United States",
+					"casualities": 60,
+					"leader": "Winfield Scott",
+					"troops": 10738
+				}
+			],
+			"location": {
+				"name": "Mexico City, Mexico",
+				"lat":  19.4330,
+				"lon": -99.1332
+			}
+		},
+		{
+			"name": "Battle of Churubusco",
+			"start": "8/20/1847",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 263,
+					"leader": "Antonio López de Santa Anna",
+					"troops": 3800
+				},
+				{
+					"name": "United States",
+					"casualities": 133,
+					"leader": "Winfield Scott",
+					"troops": 8497
+				}
+			],
+			"location": {
+				"name": "Mexico City, Mexico",
+				"lat":  19.4329,
+				"lon": -99.1332
+			}
+		},
+		{
+			"name": "Battle of Molino del Rey",
+			"start": "9/8/1847",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 269,
+					"leader": "Antonio León",
+					"troops": 4000
+				},
+				{
+					"name": "United States",
+					"casualities": 116,
+					"leader": "Winfield Scott",
+					"troops": 9800
+				}
+			],
+			"location": {
+				"name": "Mexico City, Mexico",
+				"lat":  19.4329,
+				"lon": -99.1331
+			}
+		},
+		{
+			"name": "Battle of Chapultepec",
+			"start": "9/12/1847",
+			"end": "9/13/1847",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 650,
+					"leader": "Nicolás Bravo",
+					"troops": 15000
+				},
+				{
+					"name": "United States",
+					"casualities": 138,
+					"leader": "Winfield Scott",
+					"troops": 7200
+				}
+			],
+			"location": {
+				"name": "Mexico City, Mexico",
+				"lat":  19.4328,
+				"lon": -99.1330
+			}
+		},
+		{
+			"name": "Siege of Puebla",
+			"start": "9/13/1847",
+			"end": "10/12/1847",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": "?",
+					"leader": "Joaquín Rea",
+					"troops": 4000
+				},
+				{
+					"name": "United States",
+					"casualities": 78,
+					"leader": "Thomas Childs",
+					"troops": 3500
+				}
+			],
+			"location": {
+				"name": "Puebla, Mexico",
+				"lat":  19.0414,
+				"lon": -98.2063
+			}
+		},
+		{
+			"name": "Battle of Mulegé",
+			"start": "10/2/1847",
+			"end": "",
+			"winner": "Mexico",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 0,
+					"leader": "Manuel Pineda Munoz",
+					"troops": 100
+				},
+				{
+					"name": "United States",
+					"casualities": 0,
+					"leader": "Thomas O. Selfridge",
+					"troops": 71
+				}
+			],
+			"location": {
+				"name": "Mulegé, Baja California Sur",
+				"lat":  26.8922,
+				"lon": -111.9836
+			}
+		},
+		{
+			"name": "Battle of Huamantla",
+			"start": "10/9/1847",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": "?",
+					"leader": "Antonio López de Santa Anna",
+					"troops": 2000
+				},
+				{
+					"name": "United States",
+					"casualities": 13,
+					"leader": "Joseph Lane",
+					"troops": 2700
+				}
+			],
+			"location": {
+				"name": "Huamantla, Tlaxcala",
+				"lat":  19.3185,
+				"lon": -97.9234
+			}
+		},
+		{
+			"name": "Action of Atlixco",
+			"start": "10/19/1847",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 219,
+					"leader": "Joaquín Rea",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": 1,
+					"leader": "Joseph Lane",
+					"troops": 1500
+				}
+			],
+			"location": {
+				"name": "Atlixco, Puebla",
+				"lat":  18.9131,
+				"lon": -98.4294
+			}
+		},
+		{
+			"name": "Battle of La Paz",
+			"start": "11/16/1847",
+			"end": "11/17/1847",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 6,
+					"leader": "Manuel Pineda Munoz",
+					"troops": 200
+				},
+				{
+					"name": "United States",
+					"casualities": 1,
+					"leader": "Henry S. Burton",
+					"troops": 115
+				}
+			],
+			"location": {
+				"name": "La Paz, Baja California Sur",
+				"lat":  24.1426,
+				"lon": -110.3128
+			}
+		},
+		{
+			"name": "Battle of San José del Cabo",
+			"start": "11/20/1847",
+			"end": "11/21/1847",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 8,
+					"leader": "José Antonio Mijares",
+					"troops": 150
+				},
+				{
+					"name": "United States",
+					"casualities": 0,
+					"leader": "Charles Heywood",
+					"troops": 56
+				}
+			],
+			"location": {
+				"name": "San José del Cabo, Baja California Sur",
+				"lat":  23.0637,
+				"lon": -109.7024
+			}
+		},
+		{
+			"name": "Skirmish at Matamoros",
+			"start": "11/23/1847",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 60,
+					"leader": "Colonel Piedras",
+					"troops": 500
+				},
+				{
+					"name": "United States",
+					"casualities": 0,
+					"leader": "Joseph Lane",
+					"troops": 160
+				}
+			],
+			"location": {
+				"name": "Izúcar de Matamoros, Puebla",
+				"lat":  18.5991,
+				"lon": -98.4678
+			}
+		},
+		{
+			"name": "Affair at Galaxara Pass",
+			"start": "11/24/1847",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 50,
+					"leader": "Joaquín Rea",
+					"troops": 700
+				},
+				{
+					"name": "United States",
+					"casualities": 2,
+					"leader": "Joseph Lane",
+					"troops": 181
+				}
+			],
+			"location": {
+				"name": "Galaxara Pass, Puebla",
+				"lat":  18.6705,
+				"lon": -98.4452
+			}
+		},
+		{
+			"name": "Action of Sequalteplan",
+			"start": "2/25/1848",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 150,
+					"leader": "Celedonio Dómeco de Jarauta",
+					"troops": "?"
+				},
+				{
+					"name": "United States",
+					"casualities": 1,
+					"leader": "Joseph Lane",
+					"troops": 380
+				}
+			],
+			"location": {
+				"name": "Zacualtipan, Hidalgo",
+				"lat":  20.6485,
+				"lon": -98.6577
+			}
+		},
+		{
+			"name": "Battle of Santa Cruz de Rosales",
+			"start": "3/16/1848",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 328,
+					"leader": "Angel Trias",
+					"troops": 804
+				},
+				{
+					"name": "United States",
+					"casualities": 4,
+					"leader": "Sterling Price",
+					"troops": 200
+				}
+			],
+			"location": {
+				"name": "Santa Cruz de Rosales, Chihuahua",
+				"lat":  28.1886,
+				"lon": -105.5577
+			}
+		},
+		{
+			"name": "Skirmish of Todos Santos",
+			"start": "3/30/1848",
+			"end": "",
+			"winner": "United States",
+			"countries": [
+				{
+					"name": "Mexico",
+					"casualities": 10,
+					"leader": "Mauricio Castro Cota",
+					"troops": 250
+				},
+				{
+					"name": "United States",
+					"casualities": 0,
+					"leader": "Henry S. Burton",
+					"troops": 217
+				}
+			],
+			"location": {
+				"name": "Todos los Santos, Baja California Sur",
+				"lat":  23.4464,
+				"lon": -110.2265
+			}
+		}
+	],
+	"countries": [
+		{
+			"name": "California Republic",
+			"leaders": [
+				{
+					"name": "William B. Ide",
+					"title": "Commander"
+				}
+			]
+		},
+		{
+			"name": "Mexico",
+			"leaders": [
+				{
+					"name": "Antonio López de Santa Anna",
+					"title": "President"
+				}
+			]
+		},
+		{
+			"name": "United States",
+			"leaders": [
+				{
+					"name": "James K. Polk",
+					"title": "President"
+				}
+			]
+		}
+	]
+}

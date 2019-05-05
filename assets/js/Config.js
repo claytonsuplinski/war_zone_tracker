@@ -30,10 +30,30 @@ WARS.mouse.y = "";
 
 WARS.models = {};
 
+WARS.config = {};
+WARS.config.wars = [
+	'American Revolutionary War',
+	'Civil War',
+	'Iraq War',
+	'Korean War',
+	'Mexican-American War',
+	'Spanish-American War',
+	'Syrian Civil War',
+	'Vietnam War',
+	'World War I',
+	'World War II',
+];
+
 WARS.functions = {};
 WARS.functions.init_data = function(){
-	$.getJSON('./assets/data/wars.json', function (data){
-		WARS.data = data["wars"];
+	WARS.data = {};
+	
+	WARS.config.wars.forEach(function( war ){
+		var war_name = war.replace(/[\s,\-]/g, '_').toLowerCase();
+		console.log( war_name );
+		$.getJSON('./assets/data/' + war_name + '.json', function(data){
+			WARS.data[ war ] = data;
+		});
 	});
 };
 WARS.functions.get_date_string = function(d){
